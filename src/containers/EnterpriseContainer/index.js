@@ -9,7 +9,7 @@ import { Switch, Route, NavLink, Redirect } from 'react-router-dom';
 // import DMS from '../../components/Enterprise/DMS';
 // import NSG from '../../components/Enterprise/NSG';
 
-import Breadcrumbs from '../../components/App/Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 class EnterpriseContainer extends Component {
   componentDidMount() {

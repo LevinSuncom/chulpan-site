@@ -3,187 +3,58 @@ import React from 'react';
 const IndividualsHealthAccidentsFaq = () => {
   return (
     <div>
-      <h1>
-        <span
-          style={{
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
-          Страхование от несчастных случаев<p />
-        </span>
-      </h1>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal'
-        }}>
+      <h1 className="product-header">Страхование от несчастных случаев</h1>
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
+          <span>
             <p>&nbsp;</p>
           </span>
         </b>
       </p>
-      <p
-        className="MsoListParagraph"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          msoAddSpace: 'auto',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          msoList: 'l0 level1 lfo1',
-          tabStops: '42.55pt'
-        }}>
-        {/*[if !supportLists]*/}
-        <b style={{ msoBidiFontWeight: 'normal' }}>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
-            <span style={{ msoList: 'Ignore' }}>
-              1.<span style={{ font: '7.0pt "Times New Roman"' }}>
-                &nbsp;&nbsp;{' '}
-              </span>
+      <p>
+        <b>
+          <span>
+            <span>
+              1.<span>&nbsp;&nbsp; </span>
             </span>
           </span>
         </b>
-        {/*[endif]*/}
+
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
-            Что делать при наступлении страхового случая?
-          </span>
+          <span>Что делать при наступлении страхового случая?</span>
         </b>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+        <span>
           <p />
         </span>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
-            <span style={{ msoSpacerun: 'yes' }}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+          <span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <p />
           </span>
         </b>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU',
-            msoBidiFontWeight: 'bold'
-          }}>
-          При наступлении страхового случая необходимо:
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>При наступлении страхового случая необходимо:</span>
+        <span>
           <p />
         </span>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
-          -Обратиться в ближайший <span className="SpellE">травмпункт</span> или
-          любое медицинское учреждение;<p />
+      <p>
+        <span>
+          -Обратиться в ближайший <span>травмпункт</span> или любое медицинское
+          учреждение;<p />
         </span>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>
           -Зафиксировать событие у врача.<p />
         </span>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{ fontSize: '12.0pt', fontFamily: '"Times New Roman",serif' }}>
+      <p>
+        <span>
           - Письменно известить об этом Страховщика в течение 30 (тридцати) дней
           со дня, когда Страхователю стало известно о случившемся с последующим
           предоставлением всей необходимой информации и приложением
@@ -191,261 +62,102 @@ const IndividualsHealthAccidentsFaq = () => {
           наступления указанного события может быть исполнена
           Выгодоприобретателем (наследниками по закону).
         </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+        <span>
           <p />
         </span>
       </p>
-      <p
-        className="MsoListParagraphCxSpFirst"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          msoAddSpace: 'auto',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>
           <p>&nbsp;</p>
         </span>
       </p>
-      <p
-        className="MsoListParagraphCxSpLast"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          msoAddSpace: 'auto',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          msoOutlineLevel: 5,
-          msoList: 'l0 level1 lfo1',
-          tabStops: '42.55pt'
-        }}>
-        {/*[if !supportLists]*/}
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
-            <span style={{ msoList: 'Ignore' }}>
-              2.<span style={{ font: '7.0pt "Times New Roman"' }}>
-                &nbsp;&nbsp;{' '}
-              </span>
+          <span>
+            <span>
+              2.<span>&nbsp;&nbsp; </span>
             </span>
           </span>
         </b>
-        {/*[endif]*/}
+
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
+          <span>
             Какие ситуации не покрывает страховка от несчастного случая?<p />
           </span>
         </b>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
+          <span>
             <p>&nbsp;</p>
           </span>
         </b>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>
           Страховка не покрывает ситуации, когда застрахованный совершает
           противоправные действия, находится под воздействием наркотиков или
           алкоголя, умышленно наносит себе физический вред.<p />
         </span>
       </p>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>
           <p>&nbsp;</p>
         </span>
       </p>
-      <h5
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          msoList: 'l0 level1 lfo1',
-          tabStops: '42.55pt'
-        }}>
-        {/*[if !supportLists]*/}
-        <span style={{ fontSize: '12.0pt' }}>
-          <span style={{ msoList: 'Ignore' }}>
-            3.<span style={{ font: '7.0pt "Times New Roman"' }}>
-              &nbsp;&nbsp;{' '}
-            </span>
+      <h5>
+        <span>
+          <span>
+            3.<span>&nbsp;&nbsp; </span>
           </span>
         </span>
-        {/*[endif]*/}
-        <span style={{ fontSize: '12.0pt' }}>
+
+        <span>
           Кто считается профессиональным спортсменом?<p />
         </span>
       </h5>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          msoOutlineLevel: 5,
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{ fontSize: '12.0pt', fontFamily: '"Times New Roman",serif' }}>
+      <p>
+        <span>
           Человек, для которого занятия спортом являются основным видом
           заработка
         </span>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              msoFareastFontFamily: '"Times New Roman"',
-              msoFareastLanguage: 'RU'
-            }}>
+          <span>
             <p />
           </span>
         </b>
       </p>
-      <p
-        className="MsoListParagraph"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          msoAddSpace: 'auto',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          lineHeight: 'normal',
-          tabStops: '42.55pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastFontFamily: '"Times New Roman"',
-            msoFareastLanguage: 'RU'
-          }}>
+      <p>
+        <span>
           <p>&nbsp;</p>
         </span>
       </p>
-      <h5
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          tabStops: '42.55pt'
-        }}>
-        <span style={{ fontSize: '12.0pt' }}>
-          <span style={{ msoSpacerun: 'yes' }}>&nbsp;</span>4. Я хочу заниматься{' '}
-          <span className="SpellE">травмоопасным</span>
+      <h5>
+        <span>
+          <span>&nbsp;</span>4. Я хочу заниматься <span>травмоопасным</span>
           видом спорта в качестве хобби. Могу ли я получить полис добровольного
           страхования от несчастного случая?<p />
         </span>
       </h5>
-      <p
-        className="faq-expanditem-description"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          tabStops: '42.55pt'
-        }}>
-        <b style={{ msoBidiFontWeight: 'normal' }}>
+      <p>
+        <b>
           <p>&nbsp;</p>
         </b>
       </p>
-      <p
-        className="faq-expanditem-description"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '1.0cm',
-          tabStops: '42.55pt'
-        }}>
-        Да, мы покрываем <span className="SpellE">травмоопасные</span> виды
-        спорта. Специально для Вас мы рады будем предложить П<span
-          style={{ color: 'black' }}>
+      <p>
+        Да, мы покрываем <span>травмоопасные</span> виды спорта. Специально для
+        Вас мы рады будем предложить П<span>
           рограмму добровольного страхования от несчастных случаев граждан и
           детей, занимающихся любительским{' '}
-          <span className="GramE">
-            и<span style={{ msoSpacerun: 'yes' }}>&nbsp; </span>профессиональным
+          <span>
+            и<span>&nbsp; </span>профессиональным
           </span>
-          спортом<b style={{ msoBidiFontWeight: 'normal' }}>
+          спортом<b>
             .<p />
           </b>
         </span>
       </p>
-      <p className="MsoNormal">
+      <p>
         <p>&nbsp;</p>
       </p>
     </div>

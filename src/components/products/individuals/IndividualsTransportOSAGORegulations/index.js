@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IndividualsTransportOSAGORegulations = () => {
-  return <div>IndividualsTransportOSAGORegulations</div>;
+  return <div>Нет текстовки</div>;
 };
 
 export default IndividualsTransportOSAGORegulations;

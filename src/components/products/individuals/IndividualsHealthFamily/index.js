@@ -1,154 +1,26 @@
 import React from 'react';
+import image from './image.jpg';
 
 const IndividualsHealthFamily = () => {
   return (
     <div>
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'center',
-          lineHeight: 'normal',
-          pageBreakAfter: 'avoid',
-          msoOutlineLevel: 1,
-          msoHyphenate: 'none',
-          tabStops: '0cm'
-        }}
-        align="center">
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            Программа
-          </span>
-        </b>
-      </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'center',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}
-        align="center">
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            <span style={{ msoSpacerun: 'yes' }}>&nbsp;</span>«
-          </span>
-        </b>
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoAnsiLanguage: 'EN-US',
-              msoFareastLanguage: 'RU'
-            }}
-            lang="EN-US">
-            C
-          </span>
-        </b>
-        <span className="SpellE">
-          <b>
-            <span
-              style={{
-                fontSize: '12.0pt',
-                fontFamily: '"Times New Roman",serif',
-                color: 'black',
-                msoFareastLanguage: 'RU'
-              }}>
-              емейный
-            </span>
-          </b>
-        </span>
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            {' '}
-            полис»
-          </span>
-        </b>
-      </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}
-        />
+      <h1 className="product-header">Программа Cемейный полис»</h1>
+      <img src={image} className="product-image" alt="" />
+
+      <p>
+        <span />
       </p>
       <p>&nbsp;</p>
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            Застрахованными лицами
-          </span>
+          <span>Застрахованными лицами</span>
         </b>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
+        <span>
           {' '}
           признаются указанные в договоре страхования Страхователь и члены{' '}
-          <span className="GramE">
-            семьи<span style={{ msoSpacerun: 'yes' }}>&nbsp;</span>Страхователя
+          <span>
+            семьи<span>&nbsp;</span>Страхователя
           </span>{' '}
           в течение действия договора страхования, проживающие на одной с ним
           жилой площади (зарегистрированные по адресу места жительства
@@ -156,324 +28,84 @@ const IndividualsHealthFamily = () => {
           зарегистрированы по другим адресам) и совместно ведущие хозяйство:
         </span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - муж и жена;
-        </span>
+
+      <p>
+        <span>- муж и жена;</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - отец и мать мужа и /или жены;
-        </span>
+
+      <p>
+        <span>- отец и мать мужа и /или жены;</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - родные братья и сестры мужа или жены;
-        </span>
+
+      <p>
+        <span>- родные братья и сестры мужа или жены;</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - дети Страхователя (основного Застрахованного).
-        </span>
+
+      <p>
+        <span>- дети Страхователя (основного Застрахованного).</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          textIndent: '35.45pt',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}
-        />
+
+      <p>
+        <span />
       </p>
       <p>&nbsp;</p>
-      <p />
-      <p
-        className="MsoNormal"
-        style={{ textAlign: 'justify', textIndent: '35.45pt' }}>
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              lineHeight: '115%',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black'
-            }}>
-            Страховыми случаями признаются следующие события:
-          </span>
+          <span>Страховыми случаями признаются следующие события:</span>
         </b>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - смерть Застрахованного в результате несчастного случая.
-        </span>
+
+      <p>
+        <span>- смерть Застрахованного в результате несчастного случая.</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - постоянная утрата,{' '}
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastLanguage: 'RU'
-          }}>
-          снижение<span style={{ color: 'black' }}>
+
+      <p>
+        <span>- постоянная утрата, </span>
+        <span>
+          снижение<span>
             {' '}
-            <span className="GramE">
-              Застрахованным<span style={{ msoSpacerun: 'yes' }}>&nbsp; </span>трудоспособности
+            <span>
+              Застрахованным<span>&nbsp; </span>трудоспособности
             </span>{' '}
             в результате несчастного случая: в отношении детей – установление
             категории «ребенок-инвалид»; в отношении других лиц – установление
             инвалидности{' '}
           </span>
         </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoAnsiLanguage: 'EN-US',
-            msoFareastLanguage: 'RU'
-          }}
-          lang="EN-US">
-          I
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          ,{' '}
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoAnsiLanguage: 'EN-US',
-            msoFareastLanguage: 'RU'
-          }}
-          lang="EN-US">
-          II
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
+        <span>I</span>
+        <span>, </span>
+        <span>II</span>
+        <span>
           {' '}
-          или<span style={{ msoSpacerun: 'yes' }}>&nbsp; </span>
+          или<span>&nbsp; </span>
         </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoAnsiLanguage: 'EN-US',
-            msoFareastLanguage: 'RU'
-          }}
-          lang="EN-US">
-          III
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          {' '}
-          группы.
-        </span>
+        <span>III</span>
+        <span> группы.</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
+
+      <p>
+        <span>
           - временная нетрудоспособность в результате несчастного случая;
         </span>
       </p>
-      <p />
-      <p />
-      <p className="MsoNormal" style={{ textAlign: 'justify' }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
+
+      <p>
+        <span>
           - причинение вреда здоровью Застрахованного в результате несчастного
           случая.
         </span>
       </p>
-      <p />
-      <p />
-      <p className="MsoNormal" style={{ textAlign: 'justify' }}>
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              lineHeight: '115%',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
+          <span>
             Данная программа может быть интересна всем, кто заботится о всех
             членах своей семьи, независимо от возраста и социального статуса.
             Экономное страхование при максимальном страховом покрытии.
           </span>
         </b>
       </p>
-      <p />
-      <p />
     </div>
   );
 };

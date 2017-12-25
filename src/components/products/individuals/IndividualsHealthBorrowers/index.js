@@ -1,246 +1,52 @@
 import React from 'react';
+import image from './image.jpg';
 
 const IndividualsHealthBorrowers = () => {
   return (
     <div>
-      <p
-        className="MsoNormal"
-        style={{
-          margin: '0cm',
-          marginBottom: '.0001pt',
-          textAlign: 'center',
-          textIndent: '0cm',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          pageBreakAfter: 'avoid',
-          msoOutlineLevel: 1,
-          msoList: 'l0 level1 lfo2',
-          msoHyphenate: 'none',
-          tabStops: '0cm',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}
-        align="center">
+      <h1 className="product-header">Программа «Страхование заемщиков»</h1>
+      <img src={image} className="product-image" alt="" />
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            Программа
-          </span>
+          <span>Страховыми случаями признаются следующие события:</span>
         </b>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'center',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}
-        align="center">
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            «Страхование заемщиков»
-          </span>
-        </b>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}
-        />
+
+      <p>
+        <span>- смерть Застрахованного в результате несчастного случая.</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '10.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}
-        />
-      </p>
-      <p>&nbsp;</p>
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              fontFamily: '"Times New Roman",serif',
-              color: 'black',
-              msoFareastLanguage: 'RU'
-            }}>
-            Страховыми случаями признаются следующие события:
-          </span>
-        </b>
-      </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          marginBottom: '.0001pt',
-          textAlign: 'justify',
-          lineHeight: 'normal',
-          msoPagination: 'none',
-          background: 'white',
-          msoLayoutGridAlign: 'none',
-          textAutospace: 'none'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - смерть Застрахованного в результате несчастного случая.
-        </span>
-      </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{ textAlign: 'justify', tabStops: '7.1pt' }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          - постоянная утрата,{' '}
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            msoFareastLanguage: 'RU'
-          }}>
+
+      <p>
+        <span>- постоянная утрата, </span>
+        <span>
           снижение{' '}
-          <span className="GramE">
-            <span style={{ color: 'black' }}>
-              Застрахованным<span style={{ msoSpacerun: 'yes' }}>&nbsp; </span>трудоспособности
+          <span>
+            <span>
+              Застрахованным<span>&nbsp; </span>трудоспособности
             </span>
           </span>
-          <span style={{ color: 'black' }}>
+          <span>
             {' '}
-            в результате несчастного случая:<span
-              style={{ msoSpacerun: 'yes' }}>
+            в результате несчастного случая:<span>
               &nbsp;&nbsp;{' '}
             </span>установление инвалидности{' '}
           </span>
         </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoAnsiLanguage: 'EN-US',
-            msoFareastLanguage: 'RU'
-          }}
-          lang="EN-US">
-          I
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          {' '}
-          группы.
-        </span>
+        <span>I</span>
+        <span> группы.</span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          textAlign: 'justify',
-          textIndent: '7.1pt',
-          tabStops: '7.1pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif',
-            color: 'black',
-            msoFareastLanguage: 'RU'
-          }}>
-          Страховая сумма устанавливается с
-        </span>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif'
-          }}>
+
+      <p>
+        <span>Страховая сумма устанавливается с</span>
+        <span>
           огласно сумме оформляемого кредита, включая банковский процент.
         </span>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          textAlign: 'justify',
-          textIndent: '7.1pt',
-          tabStops: '7.1pt'
-        }}>
+
+      <p>
         <b>
-          <span
-            style={{
-              fontSize: '12.0pt',
-              lineHeight: '115%',
-              fontFamily: '"Times New Roman",serif'
-            }}>
+          <span>
             Данная программа может быть интересна тем, кто планирует взять
             кредит на любые цели (потребительский, ипотечный и др.) в Банке и
             одновременно исполнить требование Банка о страховании жизни и
@@ -249,25 +55,11 @@ const IndividualsHealthBorrowers = () => {
           </span>
         </b>
       </p>
-      <p />
-      <p />
-      <p
-        className="MsoNormal"
-        style={{
-          textAlign: 'justify',
-          textIndent: '7.1pt',
-          tabStops: '7.1pt'
-        }}>
-        <span
-          style={{
-            fontSize: '12.0pt',
-            lineHeight: '115%',
-            fontFamily: '"Times New Roman",serif'
-          }}
-        />
+
+      <p>
+        <span />
       </p>
       <p>&nbsp;</p>
-      <p />
     </div>
   );
 };

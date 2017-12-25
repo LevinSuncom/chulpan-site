@@ -35,6 +35,7 @@ import {
   // Ипотека
   IndividualsMortgageAbout,
   // Путешествия
+  IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
   IndividualsTravelAbroadManual
 } from '../products';
@@ -54,7 +55,11 @@ export default class Services extends Component {
                 path="/services/individuals"
                 component={Individuals}
               />
-              <Redirect exact from="/services/individuals/health/accidents" to="/services/individuals/health/accidents/about" />
+              <Redirect
+                exact
+                from="/services/individuals/health/accidents"
+                to="/services/individuals/health/accidents/about"
+              />
               <Route
                 path="/services/individuals/health/accidents/about"
                 component={IndividualsHealthAccidentsAbout}
@@ -83,7 +88,11 @@ export default class Services extends Component {
                 path="/services/individuals/health/borrowers"
                 component={IndividualsHealthBorrowers}
               />
-              <Redirect exact from="/services/individuals/property/combined" to="/services/individuals/property/combined/about" />
+              <Redirect
+                exact
+                from="/services/individuals/property/combined"
+                to="/services/individuals/property/combined/about"
+              />
               <Route
                 path="/services/individuals/property/combined/about"
                 component={IndividualsPropertyCombinedAbout}
@@ -100,7 +109,11 @@ export default class Services extends Component {
                 path="/services/individuals/property/express"
                 component={IndividualsPropertyExpress}
               />
-                            <Redirect exact from="/services/individuals/property/estate" to="/services/individuals/property/estate/about" />
+              <Redirect
+                exact
+                from="/services/individuals/property/estate"
+                to="/services/individuals/property/estate/about"
+              />
               <Route
                 path="/services/individuals/property/estate/about"
                 component={IndividualsPropertyEstateAbout}
@@ -113,13 +126,25 @@ export default class Services extends Component {
                 path="/services/individuals/property/estate/manual"
                 component={IndividualsPropertyEstateManual}
               />
-              
-              <Redirect exact from="/services/individuals/mortgage" to="/services/individuals/mortgage/about" />
+
+              <Redirect
+                exact
+                from="/services/individuals/mortgage"
+                to="/services/individuals/mortgage/about"
+              />
               <Route
                 path="/services/individuals/mortgage/about"
                 component={IndividualsMortgageAbout}
               />
-              <Redirect exact from="/services/individuals/travel/abroad" to="/services/individuals/travel/abroad/faq" />
+              <Redirect
+                exact
+                from="/services/individuals/travel/abroad"
+                to="/services/individuals/travel/abroad/about"
+              />
+              <Route
+                path="/services/individuals/travel/abroad/about"
+                component={IndividualsTravelAbroadAbout}
+              />
               <Route
                 path="/services/individuals/travel/abroad/faq"
                 component={IndividualsTravelAbroadFaq}
@@ -140,7 +165,11 @@ export default class Services extends Component {
                 path="/services/individuals/transport/kasko50"
                 component={IndividualsTransportKASKO50}
               />
-              <Redirect exact from="/services/individuals/transport/kasko" to="/services/individuals/transport/kasko/about" />
+              <Redirect
+                exact
+                from="/services/individuals/transport/kasko"
+                to="/services/individuals/transport/kasko/about"
+              />
               <Route
                 path="/services/individuals/transport/kasko/about"
                 component={IndividualsTransportKASKOAbout}
@@ -153,7 +182,11 @@ export default class Services extends Component {
                 path="/services/individuals/transport/kasko/regulations"
                 component={IndividualsTransportKASKORegulations}
               />
-              <Redirect exact from="/services/individuals/transport/osago" to="/services/individuals/transport/osago/about" />
+              <Redirect
+                exact
+                from="/services/individuals/transport/osago"
+                to="/services/individuals/transport/osago/about"
+              />
               <Route
                 path="/services/individuals/transport/osago/about"
                 component={IndividualsTransportOSAGOAbout}
@@ -162,7 +195,11 @@ export default class Services extends Component {
                 path="/services/individuals/transport/osago/regulations"
                 component={IndividualsTransportOSAGORegulations}
               />
-              <Redirect exact from="/services/individuals/transport/eosago" to="/services/individuals/transport/eosago/about" />
+              <Redirect
+                exact
+                from="/services/individuals/transport/eosago"
+                to="/services/individuals/transport/eosago/about"
+              />
               <Route
                 path="/services/individuals/transport/eosago/faq"
                 component={IndividualsTransportEOSAGOFaq}
@@ -171,7 +208,11 @@ export default class Services extends Component {
                 path="/services/individuals/transport/eosago/manual"
                 component={IndividualsTransportEOSAGOManual}
               />
-              <Redirect exact from="/services/individuals/transport/voluntary" to="/services/individuals/transport/voluntary/about" />
+              <Redirect
+                exact
+                from="/services/individuals/transport/voluntary"
+                to="/services/individuals/transport/voluntary/about"
+              />
               <Route
                 path="/services/individuals/transport/voluntary/about"
                 component={IndividualsTransportVoluntaryAbout}

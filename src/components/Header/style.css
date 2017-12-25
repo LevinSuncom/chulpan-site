@@ -1,0 +1,20 @@
+.header {
+  position: fixed;
+  width: 100%;
+  min-width: 960px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header__info {
+  font-size: 12px;
+  font-weight: 300;
+  color: #5c5c5c;
+}

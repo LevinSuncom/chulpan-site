@@ -8,6 +8,8 @@ import ScrollToTop from './components/ScrollToTop';
 import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
+import './fonts/index.css';
+
 import './index.css';
 
 ReactDOM.render(

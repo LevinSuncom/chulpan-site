@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { YMaps, Map, Placemark, GeoObject } from 'react-yandex-maps';
 // import Modal from 'react-modal';
 
-import Carousel from '../../components/Main/Carousel';
-import Options from '../../components/Main/Options';
-import News from '../../components/Main/News';
-import Stocks from '../../components/Main/Stocks';
+import Carousel from '../../components/Carousel';
+import Options from '../../components/Options';
+import News from '../../components/News';
+import Stocks from '../../components/Stocks';
 
 import './style.css';
 

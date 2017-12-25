@@ -1,4 +1,5 @@
 import React from 'react';
+import image from './image.jpg';
 
 const IndividualsPropertyCombinedAbout = () => {
   return (
@@ -6,6 +7,8 @@ const IndividualsPropertyCombinedAbout = () => {
       <h1 className="product-header">
         Комбинированное страхование имущества граждан
       </h1>
+
+      <img src={image} alt="" className="product-image" />
 
       {/* <img src={image} className="product-image" alt="" />
         <button

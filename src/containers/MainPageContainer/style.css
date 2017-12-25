@@ -7,21 +7,21 @@
 
 .callback label {
   display: block;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 
 .callback input {
   height: 40px;
   padding: 13px;
   border-radius: 4px;
-  border: 1px solid #C2C2C2;
+  border: 1px solid #c2c2c2;
   /* box-shadow: none; */
   /* display: block; */
   box-sizing: border-box;
 }
 
 .callback input:focus {
-  border: 2px solid #F6DE34;
+  border: 2px solid #f6de34;
   outline: none;
   padding: 12px;
 }
@@ -30,13 +30,13 @@
   /* height: 40px; */
   padding: 13px;
   border-radius: 4px;
-  border: 1px solid #C2C2C2;
+  border: 1px solid #c2c2c2;
   /* box-shadow: none; */
   /* display: block; */
 }
 
 .callback textarea:focus {
-  border: 2px solid #F6DE34;
+  border: 2px solid #f6de34;
   outline: none;
   padding: 12px;
 }

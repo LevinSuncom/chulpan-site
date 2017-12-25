@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, NavLink, Link } from 'react-router-dom';
 
+import './style.css';
+
 const Icon = () => <i className="material-icons">keyboard_arrow_right</i>;
 const BackIcon = () => <i className="material-icons">arrow_back</i>;
 
@@ -11,22 +13,22 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           {/* <div> */}
           <Link to="/services/individuals" className="navbar__link">
-            Частным клиентам <Icon/>
+            Частным клиентам <Icon />
           </Link>
           {/* </div> */}
           {/* <div> */}
           <Link to="/services" className="navbar__link">
-            Корпоративным клиентам <Icon/>
+            Корпоративным клиентам <Icon />
           </Link>
           {/* </div> */}
           {/* <div> */}
           <Link to="/services" className="navbar__link">
-            Представители <Icon/>
+            Представители <Icon />
           </Link>
           {/* </div> */}
           {/* <div> */}
           <Link to="/services" className="navbar__link">
-            Все правила <Icon/>
+            Все правила <Icon />
           </Link>
           {/* </div> */}
         </React.Fragment>
@@ -37,32 +39,32 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services" className="navbar__link">
-            <BackIcon/> Частным клиентам
+              <BackIcon /> Частным клиентам
             </Link>
           </div>
           <div>
             <Link to="/services/individuals/transport" className="navbar__link">
-              Транспорт <Icon/>
+              Транспорт <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals/health" className="navbar__link">
-              Здоровье <Icon/>
+              Здоровье <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals/property" className="navbar__link">
-              Имущество <Icon/>
+              Имущество <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals/mortgage" className="navbar__link">
-              Ипотека <Icon/>
+              Ипотека <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals/travel" className="navbar__link">
-              Путешествия <Icon/>
+              Путешествия <Icon />
             </Link>
           </div>
         </React.Fragment>
@@ -75,14 +77,14 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-            <BackIcon/> Транспорт
+              <BackIcon /> Транспорт
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/transport/kasko"
               className="navbar__link">
-              КАСКО <Icon/>
+              КАСКО <Icon />
             </Link>
           </div>
           <div>
@@ -103,21 +105,21 @@ const MultiLevelNavigation = props => {
             <Link
               to="/services/individuals/transport/osago"
               className="navbar__link">
-              ОСАГО <Icon/>
+              ОСАГО <Icon />
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/transport/eosago"
               className="navbar__link">
-              е-ОСАГО <Icon/>
+              е-ОСАГО <Icon />
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/transport/voluntary"
               className="navbar__link">
-              Добровольная автогражданка <Icon/>
+              Добровольная автогражданка <Icon />
             </Link>
           </div>
         </React.Fragment>
@@ -132,7 +134,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/transport" className="navbar__link">
-            <BackIcon/> КАСКО
+              <BackIcon /> КАСКО
             </Link>
           </div>
           <div>
@@ -177,7 +179,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/transport" className="navbar__link">
-            <BackIcon/> ОСАГО
+              <BackIcon /> ОСАГО
             </Link>
           </div>
           <div>
@@ -208,7 +210,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/transport" className="navbar__link">
-            <BackIcon/> е-ОСАГО
+              <BackIcon /> е-ОСАГО
             </Link>
           </div>
           <div>
@@ -258,7 +260,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/transport" className="navbar__link">
-            <BackIcon/> Добровольная автогражданка
+              <BackIcon /> Добровольная автогражданка
             </Link>
           </div>
           <div>
@@ -295,14 +297,14 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-            <BackIcon/> Здоровье
+              <BackIcon /> Здоровье
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/health/accidents"
               className="navbar__link">
-              Несчастные случаи <Icon/>
+              Несчастные случаи <Icon />
             </Link>
           </div>
           <div>
@@ -345,7 +347,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/health" className="navbar__link">
-            <BackIcon/> Несчастные случаи
+              <BackIcon /> Несчастные случаи
             </Link>
           </div>
           <div>
@@ -384,35 +386,35 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-            <BackIcon/> Имущество
+              <BackIcon /> Имущество
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/property/combined"
               className="navbar__link">
-              Комбинированное <Icon/>
+              Комбинированное <Icon />
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/property/economy"
               className="navbar__link">
-              Эконом-страхование <Icon/>
+              Эконом-страхование <Icon />
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/property/express"
               className="navbar__link">
-              Экспресс-страхование <Icon/>
+              Экспресс-страхование <Icon />
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/property/estate"
               className="navbar__link">
-              Имущество <Icon/>
+              Имущество <Icon />
             </Link>
           </div>
         </React.Fragment>
@@ -427,7 +429,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/property" className="navbar__link">
-            <BackIcon/> Комбинированное
+              <BackIcon /> Комбинированное
             </Link>
           </div>
           <div>
@@ -467,7 +469,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/property" className="navbar__link">
-            <BackIcon/> Эконом-страхование
+              <BackIcon /> Эконом-страхование
             </Link>
           </div>
           <div>
@@ -486,7 +488,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/property" className="navbar__link">
-            <BackIcon/> Экспресс-страхование
+              <BackIcon /> Экспресс-страхование
             </Link>
           </div>
           <div>
@@ -508,7 +510,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/property" className="navbar__link">
-            <BackIcon/> Имущество
+              <BackIcon /> Имущество
             </Link>
           </div>
           <div>
@@ -550,7 +552,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-            <BackIcon/> Ипотека
+              <BackIcon /> Ипотека
             </Link>
           </div>
           <div>
@@ -582,14 +584,14 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-            <BackIcon/> Путешествия
+              <BackIcon /> Путешествия
             </Link>
           </div>
           <div>
             <Link
               to="/services/individuals/travel/abroad"
               className="navbar__link">
-              Выезжающим за рубеж <Icon/>
+              Выезжающим за рубеж <Icon />
             </Link>
           </div>
         </React.Fragment>
@@ -605,7 +607,14 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services/individuals/travel" className="navbar__link">
-            <BackIcon/> Выезжающим за рубеж
+              <BackIcon /> Выезжающим за рубеж
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/services/individuals/travel/abroad/about"
+              className="navbar__link">
+              Описание
             </Link>
           </div>
           <div>
@@ -644,32 +653,32 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services" className="navbar__link">
-            <BackIcon/> Корпоративным клиентам
+              <BackIcon /> Корпоративным клиентам
             </Link>
           </div>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-              Имущество <Icon/>
+              Имущество <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-              Ответственность <Icon/>
+              Ответственность <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-              Персонал <Icon/>
+              Персонал <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-              Комбинированное <Icon/>
+              Комбинированное <Icon />
             </Link>
           </div>
           <div>
             <Link to="/services/individuals" className="navbar__link">
-              Путешествия <Icon/>
+              Путешествия <Icon />
             </Link>
           </div>
         </React.Fragment>
@@ -680,7 +689,7 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <div>
             <Link to="/services" className="navbar__link">
-            <BackIcon/> Все правила
+              <BackIcon /> Все правила
             </Link>
           </div>
           <div>
