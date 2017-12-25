@@ -1,0 +1,32 @@
+.quick-icons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.quick-icon {
+  text-align: center;
+  background-color: #d0ecfa;
+  width: 16%;
+    @media( max-width: 992px) {
+  width: 18%;
+    // justify-content: space-around;
+  }
+  padding-top: 8px;
+  
+  &__text {
+    padding: 8px;
+    background-color: #F6DE34;
+    color: #0095d6;
+    min-height: 64px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    margin-bottom: 0;
+  }
+
+  & i {
+    font-size: 52px;
+    color: #0095d6;
+  }
+}

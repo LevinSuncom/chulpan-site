@@ -1,0 +1,72 @@
+// @import 'reboot';
+
+@import 'base';
+@import 'utilities';
+
+// @import 'grid';
+
+
+@import 'components';
+@import 'main-header';
+@import 'navbar';
+@import 'footer';
+@import 'quick-icons';
+
+@import 'sizes';
+
+@import 'spacings';
+
+// @import 'abstracts/variables';
+// @import 'abstracts/functions';
+// @import 'abstracts/mixins';
+// @import 'abstracts/placeholders';
+
+// @import 'vendors/bootstrap';
+// @import 'vendors/jquery-ui';
+
+// @import 'base/reset';
+// @import 'base/typography';
+// @import 'base/utilities';
+
+
+// @import 'layout/navigation';
+// @import 'layout/grid';
+// @import 'layout/header';
+// @import 'layout/spacings';
+// @import 'layout/dimensions';
+// @import 'layout/footer';
+// @import 'layout/sidebar';
+// @import 'layout/forms';
+
+// @import 'components/button-group';
+// @import 'components/buttons';
+// @import 'components/navbar';
+// @import 'components/tables';
+// @import 'components/inputs';
+// @import 'components/carousel';
+// @import 'components/cover';
+// @import 'components/dropdown';
+
+// @import 'pages/home';
+// @import 'pages/contact';
+
+// @import 'themes/theme';
+// @import 'themes/admin';
+
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}
+
+.ReactModal__Overlay {
+    z-index: 2;
+}
+
+.ReactModal__Content {
+    top: 80px!important;
+    left: 28%!important;
+    right: 28%!important;
+    bottom: 32%!important;
+    border: none!important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20), 0 1px 3px 0 rgba(0,0,0,0.10)!important;
+}
