@@ -16,6 +16,18 @@ ul {
   color: #5c5c5c;
   line-height: 1.4;
   margin-bottom: 8px;
+  list-style: none;
+  margin-left: -16px;
+}
+
+li::before {
+  content: "● ";
+  margin-right: 8px;
+  color: #0094D9; /* or whatever color you prefer */
+}
+
+b {
+  color: #0094D9;
 }
 
 ol {
