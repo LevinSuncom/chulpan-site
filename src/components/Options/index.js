@@ -30,7 +30,7 @@ class Options extends Component {
               <Link
                 to="/services/individuals/transport/eosago"
                 className="option__link">
-                ЕОСАГО
+                еОСАГО
               </Link>
               {/* <Link to="/individuals/dago" className="option__link">
                 ДАГО
@@ -42,15 +42,15 @@ class Options extends Component {
           <div className="option">
             <Link to="/services/individuals/property" style={{ zIndex: 1 }}>
               <i className="material-icons option__icon">home</i>
-              <div className="option__name">Имущество</div>
+              <div className="option__name">Жильё</div>
             </Link>
             {/* <span className="option__caption">Ипотека, дом, квартира</span> */}
             <div className="option__dropdown">
-              <Link to="/services/individuals" className="option__link">
-                СИГ(расш)
+              <Link to="/services/individuals/property/estate/about" className="option__link">
+                Имущество
               </Link>
-              <Link to="/services/individuals" className="option__link">
-                КСИГ(расш)
+              <Link to="/services/individuals/property/combined/about" className="option__link">
+                Комплексное
               </Link>
               {/* <Link to="/individuals/osago" className="option__link">
                 Эконом-страхование

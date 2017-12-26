@@ -58,7 +58,7 @@ const Header = () => {
           <LocationIcon className="" />
           <span
             style={{ fontSize: '12px', color: '#666666', paddingLeft: '8px' }}>
-            Казань
+            Альметьевск
           </span>
           <span
             style={{
@@ -66,7 +66,7 @@ const Header = () => {
               paddingLeft: '40px',
               paddingRight: '40px'
             }}>
-            8 800 000 00 00
+            8 800 700 44 90
           </span>
           <NavLink to="/" className="button ">
             Личный кабинет
