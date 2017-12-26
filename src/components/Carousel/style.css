@@ -6,6 +6,7 @@
   z-index: 0;
   position: relative;
 }
+
 @media (min-width: 992px) {
   .banner {
     height: 65vh;
@@ -47,29 +48,30 @@
   height: 108px;
   width: 100%;
 }
-.banner__nav {
-}
-.banner__nav:hover {
-}
+
 .banner__text {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+
 .banner__text:hover {
   text-decoration: none;
 }
+
 .banner__head {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 56px;
   color: #f6de34;
 }
+
 .banner__caption {
   font-size: 24px;
   color: #ffffff;
   font-weight: 600;
 }
+
 .banner__indicators {
   position: absolute;
   bottom: 5%;
@@ -89,6 +91,7 @@
   background-color: #ffffff;
   border-radius: 50%;
 }
+
 .circle--active {
   background-color: #0095d6;
 }

@@ -3,8 +3,33 @@ import { Switch, NavLink, Link } from 'react-router-dom';
 
 import './style.css';
 
-const Icon = () => <i className="material-icons">keyboard_arrow_right</i>;
-const BackIcon = () => <i className="material-icons">arrow_back</i>;
+const Icon = () => {
+  return (
+    <svg
+      fill="#5c5c5c"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </svg>
+  );
+};
+
+const BackIcon = () => {
+  return (
+    <svg
+      fill="#5c5c5c"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+    </svg>
+  );
+};
 
 const MultiLevelNavigation = props => {
   switch (props.path) {

@@ -47,67 +47,67 @@ const RightIcon = ({ onClick }) => {
   );
 };
 
+const slidesArr = [
+  {
+    image: childrenImage,
+    head: 'А ваш ребёнок защищён?',
+    caption: 'Льготное страхование школьников и дошкольников в СК Чулпан',
+    link: '/services/individuals/health/kids'
+  },
+  {
+    image: sportImage,
+    head: 'Быстрее, выше, сильнее!',
+    caption: 'Страхование спортсменов в СК Чулпан',
+    link: '/services/individuals/health/sport'
+  },
+  {
+    image: economyImage,
+    head: 'Как за каменной стеной',
+    caption: 'Эконом страхование в СК Чулпан',
+    link: '/services/individuals/property/economy'
+  },
+  {
+    image: expressImage,
+    head: 'Защити свой дом',
+    caption: 'Экспресс страхование в СК Чулпан',
+    link: '/services/individuals/property/express'
+  },
+  {
+    image: kasko50Image,
+    head: 'КАСКО 50',
+    caption:
+      'Программа добровольного страхования средств наземного транспорта в СК Чулпан',
+    link: '/services/individuals/transport/kasko50'
+  },
+  // {
+  //   image: familyImage,
+  //   head: 'Семейный полис',
+  //   caption:
+  //     'Программа добровольного страхования от несчастных случаев граждан и детей'
+  // },
+  {
+    image: voluntaryImage,
+    head: 'Опора и спокойствие Вашей семьи',
+    caption: 'Ипотечное страхование в СК Чулпан',
+    link: '/services/individuals/mortgage/about'
+  },
+  {
+    image: travelImage,
+    head: 'В отпуск без забот',
+    caption: 'Страхование путешественников в СК Чулпан',
+    link: '/services/individuals/travel/abroad/about'
+  },
+  {
+    image: kaskoImage,
+    head: 'Исключи случайность на дороге',
+    caption: 'КАСКО до первого случая в СК Чулпан',
+    link: '/services/individuals/transport/kasko2'
+  }
+];
+
 class Carousel extends Component {
   constructor(props) {
     super(props);
-
-    const slidesArr = [
-      {
-        image: childrenImage,
-        head: 'А ваш ребёнок защищён?',
-        caption: 'Льготное страхование школьников и дошкольников в СК Чулпан',
-        link: '/services/individuals/health/kids'
-      },
-      {
-        image: sportImage,
-        head: 'Быстрее, выше, сильнее!',
-        caption: 'Страхование спортсменов в СК Чулпан',
-        link: '/services/individuals/health/sport'
-      },
-      {
-        image: economyImage,
-        head: 'Как за каменной стеной',
-        caption: 'Эконом страхование в СК Чулпан',
-        link: '/services/individuals/property/economy'
-      },
-      {
-        image: expressImage,
-        head: 'Защити свой дом',
-        caption: 'Экспресс страхование в СК Чулпан',
-        link: '/services/individuals/property/express'
-      },
-      {
-        image: kasko50Image,
-        head: 'КАСКО 50',
-        caption:
-          'Программа добровольного страхования средств наземного транспорта в СК Чулпан',
-        link: '/services/individuals/transport/kasko50'
-      },
-      // {
-      //   image: familyImage,
-      //   head: 'Семейный полис',
-      //   caption:
-      //     'Программа добровольного страхования от несчастных случаев граждан и детей'
-      // },
-      {
-        image: voluntaryImage,
-        head: 'Опора и спокойствие Вашей семьи',
-        caption: 'Ипотечное страхование в СК Чулпан',
-        link: '/services/individuals/mortgage/about'
-      },
-      {
-        image: travelImage,
-        head: 'В отпуск без забот',
-        caption: 'Страхование путешественников в СК Чулпан',
-        link: '/services/individuals/travel/abroad/about'
-      },
-      {
-        image: kaskoImage,
-        head: 'Исключи случайность на дороге',
-        caption: 'КАСКО до первого случая в СК Чулпан',
-        link: '/services/individuals/transport/kasko2'
-      }
-    ];
 
     this.state = {
       slidesArr,
@@ -122,6 +122,7 @@ class Carousel extends Component {
     this.setState({ currentSlide: this.state.slidesArr[this.state.index] });
     this.setState({ interval: setInterval(this.nextSlide, 5000) });
   }
+
   componentWillUnmount() {
     clearInterval(this.state.interval);
   }
