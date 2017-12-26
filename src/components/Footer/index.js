@@ -53,7 +53,7 @@ class Footer extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-4 footer__navs">
+            <div className="col-3 footer__navs">
               <span className="footer__headline">Навигация</span>
               <Link to="" className="footer__link">
                 OOО Страховая Медицинская Организация «Чулпан&#8209;Мед»
@@ -65,7 +65,7 @@ class Footer extends Component {
                 ООО Страховая компания «Чулпан&#8209;Жизнь»
               </Link>
             </div>
-            <div className="col-4 footer__navs">
+            <div className="col-3 footer__navs">
               <span className="footer__headline">Информация</span>
               <Link to="" className="footer__link">
                 Политика о защите персональных данных
@@ -75,7 +75,7 @@ class Footer extends Component {
                 Отчётность
               </Link>
             </div>
-            <div className="col-4 footer__navs">
+            <div className="col-3 footer__navs">
               <span className="footer__headline">Оставайтесь на связи</span>
               <span
                 className="footer__link"
@@ -98,6 +98,16 @@ class Footer extends Component {
               </Link>
               <Link to="" className="footer__link">
                 mail@chulpan.ru
+              </Link>
+            </div>
+            <div className="col-3 footer__navs">
+              <span className="footer__headline">О компании</span>
+              <Link to="" className="footer__link">
+                Руководство
+              </Link>
+
+              <Link to="" className="footer__link">
+                История
               </Link>
             </div>
           </div>
