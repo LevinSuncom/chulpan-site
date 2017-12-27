@@ -40,6 +40,8 @@ import {
   IndividualsTravelAbroadManual
 } from '../products';
 
+import Breadcrumbs from '../Breadcrumbs';
+
 export default class Services extends Component {
   render() {
     return (
@@ -49,6 +51,7 @@ export default class Services extends Component {
             <MultiLevelNavigation path={this.props.location.pathname} />
           </div>
           <div className="col-9">
+            <Breadcrumbs />
             <Switch>
               <Route
                 exact
