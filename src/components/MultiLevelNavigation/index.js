@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, NavLink, Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import './style.css';
 
@@ -58,7 +58,7 @@ const MultiLevelNavigation = props => {
           {/* </div> */}
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals':
       return (
         <React.Fragment>
@@ -94,7 +94,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/transport':
     case '/services/individuals/transport/kasko2':
     case '/services/individuals/transport/kasko50':
@@ -149,7 +149,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/transport/kasko':
     case '/services/individuals/transport/kasko/about':
     case '/services/individuals/transport/kasko/faq':
@@ -196,7 +196,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/transport/osago':
     case '/services/individuals/transport/osago/about':
     case '/services/individuals/transport/osago/regulations':
@@ -224,7 +224,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/transport/eosago':
     case '/services/individuals/transport/eosago/about':
     case '/services/individuals/transport/eosago/regulations':
@@ -276,7 +276,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/transport/voluntary':
     case '/services/individuals/transport/voluntary/about':
     case '/services/individuals/transport/voluntary/faq':
@@ -312,7 +312,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/health':
     case '/services/individuals/health/sport':
     case '/services/individuals/health/kids':
@@ -362,7 +362,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/health/accidents':
     case '/services/individuals/health/accidents/about':
     case '/services/individuals/health/accidents/faq':
@@ -405,7 +405,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/property':
       return (
         <React.Fragment>
@@ -444,7 +444,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/property/combined':
     case '/services/individuals/property/combined/about':
     case '/services/individuals/property/combined/faq':
@@ -487,7 +487,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/property/economy':
     case '/services/individuals/property/economy/calculate':
       return (
@@ -506,7 +506,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/property/express':
     case '/services/individuals/property/express/calculate':
       return (
@@ -525,7 +525,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/property/estate':
     case '/services/individuals/property/estate/about':
     case '/services/individuals/property/estate/faq':
@@ -568,7 +568,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/mortgage':
     case '/services/individuals/mortgage/about':
     case '/services/individuals/mortgage/faq':
@@ -603,7 +603,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/travel':
       return (
         <React.Fragment>
@@ -621,7 +621,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/individuals/travel/abroad':
     case '/services/individuals/travel/abroad/about':
     case '/services/individuals/travel/abroad/faq':
@@ -672,7 +672,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/enterprice':
       return (
         <React.Fragment>
@@ -708,7 +708,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
     case '/services/all':
       return (
         <React.Fragment>
@@ -773,7 +773,7 @@ const MultiLevelNavigation = props => {
           </div>
         </React.Fragment>
       );
-      break;
+    // break;
   }
 };
 

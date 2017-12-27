@@ -333,7 +333,7 @@ export default class AppContainer extends Component {
             <Route path="/about" component={AboutContainer} />
             <Route exact path="/news/:id" component={NewsContainer} />
             {routes.map(route => (
-              <Route exact path={route} component={Services} />
+              <Route key={route} exact path={route} component={Services} />
             ))}
           </Switch>
           <Footer />

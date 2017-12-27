@@ -15,7 +15,6 @@ import './style.css';
 
 const LeftIcon = ({ onClick }) => {
   return (
-    // <div >
     <svg
       className="carousel__nav"
       onClick={onClick}
@@ -27,7 +26,6 @@ const LeftIcon = ({ onClick }) => {
       <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
       <path d="M0 0h24v24H0z" fill="none" />
     </svg>
-    // </div>
   );
 };
 
@@ -79,12 +77,6 @@ const slidesArr = [
       'Программа добровольного страхования средств наземного транспорта в СК Чулпан',
     link: '/services/individuals/transport/kasko50'
   },
-  // {
-  //   image: familyImage,
-  //   head: 'Семейный полис',
-  //   caption:
-  //     'Программа добровольного страхования от несчастных случаев граждан и детей'
-  // },
   {
     image: voluntaryImage,
     head: 'Опора и спокойствие Вашей семьи',
@@ -166,11 +158,6 @@ class Carousel extends Component {
         />
 
         <section className="banner__section">
-          {/* <i
-            className="material-icons banner__nav"
-            onClick={this.previousSlide}>
-            keyboard_arrow_left
-          </i> */}
           <LeftIcon onClick={this.previousSlide} />
 
           <Link
@@ -180,9 +167,6 @@ class Carousel extends Component {
             <p className="banner__caption">{this.state.currentSlide.caption}</p>
           </Link>
           <RightIcon onClick={this.nextSlide} />
-          {/* <i className="material-icons banner__nav" onClick={this.nextSlide}>
-            keyboard_arrow_right
-          </i> */}
         </section>
 
         <div className="banner__indicators">
