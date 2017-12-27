@@ -111,7 +111,7 @@ class Options extends Component {
         </div>
         <div className="col-2">
           <div className="option">
-            <Link to="/services/individuals/travel" className="option__badge">
+            <Link to="/services/individuals/travel/abroad/calculate" className="option__badge">
               <TravelIcon />
               <p>Путешествия</p>
             </Link>
@@ -119,7 +119,7 @@ class Options extends Component {
         </div>
         <div className="col-2">
           <div className="option">
-            <Link to="/services/individuals/health" className="option__badge">
+            <Link to="/services/individuals/health/accidents/about" className="option__badge">
               <HealthIcon />
               <p>Здоровье</p>
             </Link>

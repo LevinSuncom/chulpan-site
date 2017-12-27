@@ -63,13 +63,13 @@ const slidesArr = [
   {
     image: economyImage,
     head: 'Как за каменной стеной',
-    caption: 'Эконом страхование в СК Чулпан',
+    caption: 'Эконом-страхование в СК Чулпан',
     link: '/services/individuals/property/economy'
   },
   {
     image: expressImage,
     head: 'Защити свой дом',
-    caption: 'Экспресс страхование в СК Чулпан',
+    caption: 'Экспресс-страхование в СК Чулпан',
     link: '/services/individuals/property/express'
   },
   {

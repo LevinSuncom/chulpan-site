@@ -16,14 +16,14 @@ const IndividualsPropertyCombinedAbout = () => {
           onClick={() => {
             this.setState({ economIsOpen: !this.state.economIsOpen });
           }}>
-          Рассчёт эконом страхования
+          Рассчёт эконом-страхования
         </button>
         <button
           className="button mb-40"
           onClick={() => {
             this.setState({ expressIsOpen: !this.state.expressIsOpen });
           }}>
-          Рассчёт экспресс страхования
+          Рассчёт экспресс-страхования
         </button> */}
       <p>
         Риск потерять в результате непредвиденных событий имущество и понести в
