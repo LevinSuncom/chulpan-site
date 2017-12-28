@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import MultiLevelNavigation from '../MultiLevelNavigation';
 import CalculatorEconomy from '../CalculatorEconomy';
 import CalculatorExpress from '../CalculatorExpress';
+import CalculatorTravel from '../CalculatorTravel';
 
 import {
   Individuals,
@@ -167,6 +168,10 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/travel/abroad/manual"
                 component={IndividualsTravelAbroadManual}
+              />
+              <Route
+                path="/services/individuals/travel/abroad/calculate"
+                component={CalculatorTravel}
               />
               <Route
                 path="/services/individuals/transport/eosago/about"
