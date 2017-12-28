@@ -275,7 +275,7 @@ export default class AppContainer extends Component {
       '/services/enterprice/combined/mortgage/regulations',
 
       // Представители
-      '/services/representatives',
+      '/services/delegates',
       // Все правила
       '/services/all',
 

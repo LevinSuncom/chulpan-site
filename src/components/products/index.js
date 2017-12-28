@@ -40,6 +40,10 @@ import IndividualsTravelAbroadAbout from './individuals/IndividualsTravelAbroadA
 import IndividualsTravelAbroadFaq from './individuals/IndividualsTravelAbroadFaq';
 import IndividualsTravelAbroadManual from './individuals/IndividualsTravelAbroadManual';
 
+// Представитель
+import Delegates from './delegates';
+
+
 export {
   Individuals,
   IndividualsHealthAccidentsAbout,
@@ -70,5 +74,6 @@ export {
   IndividualsMortgageAbout,
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
-  IndividualsTravelAbroadManual
+  IndividualsTravelAbroadManual,
+  Delegates
 };

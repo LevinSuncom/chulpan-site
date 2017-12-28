@@ -42,7 +42,7 @@ const MultiLevelNavigation = props => {
           <Link to="/services" className="navbar__link">
             Корпоративным клиентам <Icon />
           </Link>
-          <Link to="/services" className="navbar__link">
+          <Link to="/services/delegates" className="navbar__link">
             Представители <Icon />
           </Link>
           <Link to="/services" className="navbar__link">
