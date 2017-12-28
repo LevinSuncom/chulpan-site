@@ -359,7 +359,7 @@ body,
 .callback input:focus {
   border: 2px solid #f6de34;
   outline: none;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 .callback select:focus {
