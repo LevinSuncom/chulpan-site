@@ -104,7 +104,7 @@ class Options extends Component {
               <Link
                 to="/services/individuals/property/combined/about"
                 className="option__link">
-                Комплексное
+                Комбинированное
               </Link>
             </div>
           </div>

@@ -9,7 +9,7 @@ const IndividualsPropertyCombinedManual = () => {
             msoFareastFontFamily: '"Times New Roman"',
             msoFareastLanguage: 'RU'
           }}>
-          Комплексное страхование имущества<p />
+          Комбинированное страхование имущества<p />
         </span>
       </h1>
       <p
