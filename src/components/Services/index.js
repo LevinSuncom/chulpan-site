@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import MultiLevelNavigation from '../MultiLevelNavigation';
+import CalculatorEconomy from '../CalculatorEconomy';
+import CalculatorExpress from '../CalculatorExpress';
 
 import {
   Individuals,
@@ -105,12 +107,22 @@ export default class Services extends Component {
                 component={IndividualsPropertyCombinedManual}
               />
               <Route
+                exact
                 path="/services/individuals/property/economy"
                 component={IndividualsPropertyEconomy}
               />
               <Route
+                path="/services/individuals/property/economy/calculate"
+                component={CalculatorEconomy}
+              />
+              <Route
+                exact
                 path="/services/individuals/property/express"
                 component={IndividualsPropertyExpress}
+              />
+              <Route
+                path="/services/individuals/property/express/calculate"
+                component={CalculatorExpress}
               />
               <Redirect
                 exact

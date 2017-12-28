@@ -7,8 +7,6 @@ import Options from '../../components/Options';
 import News from '../../components/News';
 import Stocks from '../../components/Stocks';
 
-import './style.css';
-
 class MainPageContainer extends Component {
   state = {
     modalPop: false
