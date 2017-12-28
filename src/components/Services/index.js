@@ -39,7 +39,10 @@ import {
   // Путешествия
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
-  IndividualsTravelAbroadManual
+  IndividualsTravelAbroadManual,
+
+  // Представители
+  Delegates
 } from '../products';
 
 import Breadcrumbs from '../Breadcrumbs';
@@ -231,6 +234,10 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/transport/voluntary/about"
                 component={IndividualsTransportVoluntaryAbout}
+              />
+              <Route
+                path="/services/delegates"
+                component={Delegates}
               />
             </Switch>
           </div>

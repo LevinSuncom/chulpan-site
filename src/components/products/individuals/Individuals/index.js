@@ -88,7 +88,7 @@ const Individuals = () => {
         </li>
         <li>
           <a href="/services/individuals/transport/osago/about">
-            Обязательное страхование автогражданской ответственности{' '}
+            Обязательное страхование автогражданской ответственности
           </a>
         </li>
         <li>
