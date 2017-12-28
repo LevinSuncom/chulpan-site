@@ -169,14 +169,14 @@ export default class CalculatorEconomy extends Component {
         {this.state.buttons && (
           <div>
             <NextButton
-              href={`http://chulpan.ru/Portal/Selfcare/Login/mode=signin&type=express&guid=${
+              href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signin&type=express&guid=${
                 this.state.guid
               }`}
               className="mr-12">
               Войти в Личный кабинет
             </NextButton>
             <NextButton
-              href={`http://chulpan.ru/Portal/Selfcare/Login/mode=signup&type=express&guid=${
+              href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signup&type=express&guid=${
                 this.state.guid
               }`}>
               Создать Личный Кабинет
