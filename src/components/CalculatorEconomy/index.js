@@ -138,7 +138,7 @@ export default class CalculatorEconomy extends Component {
           </select>
 
           <label htmlFor="">
-            Дата ввода в эксплуатацию/ капитального ремонта
+            Год ввода в эксплуатацию/ капитального ремонта
           </label>
           <input
             type="number"
@@ -159,7 +159,7 @@ export default class CalculatorEconomy extends Component {
           </button>
         </form>
         <span style={{ color: 'green' }}>
-          {this.state.price && `Стоимость полиса: ${this.state.price}`}
+          {this.state.price && `Стоимость полиса: ${this.state.price} рублей`}
         </span>
         <span style={{ color: 'red' }}>
           {this.state.error && `Ошибка: ${this.state.error}`}

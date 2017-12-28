@@ -179,7 +179,7 @@ export default class CalculatorExpress extends Component {
           />
 
           <label htmlFor="">
-            Дата ввода в эксплуатацию/ капитального ремонта
+            Год ввода в эксплуатацию/ капитального ремонта
           </label>
           <input
             type="number"
@@ -200,7 +200,7 @@ export default class CalculatorExpress extends Component {
           </button>
         </form>
         <span style={{ color: 'green', marginBotton: '8px' }}>
-          {this.state.price && `Стоимость полиса: ${this.state.price}`}
+          {this.state.price && `Стоимость полиса: ${this.state.price} рублей`}
         </span>
         <span style={{ color: 'red' }}>
           {this.state.error && `Ошибка: ${this.state.error}`}
