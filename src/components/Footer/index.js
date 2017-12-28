@@ -102,13 +102,13 @@ class Footer extends Component {
             </div>
             <div className="col-3 footer__navs">
               <span className="footer__headline">О компании</span>
-              <Link to="" className="footer__link">
+              <Link to="/about/heads" className="footer__link">
                 Руководство
               </Link>
 
-              <Link to="" className="footer__link">
+              {/* <Link to="" className="footer__link">
                 История
-              </Link>
+              </Link> */}
             </div>
           </div>
           <hr className="mb-12 footer__hr" />

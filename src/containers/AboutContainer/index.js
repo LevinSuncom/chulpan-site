@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 
-// import People from '../../components/About/People';
+import Heads from '../../components/about/Heads';
 // import Common from '../../components/Individuals/Common';
 // import Accident from '../../components/Individuals/Accident';
 // import OMS from '../../components/Individuals/OMS';
@@ -9,27 +9,24 @@ import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 class AboutContainer extends Component {
   render() {
     return (
-      <div
-        className="container"
-        ref="container"
-        style={{ minHeight: 'calc(100vh)' }}>
+      <div className="container">
         <div className="row">
           <div className="col-3 ">
-            <div className="navbar" ref="navbar" style={{ position: 'static' }}>
+            <div>
               <div className="mb-28" />
-              <NavLink
+              {/* <NavLink
                 to="/about/1"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Учредители и акционеры
-              </NavLink>
+              </NavLink> */}
               <NavLink
-                to="/about/people"
+                to="/about/heads"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Руководство компании
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/about/3"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
@@ -124,10 +121,10 @@ class AboutContainer extends Component {
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Реестр страховых агентов
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
-          <div className="col-9 border">
+          <div className="col-9">
             <div className="mb-20" />
             {/* <Switch>
               <Redirect exact from="/individuals" to="/individuals/common" />
@@ -136,8 +133,8 @@ class AboutContainer extends Component {
               <Route path="/individuals/oms" component={OMS} />
             </Switch> */}
             <Switch>
-              {/* <Redirect exact from="/about" to="/about/people" /> */}
-              {/* <Route path="/about/people" component={People} /> */}
+              <Redirect exact from="/about" to="/about/heads" />
+              <Route path="/about/heads" component={Heads} />
             </Switch>
             <div className="mb-40" />
           </div>

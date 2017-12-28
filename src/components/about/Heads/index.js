@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 
-class People extends Component {
+class Heads extends Component {
   render() {
     return (
       <div>
-        <div style={{ marginLeft: '40px' }}>
-          <strong>Руководство АО СК "Чулпан"</strong>
-        </div>
-        <div style={{ marginLeft: '40px' }} />
-        <div style={{ marginLeft: '40px' }}>
+        <h1 className="product-header">Руководство АО СК "Чулпан"</h1>
+
+        <div>
           <img
             style={{ width: '85px', height: '110px' }}
             alt=""
@@ -17,16 +15,16 @@ class People extends Component {
             height="110"
           />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <a href="http://www.chulpan.ru/130/">
-            <span style={{ fontWeight: 'bold' }}>Вафин Фарит Салихович</span>
-          </a>
+            <b>Вафин Фарит Салихович</b>
+          </a>{' '}
           - генеральный директор
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <hr />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <img
             style={{ width: '85px', height: '111px' }}
             alt=""
@@ -35,21 +33,21 @@ class People extends Component {
             height="111"
           />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <a href="http://www.chulpan.ru/134/">
             <span style={{ fontWeight: 'bold' }}>
               Шакиров Фарит Гарифзанович
             </span>
           </a>
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           - первый заместитель генерального директора, начальник управления по
           экономике и финансам
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <hr />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <p>
             <img
               style={{ width: '85px', height: '110px' }}
@@ -69,9 +67,8 @@ class People extends Component {
             страхования<br />
           </p>
           <hr />
-          <p />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <img
             style={{ width: '84px', height: '107px' }}
             alt=""
@@ -80,14 +77,14 @@ class People extends Component {
             height="107"
           />
         </div>
-        <div style={{ marginLeft: '40px' }}>
+        <div>
           <a href="/133/">
             <span style={{ fontWeight: 'bold' }}>Садыков Илдар Шакирович</span>
           </a>
           - заместитель генерального директора, начальник управления по
           страхованию имущества и ответственности
         </div>
-        <blockquote style={{ marginLeft: '40px' }} dir="ltr">
+        <blockquote dir="ltr">
           <hr />
           <p>
             <strong>
@@ -107,12 +104,10 @@ class People extends Component {
             &nbsp;- главный бухгалтер - начальник управления бухгалтерского
             учета и отчетности
           </p>
-          <p />
         </blockquote>
-        <p />
       </div>
     );
   }
 }
 
-export default People;
+export default Heads;
