@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { createKey } from '../../helpers';
 
 import childrenImage from './images/children.jpg';
 import economyImage from './images/economy.jpg';
@@ -172,9 +173,9 @@ class Carousel extends Component {
         <div className="banner__indicators">
           {this.state.slidesArr.map(item => {
             return item === this.state.currentSlide ? (
-              <span className="circle circle--active" />
+              <span key={createKey()} className="circle circle--active" />
             ) : (
-              <span className="circle" />
+              <span key={createKey()} className="circle" />
             );
           })}
         </div>
