@@ -65,21 +65,64 @@ export default class CalculatorTravel extends Component {
     sportCheck: false,
     businessCheck: false,
     leisureCheck: false,
-    tourismCheck: false
+    tourismCheck: false,
+    rubSum: ''
   };
 
   componentDidMount() {
     const countryUrl = 'http://chulpan.ru/Portal/Travel/GetTravelZones';
-    axios.get(countryUrl).then(responce => {
-      const value = responce.data.periodTypes;
-      this.setState({ countriesArr: value, country: value[0].id });
-      // console.log(responce.data);
-    });
     const amountUrl = 'http://chulpan.ru/Portal/Travel/GetInsuranceSums';
-    axios.get(amountUrl).then(responce => {
-      const value = responce.data.insuranceSums;
-      this.setState({ amountArr: value, amount: value[0].id });
-    });
+
+    // axios.get(countryUrl).then(responce => {
+    //   const value = responce.data.periodTypes;
+    //   this.setState({ countriesArr: value, country: value[0].id });
+    // });
+
+    function getCountries() {
+      return axios.get(countryUrl);
+    }
+
+    function getAmounts() {
+      return axios.get(amountUrl);
+    }
+
+    // function getSumInRub() {
+    //   return axios.post();
+    // }
+
+    axios.all([getCountries(), getAmounts()]).then(
+      axios.spread((c, r) => {
+        const val1 = c.data.periodTypes;
+        const val2 = r.data.insuranceSums;
+        this.setState({
+          countriesArr: val1,
+          amountArr: val2,
+          country: val1[0].id,
+          amount: val2[0].id
+        });
+
+        const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
+        axios
+          .post(rubSumm, {
+            zone: this.state.country,
+            curr: this.state.amount,
+            req: moment()
+          })
+          .then(responce => {
+            const value = responce.data;
+            console.log(value);
+            this.setState({ rubSum: value.value });
+          });
+      })
+    );
+
+    // axios.get(amountUrl).then(responce => {
+    //   const value = responce.data.insuranceSums;
+    //   this.setState({ amountArr: value, amount: value[0].id });
+    // });
+
+    console.log(moment().format('YYYY-MM-DD'));
+    console.log(moment().format());
   }
 
   onChange = event => {
@@ -108,9 +151,24 @@ export default class CalculatorTravel extends Component {
       this.setState({ time: calculateDays(value, this.state.dayTo) });
     }
 
-    this.setState({
-      [name]: value
-    });
+    this.setState(
+      {
+        [name]: value
+      },
+      function() {
+        const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
+        axios
+          .post(rubSumm, {
+            zone: this.state.country,
+            curr: this.state.amount,
+            req: moment()
+          })
+          .then(responce => {
+            const value = responce.data;
+            console.log(value);
+          });
+      }
+    );
   };
 
   onSubmit = event => {
@@ -251,16 +309,18 @@ export default class CalculatorTravel extends Component {
             })}
           </select>
 
-          <label htmlFor="">Укажите страховую сумму</label>
+          <label htmlFor="">Укажите страховую сумму в валюте</label>
           <select
             name="amount"
             id=""
             className="mb-12"
             onChange={this.onChange}>
             {this.state.amountArr.map(item => {
-              return <option value={item.id}>{item.value}</option>;
+              return <option value={item.id}>{item.valueCurr}</option>;
             })}
           </select>
+          {this.state.rubSum &&
+            `Страховая сумма в рублях: ${this.state.rubSum} рублей`}
 
           <label htmlFor="">Укажите срок страхования</label>
           <div style={{ display: 'flex', alignItems: 'center' }}>
