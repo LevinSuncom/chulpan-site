@@ -42,7 +42,7 @@ import IndividualsTravelAbroadManual from './individuals/IndividualsTravelAbroad
 
 // Представитель
 import Delegates from './delegates';
-
+import AllRules from './allRules';
 
 export {
   Individuals,
@@ -75,5 +75,6 @@ export {
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
   IndividualsTravelAbroadManual,
-  Delegates
+  Delegates,
+  AllRules
 };

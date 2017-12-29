@@ -43,7 +43,8 @@ import {
   IndividualsTravelAbroadManual,
 
   // Представители
-  Delegates
+  Delegates,
+  AllRules
 } from '../products';
 
 import Breadcrumbs from '../Breadcrumbs';
@@ -243,6 +244,10 @@ export default class Services extends Component {
               <Route
                 path="/services/delegates"
                 component={Delegates}
+              />
+              <Route
+                path="/services/allRules"
+                component={AllRules}
               />
             </Switch>
           </div>
