@@ -279,7 +279,7 @@ export default class AppContainer extends Component {
       // Представители
       '/services/delegates',
       // Все правила
-      '/services/all',
+      '/services/allRules',
 
       '/services/all/culture',
       '/services/all/culture/about',

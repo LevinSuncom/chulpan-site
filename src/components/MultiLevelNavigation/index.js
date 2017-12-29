@@ -45,7 +45,7 @@ const MultiLevelNavigation = props => {
           <Link to="/services/delegates" className="navbar__link">
             Представители <Icon />
           </Link>
-          <Link to="/services" className="navbar__link">
+          <Link to="/services/allRules" className="navbar__link">
             Все правила <Icon />
           </Link>
         </React.Fragment>
@@ -1403,6 +1403,14 @@ const MultiLevelNavigation = props => {
         <React.Fragment>
           <Link to="/services" className="navbar__link">
             <BackIcon /> Представители
+          </Link>
+        </React.Fragment>
+      );
+    case '/services/allRules':
+      return (
+        <React.Fragment>
+          <Link to="/services" className="navbar__link">
+            <BackIcon /> Все правила
           </Link>
         </React.Fragment>
       );
