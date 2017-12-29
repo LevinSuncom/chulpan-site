@@ -1,27 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-
 import moment from 'moment';
-
-function calculateAge(birthday) {
-  const ageDifMs = Date.now() - new Date(birthday).getTime();
-  const ageDate = new Date(ageDifMs); // miliseconds from epoch
-  const age = ageDate.getUTCFullYear() - 1970;
-  return age;
-}
 
 function calculateDays(dateFrom, dateTo) {
   const timeDiff = new Date(dateTo).getTime() - new Date(dateFrom).getTime();
   const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
   return diffDays;
 }
-
-// function calculateFromNow(date) {
-//   const timeDiff = Math.abs(Date.now() - new Date(date).getTime());
-//   const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-//   return diffDays;
-// }
 
 export default class CalculatorTravel extends Component {
   state = {
@@ -72,11 +58,7 @@ export default class CalculatorTravel extends Component {
   componentDidMount() {
     const countryUrl = 'http://chulpan.ru/Portal/Travel/GetTravelZones';
     const amountUrl = 'http://chulpan.ru/Portal/Travel/GetInsuranceSums';
-
-    // axios.get(countryUrl).then(responce => {
-    //   const value = responce.data.periodTypes;
-    //   this.setState({ countriesArr: value, country: value[0].id });
-    // });
+    const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
 
     function getCountries() {
       return axios.get(countryUrl);
@@ -85,10 +67,6 @@ export default class CalculatorTravel extends Component {
     function getAmounts() {
       return axios.get(amountUrl);
     }
-
-    // function getSumInRub() {
-    //   return axios.post();
-    // }
 
     axios.all([getCountries(), getAmounts()]).then(
       axios.spread((c, r) => {
@@ -101,7 +79,6 @@ export default class CalculatorTravel extends Component {
           amount: val2[0].id
         });
 
-        const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
         axios
           .post(rubSumm, {
             zone: this.state.country,
@@ -115,33 +92,12 @@ export default class CalculatorTravel extends Component {
           });
       })
     );
-
-    // axios.get(amountUrl).then(responce => {
-    //   const value = responce.data.insuranceSums;
-    //   this.setState({ amountArr: value, amount: value[0].id });
-    // });
-
-    console.log(moment().format('YYYY-MM-DD'));
-    console.log(moment().format());
   }
 
   onChange = event => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
-
-    // if (name === 'date') {
-    //   const age = calculateAge(new Date(value));
-    //   if (age >= 0) {
-    //     this.setState({
-    //       age: age
-    //     });
-    //   } else {
-    //     this.setState({
-    //       age: ''
-    //     });
-    //   }
-    // }
 
     if (name === 'dayTo' && this.state.dayFrom !== '') {
       this.setState({ time: calculateDays(this.state.dayFrom, value) });
@@ -155,7 +111,7 @@ export default class CalculatorTravel extends Component {
       {
         [name]: value
       },
-      function() {
+      () => {
         const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
         axios
           .post(rubSumm, {
@@ -166,6 +122,7 @@ export default class CalculatorTravel extends Component {
           .then(responce => {
             const value = responce.data;
             console.log(value);
+            this.setState({ rubSum: value.value });
           });
       }
     );
@@ -217,7 +174,7 @@ export default class CalculatorTravel extends Component {
     let bool = true;
 
     participantArr.forEach(item => {
-      if (moment().diff(item.birthday, 'years') < 1) {
+      if (moment().diff(item.birthday, 'years') < 0) {
         this.setState({
           error: 'Возраст не может быть отрицательным'
         });
@@ -245,23 +202,17 @@ export default class CalculatorTravel extends Component {
         tourismCheck: tourismCheck
       })
       .then(responce => {
-        console.log(responce);
+        const data = responce.data;
+        this.setState({
+          error: data.error
+        })
       });
-
-    // console.log('Vse okey')
   };
 
   onParticipantChange = event => {
     const target = event.target;
     const name = target.name;
     const value = target.value;
-
-    // console.log(event);
-
-    // const updatedParticipant = {
-    //   id: name,
-    //   birthday: value
-    // }
 
     const updatedParticipantArr = this.state.participantArr.map(item => {
       if (item.id === name) {
@@ -273,12 +224,6 @@ export default class CalculatorTravel extends Component {
     this.setState({
       participantArr: updatedParticipantArr
     });
-    // this.setState({
-    //   participantArr: [
-    //     ...this.state.participantArr,
-    //     updatedParticipant
-    //   ]
-    // })
   };
 
   addParticipant = event => {
@@ -305,7 +250,14 @@ export default class CalculatorTravel extends Component {
             className="mb-12"
             onChange={this.onChange}>
             {this.state.countriesArr.map(item => {
-              return <option value={item.id}>{item.value}</option>;
+              {
+                /* const key = createKey() */
+              }
+              return (
+                <option key={item.id} value={item.id}>
+                  {item.value}
+                </option>
+              );
             })}
           </select>
 
@@ -316,7 +268,11 @@ export default class CalculatorTravel extends Component {
             className="mb-12"
             onChange={this.onChange}>
             {this.state.amountArr.map(item => {
-              return <option value={item.id}>{item.valueCurr}</option>;
+              return (
+                <option key={item.id} value={item.id}>
+                  {item.valueCurr}
+                </option>
+              );
             })}
           </select>
           {this.state.rubSum &&
@@ -350,9 +306,10 @@ export default class CalculatorTravel extends Component {
             {participantArr.map(item => {
               return (
                 <React.Fragment>
-                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <div
+                    key={item.id}
+                    style={{ display: 'flex', alignItems: 'center' }}>
                     <input
-                      key={item.id}
                       type="date"
                       name={item.id}
                       className="mb-12 mr-12"
@@ -428,10 +385,6 @@ export default class CalculatorTravel extends Component {
             <label htmlFor="businessCheck">Профессиональная деятельность</label>
           </div>
 
-          {/* <span>
-            {this.state.age !== '' && `Возраст постройки: ${this.state.age}`}
-          </span> */}
-          {/* <div className="mb-12" /> */}
           <button type="submit" className="button">
             Рассчитать
           </button>
