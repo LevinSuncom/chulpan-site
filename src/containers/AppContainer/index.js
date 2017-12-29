@@ -98,7 +98,7 @@ export default class AppContainer extends Component {
       '/services/individuals/travel/abroad/calculate',
       // Корпоративным клиентам
       '/services/enterprice',
-      
+
       '/services/enterprice/property',
       '/services/enterprice/property/company',
       '/services/enterprice/property/company/about',

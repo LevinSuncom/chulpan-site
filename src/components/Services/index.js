@@ -241,14 +241,8 @@ export default class Services extends Component {
                 path="/services/individuals/transport/voluntary/about"
                 component={IndividualsTransportVoluntaryAbout}
               />
-              <Route
-                path="/services/delegates"
-                component={Delegates}
-              />
-              <Route
-                path="/services/allRules"
-                component={AllRules}
-              />
+              <Route path="/services/delegates" component={Delegates} />
+              <Route path="/services/allRules" component={AllRules} />
             </Switch>
           </div>
         </div>
