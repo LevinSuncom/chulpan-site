@@ -524,29 +524,45 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice" className="navbar__link">
             <BackIcon /> Имущество
           </Link>
-          <Link to="/services/enterprice/property/company" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/company"
+            className="navbar__link">
             Имущество предприятий <Icon />
           </Link>
-          <Link to="/services/enterprice/property/transport" className="navbar__link">
-          Транспорт <Icon />
+          <Link
+            to="/services/enterprice/property/transport"
+            className="navbar__link">
+            Транспорт <Icon />
           </Link>
-          <Link to="/services/enterprice/property/animals" className="navbar__link">
-          С/х животные <Icon />
+          <Link
+            to="/services/enterprice/property/animals"
+            className="navbar__link">
+            С/х животные <Icon />
           </Link>
-          <Link to="/services/enterprice/property/goods" className="navbar__link">
-          Грузы <Icon />
+          <Link
+            to="/services/enterprice/property/goods"
+            className="navbar__link">
+            Грузы <Icon />
           </Link>
-          <Link to="/services/enterprice/property/leasing" className="navbar__link">
-          Лизинг <Icon />
+          <Link
+            to="/services/enterprice/property/leasing"
+            className="navbar__link">
+            Лизинг <Icon />
           </Link>
-          <Link to="/services/enterprice/property/drilling" className="navbar__link">
-          Буровые работы <Icon />
+          <Link
+            to="/services/enterprice/property/drilling"
+            className="navbar__link">
+            Буровые работы <Icon />
           </Link>
-          <Link to="/services/enterprice/property/title" className="navbar__link">
-          Титул <Icon />
+          <Link
+            to="/services/enterprice/property/title"
+            className="navbar__link">
+            Титул <Icon />
           </Link>
-          <Link to="/services/enterprice/property/emergency" className="navbar__link">
-          Локализация и ликвидация ЧП <Icon />
+          <Link
+            to="/services/enterprice/property/emergency"
+            className="navbar__link">
+            Локализация и ликвидация ЧП <Icon />
           </Link>
         </React.Fragment>
       );
@@ -558,11 +574,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Имущество предприятий
           </Link>
-          <Link to="/services/enterprice/property/company/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/company/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/company/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/company/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -574,11 +594,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Транспорт
           </Link>
-          <Link to="/services/enterprice/property/transport/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/transport/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/transport/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/transport/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -590,11 +614,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> С/х животные
           </Link>
-          <Link to="/services/enterprice/property/animals/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/animals/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/animals/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/animals/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -606,11 +634,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Грузы
           </Link>
-          <Link to="/services/enterprice/property/goods/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/goods/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/goods/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/goods/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -622,11 +654,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Лизинг
           </Link>
-          <Link to="/services/enterprice/property/leasing/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/leasing/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/leasing/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/leasing/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -638,11 +674,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Буровые работы
           </Link>
-          <Link to="/services/enterprice/property/drilling/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/drilling/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/drilling/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/drilling/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -654,11 +694,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Титул
           </Link>
-          <Link to="/services/enterprice/property/title/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/title/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/title/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/title/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -670,11 +714,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/property" className="navbar__link">
             <BackIcon /> Локализация и ликвидация ЧП
           </Link>
-          <Link to="/services/enterprice/property/emergency/about" className="navbar__link">
+          <Link
+            to="/services/enterprice/property/emergency/about"
+            className="navbar__link">
             Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/property/emergency/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/property/emergency/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -684,11 +732,15 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice" className="navbar__link">
             <BackIcon /> Ответственность
           </Link>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-          Добровольное страхование <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            Добровольное страхование <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
-          Обязательное страхование <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
+            Обязательное страхование <Icon />
           </Link>
         </React.Fragment>
       );
@@ -698,38 +750,61 @@ const MultiLevelNavigation = props => {
           <Link to="/services/enterprice/liability" className="navbar__link">
             <BackIcon /> Добровольное страхование
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/accident" className="navbar__link">
-          Аварии и инциденты на опасном произвдстенном объекте <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/accident"
+            className="navbar__link">
+            Аварии и инциденты на опасном произвдстенном объекте <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/directors" className="navbar__link">
-          Ответственность директоров (D&O) <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/directors"
+            className="navbar__link">
+            Ответственность директоров (D&O) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/capital" className="navbar__link">
-          Капитальное строительство <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/capital"
+            className="navbar__link">
+            Капитальное строительство <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/civil" className="navbar__link">
-          Общегражданская ответственность <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/civil"
+            className="navbar__link">
+            Общегражданская ответственность <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/defect" className="navbar__link">
-          Причинение вреда вследствие недостатков товаров, работ и услуг <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/defect"
+            className="navbar__link">
+            Причинение вреда вследствие недостатков товаров, работ и услуг{' '}
+            <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/installation" className="navbar__link">
-          Строительно-монтажные работы <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/installation"
+            className="navbar__link">
+            Строительно-монтажные работы <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/nuclear" className="navbar__link">
-          Причинение вреда вследствие ядерно-радиационной аварии <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/nuclear"
+            className="navbar__link">
+            Причинение вреда вследствие ядерно-радиационной аварии <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/hydrotechnics" className="navbar__link">
-          Эксплуатация гидротехнических сооружений <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/hydrotechnics"
+            className="navbar__link">
+            Эксплуатация гидротехнических сооружений <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/opo" className="navbar__link">
-          Добровольная ответственность при эксллуатации ОПО <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/opo"
+            className="navbar__link">
+            Добровольная ответственность при эксллуатации ОПО <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/air" className="navbar__link">
-          Владельцы воздушных судов и авиаперевозчики <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/air"
+            className="navbar__link">
+            Владельцы воздушных судов и авиаперевозчики <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/car" className="navbar__link">
-          Добровольная автогражданка <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/car"
+            className="navbar__link">
+            Добровольная автогражданка <Icon />
           </Link>
         </React.Fragment>
       );
@@ -738,14 +813,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/accident/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Аварии и инциденты на опасном произвдстенном объекте
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Аварии и инциденты на опасном произвдстенном объекте
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/accident/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/accident/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/accident/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/accident/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -754,14 +835,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/directors/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Ответственность директоров (D&O)
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Ответственность директоров (D&O)
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/directors/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/directors/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/directors/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/directors/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -770,14 +857,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/capital/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Капитальное строительство
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Капитальное строительство
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/capital/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/capital/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/capital/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/capital/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -786,14 +879,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/civil/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Общегражданская ответственность
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Общегражданская ответственность
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/civil/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/civil/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/civil/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/civil/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -802,14 +901,21 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/defect/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Причинение вреда вследствие недостатков товаров, работ и услуг
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Причинение вреда вследствие недостатков товаров, работ
+            и услуг
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/defect/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/defect/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/defect/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/defect/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -818,14 +924,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/installation/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Строительно-монтажные работы
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Строительно-монтажные работы
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/installation/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/installation/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/installation/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/installation/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -834,14 +946,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/nuclear/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Причинение вреда вследствие ядерно-радиационной аварии
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Причинение вреда вследствие ядерно-радиационной аварии
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/nuclear/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/nuclear/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/nuclear/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/nuclear/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -850,14 +968,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/hydrotechnics/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Эксплуатация гидротехнических сооружений
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Эксплуатация гидротехнических сооружений
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/hydrotechnics/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/hydrotechnics/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/hydrotechnics/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/hydrotechnics/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -866,14 +990,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/opo/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Добровольная ответственность при эксллуатации ОПО
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Добровольная ответственность при эксллуатации ОПО
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/opo/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/opo/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/opo/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/opo/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -882,14 +1012,20 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/air/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Владельцы воздушных судов и авиаперевозчики
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Владельцы воздушных судов и авиаперевозчики
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/air/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/air/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/air/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/air/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
@@ -898,505 +1034,666 @@ const MultiLevelNavigation = props => {
     case '/services/enterprice/liability/voluntary/car/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/voluntary" className="navbar__link">
-            <BackIcon />  Добровольная автогражданка
+          <Link
+            to="/services/enterprice/liability/voluntary"
+            className="navbar__link">
+            <BackIcon /> Добровольная автогражданка
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/car/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/car/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/voluntary/car/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/voluntary/car/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-      case '/services/enterprice/liability/compulsory':
-      case '/services/enterprice/liability/compulsory/professional':
+    case '/services/enterprice/liability/compulsory':
+    case '/services/enterprice/liability/compulsory/professional':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/liability" className="navbar__link">
             <BackIcon /> Обязательное страхование
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo" className="navbar__link">
-          ОСОПО <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo"
+            className="navbar__link">
+            ОСОПО <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osago" className="navbar__link">
-          ОСАГО <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osago"
+            className="navbar__link">
+            ОСАГО <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop" className="navbar__link">
-          ОСГОП <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop"
+            className="navbar__link">
+            ОСГОП <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/professional" className="navbar__link">
-          Профессиональная ответственность
+          <Link
+            to="/services/enterprice/liability/compulsory/professional"
+            className="navbar__link">
+            Профессиональная ответственность
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/doctors" className="navbar__link">
-          Врачи <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/doctors"
+            className="navbar__link">
+            Врачи <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/appraisers" className="navbar__link">
-          Оценищики <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/appraisers"
+            className="navbar__link">
+            Оценищики <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/auditors" className="navbar__link">
-          Аудиторы <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/auditors"
+            className="navbar__link">
+            Аудиторы <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/detectives" className="navbar__link">
-          Детективы и охранники <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/detectives"
+            className="navbar__link">
+            Детективы и охранники <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sellers" className="navbar__link">
-          Продавцы <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sellers"
+            className="navbar__link">
+            Продавцы <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/animators" className="navbar__link">
-          Органиаторы общественных мероприятий <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/animators"
+            className="navbar__link">
+            Органиаторы общественных мероприятий <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sanatoriums" className="navbar__link">
-          Учреждения отдыха и оздоровления детей <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sanatoriums"
+            className="navbar__link">
+            Учреждения отдыха и оздоровления детей <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/liability/compulsory/osopo':
-      case '/services/enterprice/liability/compulsory/osopo/about':
-      case '/services/enterprice/liability/compulsory/osopo/faq':
-      case '/services/enterprice/liability/compulsory/osopo/regulations':
-      case '/services/enterprice/liability/compulsory/osopo/law':
-      case '/services/enterprice/liability/compulsory/osopo/rates':
-      case '/services/enterprice/liability/compulsory/osopo/calculate':
+    case '/services/enterprice/liability/compulsory/osopo':
+    case '/services/enterprice/liability/compulsory/osopo/about':
+    case '/services/enterprice/liability/compulsory/osopo/faq':
+    case '/services/enterprice/liability/compulsory/osopo/regulations':
+    case '/services/enterprice/liability/compulsory/osopo/law':
+    case '/services/enterprice/liability/compulsory/osopo/rates':
+    case '/services/enterprice/liability/compulsory/osopo/calculate':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> ОСОПО
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/faq" className="navbar__link">
-          Вопрос-ответ (сайт НССО) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/faq"
+            className="navbar__link">
+            Вопрос-ответ (сайт НССО) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/law" className="navbar__link">
-          №225-ФЗ (Закон ОСОПО) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/law"
+            className="navbar__link">
+            №225-ФЗ (Закон ОСОПО) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/rates" className="navbar__link">
-          Тарифы (Положение ЦБ) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/rates"
+            className="navbar__link">
+            Тарифы (Положение ЦБ) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osopo/calculate" className="navbar__link">
-          Расчет суммы возмещения (Постановление правительства) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osopo/calculate"
+            className="navbar__link">
+            Расчет суммы возмещения (Постановление правительства) <Icon />
           </Link>
         </React.Fragment>
       );
-      case '/services/enterprice/liability/compulsory/osago':
-      case '/services/enterprice/liability/compulsory/osago/about':
-      case '/services/enterprice/liability/compulsory/osago/regulations':
+    case '/services/enterprice/liability/compulsory/osago':
+    case '/services/enterprice/liability/compulsory/osago/about':
+    case '/services/enterprice/liability/compulsory/osago/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> ОСАГО
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osago/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osago/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osago/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osago/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-      case '/services/enterprice/liability/compulsory/osgop':
-      case '/services/enterprice/liability/compulsory/osgop/about':
-      case '/services/enterprice/liability/compulsory/osgop/faq':
-      case '/services/enterprice/liability/compulsory/osgop/regulations':
-      case '/services/enterprice/liability/compulsory/osgop/law':
-      case '/services/enterprice/liability/compulsory/osgop/passengers':
-      case '/services/enterprice/liability/compulsory/osgop/rates':
-      case '/services/enterprice/liability/compulsory/osgop/calculate':
+    case '/services/enterprice/liability/compulsory/osgop':
+    case '/services/enterprice/liability/compulsory/osgop/about':
+    case '/services/enterprice/liability/compulsory/osgop/faq':
+    case '/services/enterprice/liability/compulsory/osgop/regulations':
+    case '/services/enterprice/liability/compulsory/osgop/law':
+    case '/services/enterprice/liability/compulsory/osgop/passengers':
+    case '/services/enterprice/liability/compulsory/osgop/rates':
+    case '/services/enterprice/liability/compulsory/osgop/calculate':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> ОСГОП
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/faq" className="navbar__link">
-          Вопрос-ответ (сайт НССО) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/faq"
+            className="navbar__link">
+            Вопрос-ответ (сайт НССО) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/law" className="navbar__link">
-          №67-ФЗ (Закон ОСГОП) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/law"
+            className="navbar__link">
+            №67-ФЗ (Закон ОСГОП) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/passengers" className="navbar__link">
-          Правила расчета количества пассажиров (Постановление правительства) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/passengers"
+            className="navbar__link">
+            Правила расчета количества пассажиров (Постановление правительства){' '}
+            <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/rates" className="navbar__link">
-          Тарифы (Указание ЦБ) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/rates"
+            className="navbar__link">
+            Тарифы (Указание ЦБ) <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/osgop/calculate" className="navbar__link">
-          Расчет суммы возмещения (Постановление правительства) <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/osgop/calculate"
+            className="navbar__link">
+            Расчет суммы возмещения (Постановление правительства) <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/liability/compulsory/doctors':
-      case '/services/enterprice/liability/compulsory/doctors/about':
-      case '/services/enterprice/liability/compulsory/doctors/regulations':
+    case '/services/enterprice/liability/compulsory/doctors':
+    case '/services/enterprice/liability/compulsory/doctors/about':
+    case '/services/enterprice/liability/compulsory/doctors/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Врачи
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/doctors/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/doctors/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/doctors/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/doctors/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-      case '/services/enterprice/liability/compulsory/appraisers':
-      case '/services/enterprice/liability/compulsory/appraisers/about':
-      case '/services/enterprice/liability/compulsory/appraisers/regulations':
+    case '/services/enterprice/liability/compulsory/appraisers':
+    case '/services/enterprice/liability/compulsory/appraisers/about':
+    case '/services/enterprice/liability/compulsory/appraisers/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Оценщики
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/appraisers/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/appraisers/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/appraisers/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/appraisers/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-      
-      case '/services/enterprice/liability/compulsory/auditors':
-      case '/services/enterprice/liability/compulsory/auditors/about':
-      case '/services/enterprice/liability/compulsory/auditors/regulations':
+
+    case '/services/enterprice/liability/compulsory/auditors':
+    case '/services/enterprice/liability/compulsory/auditors/about':
+    case '/services/enterprice/liability/compulsory/auditors/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Аудиторы
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/auditors/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/auditors/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/auditors/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/auditors/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/liability/compulsory/detectives':
-      case '/services/enterprice/liability/compulsory/detectives/about':
-      case '/services/enterprice/liability/compulsory/detectives/regulations':
+    case '/services/enterprice/liability/compulsory/detectives':
+    case '/services/enterprice/liability/compulsory/detectives/about':
+    case '/services/enterprice/liability/compulsory/detectives/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Детективы и охранники
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/detectives/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/detectives/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/detectives/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/detectives/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/liability/compulsory/sellers':
-      case '/services/enterprice/liability/compulsory/sellers/about':
-      case '/services/enterprice/liability/compulsory/sellers/regulations':
+    case '/services/enterprice/liability/compulsory/sellers':
+    case '/services/enterprice/liability/compulsory/sellers/about':
+    case '/services/enterprice/liability/compulsory/sellers/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Продавцы
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sellers/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sellers/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sellers/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sellers/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-
-      case '/services/enterprice/liability/compulsory/animators':
-      case '/services/enterprice/liability/compulsory/animators/about':
-      case '/services/enterprice/liability/compulsory/animators/regulations':
+    case '/services/enterprice/liability/compulsory/animators':
+    case '/services/enterprice/liability/compulsory/animators/about':
+    case '/services/enterprice/liability/compulsory/animators/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Органиаторы общественных мероприятий
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/animators/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/animators/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/animators/regulations" className="navbar__link">
-          Правила <Icon />
-          </Link>
-        </React.Fragment>
-      );
-      
-      case '/services/enterprice/liability/compulsory/sanatoriums':
-      case '/services/enterprice/liability/compulsory/sanatoriums/about':
-      case '/services/enterprice/liability/compulsory/sanatoriums/regulations':
-      return (
-        <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
-            <BackIcon /> Учреждения отдыха и оздоровления детей
-          </Link>
-          <Link to="/services/enterprice/liability/compulsory/sanatoriums/about" className="navbar__link">
-          Описание <Icon />
-          </Link>
-          <Link to="/services/enterprice/liability/compulsory/sanatoriums/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/animators/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/liability/compulsory/sanatoriums':
-      case '/services/enterprice/liability/compulsory/sanatoriums/about':
-      case '/services/enterprice/liability/compulsory/sanatoriums/regulations':
+    case '/services/enterprice/liability/compulsory/sanatoriums':
+    case '/services/enterprice/liability/compulsory/sanatoriums/about':
+    case '/services/enterprice/liability/compulsory/sanatoriums/regulations':
       return (
         <React.Fragment>
-          <Link to="/services/enterprice/liability/compulsory" className="navbar__link">
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
             <BackIcon /> Учреждения отдыха и оздоровления детей
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sanatoriums/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sanatoriums/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/liability/compulsory/sanatoriums/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/liability/compulsory/sanatoriums/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/staff':
+    case '/services/enterprice/liability/compulsory/sanatoriums':
+    case '/services/enterprice/liability/compulsory/sanatoriums/about':
+    case '/services/enterprice/liability/compulsory/sanatoriums/regulations':
+      return (
+        <React.Fragment>
+          <Link
+            to="/services/enterprice/liability/compulsory"
+            className="navbar__link">
+            <BackIcon /> Учреждения отдыха и оздоровления детей
+          </Link>
+          <Link
+            to="/services/enterprice/liability/compulsory/sanatoriums/about"
+            className="navbar__link">
+            Описание <Icon />
+          </Link>
+          <Link
+            to="/services/enterprice/liability/compulsory/sanatoriums/regulations"
+            className="navbar__link">
+            Правила <Icon />
+          </Link>
+        </React.Fragment>
+      );
+
+    case '/services/enterprice/staff':
       return (
         <React.Fragment>
           <Link to="/services/enterprice" className="navbar__link">
             <BackIcon /> Персонал
           </Link>
           <Link to="/services/enterprice/staff/dms" className="navbar__link">
-          ДМС <Icon />
+            ДМС <Icon />
           </Link>
-          <Link to="/services/enterprice/staff/accident" className="navbar__link">
-          Несчастные случаи на производстве <Icon />
+          <Link
+            to="/services/enterprice/staff/accident"
+            className="navbar__link">
+            Несчастные случаи на производстве <Icon />
           </Link>
           <Link to="/services/enterprice/staff/abroad" className="navbar__link">
-          Выезд за границу <Icon />
+            Выезд за границу <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/staff/dms':
-      case '/services/enterprice/staff/dms/about':
-      case '/services/enterprice/staff/dms/regulations':
+    case '/services/enterprice/staff/dms':
+    case '/services/enterprice/staff/dms/about':
+    case '/services/enterprice/staff/dms/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/staff" className="navbar__link">
             <BackIcon /> ДМС
           </Link>
-          <Link to="/services/enterprice/staff/dms/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/staff/dms/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/staff/dms/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/staff/dms/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/staff/accident':
-      case '/services/enterprice/staff/accident/about':
-      case '/services/enterprice/staff/accident/regulations':
+    case '/services/enterprice/staff/accident':
+    case '/services/enterprice/staff/accident/about':
+    case '/services/enterprice/staff/accident/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/staff" className="navbar__link">
             <BackIcon /> Несчастные случаи на производстве
           </Link>
-          <Link to="/services/enterprice/staff/accident/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/staff/accident/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/staff/accident/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/staff/accident/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/staff/abroad':
-      case '/services/enterprice/staff/abroad/about':
-      case '/services/enterprice/staff/abroad/regulations':
+    case '/services/enterprice/staff/abroad':
+    case '/services/enterprice/staff/abroad/about':
+    case '/services/enterprice/staff/abroad/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/staff" className="navbar__link">
             <BackIcon /> Выезд за границу
           </Link>
-          <Link to="/services/enterprice/staff/abroad/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/staff/abroad/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/staff/abroad/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/staff/abroad/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined':
+    case '/services/enterprice/combined':
       return (
         <React.Fragment>
           <Link to="/services/enterprice" className="navbar__link">
             <BackIcon /> Комбинированное
           </Link>
           <Link to="/services/enterprice/combined/air" className="navbar__link">
-          Комбинирование страхование средств воздушного транспорта <Icon />
+            Комбинирование страхование средств воздушного транспорта <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/water" className="navbar__link">
-          Комбинированное страхование средств водного транспорта <Icon />
+          <Link
+            to="/services/enterprice/combined/water"
+            className="navbar__link">
+            Комбинированное страхование средств водного транспорта <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/goods" className="navbar__link">
-          Комбинированное страхование опасных грузов <Icon />
+          <Link
+            to="/services/enterprice/combined/goods"
+            className="navbar__link">
+            Комбинированное страхование опасных грузов <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/company" className="navbar__link">
-          Комплексное страхование имущества предприятий и организаций <Icon />
+          <Link
+            to="/services/enterprice/combined/company"
+            className="navbar__link">
+            Комплексное страхование имущества предприятий и организаций <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/drilling" className="navbar__link">
-          Комбинированное страхование буровых работ <Icon />
+          <Link
+            to="/services/enterprice/combined/drilling"
+            className="navbar__link">
+            Комбинированное страхование буровых работ <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/installation" className="navbar__link">
-          Комплексное страхование строительно-монтажных рисков <Icon />
+          <Link
+            to="/services/enterprice/combined/installation"
+            className="navbar__link">
+            Комплексное страхование строительно-монтажных рисков <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/mortgage" className="navbar__link">
-          Добровольное ипотечное страхование <Icon />
+          <Link
+            to="/services/enterprice/combined/mortgage"
+            className="navbar__link">
+            Добровольное ипотечное страхование <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/air':
-      case '/services/enterprice/combined/air/about':
-      case '/services/enterprice/combined/air/regulations':
+    case '/services/enterprice/combined/air':
+    case '/services/enterprice/combined/air/about':
+    case '/services/enterprice/combined/air/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
-            <BackIcon /> Комбинирование страхование средств воздушного транспорта
+            <BackIcon /> Комбинирование страхование средств воздушного
+            транспорта
           </Link>
-          <Link to="/services/enterprice/combined/air/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/air/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/air/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/air/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-      
-      case '/services/enterprice/combined/water':
-      case '/services/enterprice/combined/water/about':
-      case '/services/enterprice/combined/water/regulations':
+
+    case '/services/enterprice/combined/water':
+    case '/services/enterprice/combined/water/about':
+    case '/services/enterprice/combined/water/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
             <BackIcon /> Комбинированное страхование средств водного транспорта
           </Link>
-          <Link to="/services/enterprice/combined/water/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/water/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/water/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/water/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/goods':
-      case '/services/enterprice/combined/goods/about':
-      case '/services/enterprice/combined/goods/regulations':
+    case '/services/enterprice/combined/goods':
+    case '/services/enterprice/combined/goods/about':
+    case '/services/enterprice/combined/goods/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
             <BackIcon /> Комбинированное страхование опасных грузов
           </Link>
-          <Link to="/services/enterprice/combined/goods/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/goods/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/goods/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/goods/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/company':
-      case '/services/enterprice/combined/company/about':
-      case '/services/enterprice/combined/company/regulations':
+    case '/services/enterprice/combined/company':
+    case '/services/enterprice/combined/company/about':
+    case '/services/enterprice/combined/company/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
-            <BackIcon /> Комплексное страхование имущества предприятий и организаций
+            <BackIcon /> Комплексное страхование имущества предприятий и
+            организаций
           </Link>
-          <Link to="/services/enterprice/combined/company/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/company/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/company/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/company/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/drilling':
-      case '/services/enterprice/combined/drilling/about':
-      case '/services/enterprice/combined/drilling/regulations':
+    case '/services/enterprice/combined/drilling':
+    case '/services/enterprice/combined/drilling/about':
+    case '/services/enterprice/combined/drilling/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
             <BackIcon /> Комбинированное страхование буровых работ
           </Link>
-          <Link to="/services/enterprice/combined/drilling/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/drilling/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/drilling/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/drilling/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/installation':
-      case '/services/enterprice/combined/installation/about':
-      case '/services/enterprice/combined/installation/regulations':
+    case '/services/enterprice/combined/installation':
+    case '/services/enterprice/combined/installation/about':
+    case '/services/enterprice/combined/installation/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
             <BackIcon /> Комплексное страхование строительно-монтажных рисков
           </Link>
-          <Link to="/services/enterprice/combined/installation/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/installation/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/installation/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/installation/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
 
-      case '/services/enterprice/combined/mortgage':
-      case '/services/enterprice/combined/mortgage/about':
-      case '/services/enterprice/combined/mortgage/regulations':
+    case '/services/enterprice/combined/mortgage':
+    case '/services/enterprice/combined/mortgage/about':
+    case '/services/enterprice/combined/mortgage/regulations':
       return (
         <React.Fragment>
           <Link to="/services/enterprice/combined" className="navbar__link">
             <BackIcon /> Добровольное ипотечное страхование
           </Link>
-          <Link to="/services/enterprice/combined/mortgage/about" className="navbar__link">
-          Описание <Icon />
+          <Link
+            to="/services/enterprice/combined/mortgage/about"
+            className="navbar__link">
+            Описание <Icon />
           </Link>
-          <Link to="/services/enterprice/combined/mortgage/regulations" className="navbar__link">
-          Правила <Icon />
+          <Link
+            to="/services/enterprice/combined/mortgage/regulations"
+            className="navbar__link">
+            Правила <Icon />
           </Link>
         </React.Fragment>
       );
-    
-
-
-
-
-
-
 
     case '/services/delegates':
       return (
