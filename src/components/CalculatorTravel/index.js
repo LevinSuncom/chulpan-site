@@ -3,6 +3,19 @@ import styled from 'styled-components';
 import axios from 'axios';
 import moment from 'moment';
 
+const NextButton = styled.a`
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0095d6;
+  line-height: 32px;
+  user-select: none;
+  padding: 0 20px;
+  font-size: 16px;
+  height: 32px;
+  border-radius: 4px;
+`;
+
 function calculateDays(dateFrom, dateTo) {
   const timeDiff = new Date(dateTo).getTime() - new Date(dateFrom).getTime();
   const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
@@ -52,7 +65,19 @@ export default class CalculatorTravel extends Component {
     businessCheck: false,
     leisureCheck: false,
     tourismCheck: false,
-    rubSum: ''
+    rubSum: '',
+    responceArr: []
+    // feeRub,
+    // ambulatoryTreat,
+    // currency,
+    // error,
+    // extraDentalCost,
+    // feeCurrency,
+    // feeRub,
+    // hospitalTreat,
+    // infoCost,
+    // success,
+    // transportationCost
   };
 
   componentDidMount() {
@@ -152,21 +177,24 @@ export default class CalculatorTravel extends Component {
     ) {
       this.setState({
         error:
-          'Дата начала страхования должна быть не раньше чем 2 двух дней от текущего'
+          'Дата начала страхования должна быть не раньше чем 2 двух дней от текущего',
+        responceArr: []
       });
       return;
     }
 
     if (moment.duration(moment(dayTo).diff(moment(dayFrom))).asYears() > 1) {
       this.setState({
-        error: 'Разница дат не должна превышать год'
+        error: 'Разница дат не должна превышать год',
+        responceArr: []
       });
       return;
     }
 
     if (moment.duration(moment(dayTo).diff(moment(dayFrom))).asDays() < 1) {
       this.setState({
-        error: 'Дата начала договора не может быть больше даты окончания'
+        error: 'Дата начала договора не может быть больше даты окончания',
+        responceArr: []
       });
       return;
     }
@@ -176,7 +204,8 @@ export default class CalculatorTravel extends Component {
     participantArr.forEach(item => {
       if (moment().diff(item.birthday, 'years') < 0) {
         this.setState({
-          error: 'Возраст не может быть отрицательным'
+          error: 'Возраст не может быть отрицательным',
+          responceArr: []
         });
         bool = false;
       }
@@ -203,9 +232,17 @@ export default class CalculatorTravel extends Component {
       })
       .then(responce => {
         const data = responce.data;
-        this.setState({
-          error: data.error
-        })
+        if (data.error !== '') {
+          this.setState({
+            error: data.error,
+            responceArr: []
+          });
+        } else {
+          this.setState({
+            responceArr: data,
+            error: ''
+          });
+        }
       });
   };
 
@@ -389,12 +426,76 @@ export default class CalculatorTravel extends Component {
             Рассчитать
           </button>
         </form>
-        <span style={{ color: 'green' }}>
-          {this.state.price && `Стоимость полиса: ${this.state.price}`}
-        </span>
+
         <span style={{ color: 'red' }}>
           {this.state.error && `Ошибка: ${this.state.error}`}
         </span>
+
+        <p style={{ color: 'green' }}>
+          {this.state.responceArr.feeRub &&
+            `Стоимость полиса: ${this.state.responceArr.feeRub} рублей `}
+          {this.state.responceArr.currency === 'EUR' &&
+            `в евро ${this.state.responceArr.feeCurrency}`}
+          {this.state.responceArr.currency === 'USD' &&
+            `в долларах ${this.state.responceArr.feeCurrency}`}
+        </p>
+
+        <div>
+          <p>
+            {this.state.responceArr.length !== 0 && `Включено в программу:`}
+          </p>
+
+          {this.state.responceArr.length !== 0 && (
+            <div>
+              <ul>
+                <li>
+                  {this.state.responceArr.hospitalTreat &&
+                    `медицинские расходы на стационарное лечение ${
+                      this.state.responceArr.hospitalTreat
+                    }`}
+                </li>
+                <li>
+                  {this.state.responceArr.ambulatoryTreat &&
+                    `медицинские расходы на амбулаторное лечение ${
+                      this.state.responceArr.ambulatoryTreat
+                    }`}
+                </li>
+                <li>
+                  {this.state.responceArr.transportationCost &&
+                    `медико-транспортные расходы ${
+                      this.state.responceArr.transportationCost
+                    }`}
+                </li>
+                <li>
+                  {this.state.responceArr.extraDentalCost &&
+                    `медицинские расходы на экстренную стоматологическую помощь ${
+                      this.state.responceArr.extraDentalCost
+                    }`}
+                </li>
+                <li>
+                  {this.state.responceArr.infoCost &&
+                    `информационные расходы ${this.state.responceArr.infoCost}`}
+                </li>
+              </ul>
+
+              <div>
+                <NextButton
+                  href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signin&type=express&guid=${
+                    this.state.guid
+                  }`}
+                  className="mr-12">
+                  Войти в Личный кабинет
+                </NextButton>
+                <NextButton
+                  href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signup&type=express&guid=${
+                    this.state.guid
+                  }`}>
+                  Создать Личный Кабинет
+                </NextButton>
+              </div>
+            </div>
+          )}
+        </div>
       </React.Fragment>
     );
   }
