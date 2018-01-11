@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 
 import Heads from '../../components/about/Heads';
+import Founders from '../../components/about/Founders';
+import Licenses from '../../components/about/Licenses';
+import Contacts from '../../components/about/Contacts';
+import Ratings from '../../components/about/Ratings';
+import Card from '../../components/about/Card';
+import Capital from '../../components/about/Capital';
+import ReportsMSFO from '../../components/about/ReportsMSFO';
+import ReportsAccountAnnual from '../../components/about/ReportsAccountAnnual';
+import ForShareHolders from '../../components/about/ForShareHolders';
+
 // import Common from '../../components/Individuals/Common';
 // import Accident from '../../components/Individuals/Accident';
 // import OMS from '../../components/Individuals/OMS';
@@ -14,72 +24,71 @@ class AboutContainer extends Component {
           <div className="col-3 ">
             <div>
               <div className="mb-28" />
-              {/* <NavLink
-                to="/about/1"
+              <NavLink
+                to="/about/founders"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Учредители и акционеры
-              </NavLink> */}
+              </NavLink>
               <NavLink
                 to="/about/heads"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Руководство компании
               </NavLink>
-              {/* <NavLink
-                to="/about/3"
+              <NavLink
+                to="/about/licenses"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Лицензии и документы
               </NavLink>
+              
               <NavLink
-                to="/about/4"
+                to="/about/contacts"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Контактная информация
               </NavLink>
+              
               <NavLink
-                to="/about/5"
+                to="/about/ratings"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Статус и рейтинги
               </NavLink>
+              
               <NavLink
-                to="/about/6"
+                to="/about/card"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Карточка предприятия
               </NavLink>
               <NavLink
-                to="/about/7"
+                to="/about/capital"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Уставный капитал
               </NavLink>
               <NavLink
-                to="/about/8"
+                to="/about/reportsMSFO"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                ООО СМО Чулпан-Мед
+                Отчётность по МСФО
               </NavLink>
               <NavLink
-                to="/about/9"
+                to="/about/reportsAccountAnnual"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                ООО СК Чулпан-Жизнь
+                Бухгалтерская отчетность
               </NavLink>
               <NavLink
-                to="/about/10"
+                to="/about/forShareHolders"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                ООО СМО Чулпан-Мед
+                Акционерам
               </NavLink>
-              <NavLink
-                to="/about/11"
-                className="navbar__link"
-                activeClassName="navbar__link_active">
-                ООО "ЛПЦ "Чулпан-Медицина"
-              </NavLink>
+
+{/*
               <NavLink
                 to="/about/12"
                 className="navbar__link"
@@ -133,9 +142,46 @@ class AboutContainer extends Component {
               <Route path="/individuals/oms" component={OMS} />
             </Switch> */}
             <Switch>
+              <Redirect exact from="/about" to="/about/founders" />
+              <Route path="/about/founders" component={Founders} />
+            </Switch>
+            <Switch>
               <Redirect exact from="/about" to="/about/heads" />
               <Route path="/about/heads" component={Heads} />
             </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/licenses" />
+              <Route path="/about/licenses" component={Licenses} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/contacts" />
+              <Route path="/about/contacts" component={Contacts} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/ratings" />
+              <Route path="/about/ratings" component={Ratings} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/card" />
+              <Route path="/about/card" component={Card} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/capital" />
+              <Route path="/about/capital" component={Capital} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/reportsMSFO" />
+              <Route path="/about/reportsMSFO" component={ReportsMSFO} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/reportsAccountAnnual" />
+              <Route path="/about/reportsAccountAnnual" component={ReportsAccountAnnual} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/forShareHolders" />
+              <Route path="/about/forShareHolders" component={ForShareHolders} />
+            </Switch>
+
             <div className="mb-40" />
           </div>
         </div>
