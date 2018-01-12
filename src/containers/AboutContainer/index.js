@@ -14,12 +14,12 @@ class AboutContainer extends Component {
           <div className="col-3 ">
             <div>
               <div className="mb-28" />
-              {/* <NavLink
+              <NavLink
                 to="/about/1"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Учредители и акционеры
-              </NavLink> */}
+              </NavLink>
               <NavLink
                 to="/about/heads"
                 className="navbar__link"

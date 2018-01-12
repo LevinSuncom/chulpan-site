@@ -2,4 +2,4 @@ function createKey() {
   return Math.random();
 }
 
-export { createKey }
+export { createKey };
