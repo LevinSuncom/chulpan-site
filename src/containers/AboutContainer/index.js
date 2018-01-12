@@ -43,21 +43,21 @@ class AboutContainer extends Component {
                 activeClassName="navbar__link_active">
                 Лицензии и документы
               </NavLink>
-              
+
               <NavLink
                 to="/about/contacts"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Контактная информация
               </NavLink>
-              
+
               <NavLink
                 to="/about/ratings"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Статус и рейтинги
               </NavLink>
-              
+
               <NavLink
                 to="/about/card"
                 className="navbar__link"
@@ -89,7 +89,7 @@ class AboutContainer extends Component {
                 Акционерам
               </NavLink>
 
-{/*
+              {/*
               <NavLink
                 to="/about/12"
                 className="navbar__link"
@@ -176,11 +176,17 @@ class AboutContainer extends Component {
             </Switch>
             <Switch>
               <Redirect exact from="/about" to="/about/reportsAccountAnnual" />
-              <Route path="/about/reportsAccountAnnual" component={ReportsAccountAnnual} />
+              <Route
+                path="/about/reportsAccountAnnual"
+                component={ReportsAccountAnnual}
+              />
             </Switch>
             <Switch>
               <Redirect exact from="/about" to="/about/forShareHolders" />
-              <Route path="/about/forShareHolders" component={ForShareHolders} />
+              <Route
+                path="/about/forShareHolders"
+                component={ForShareHolders}
+              />
             </Switch>
 
             <div className="mb-40" />
