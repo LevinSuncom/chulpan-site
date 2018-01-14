@@ -11,6 +11,7 @@ import Capital from '../../components/about/Capital';
 import ReportsMSFO from '../../components/about/ReportsMSFO';
 import ReportsAccountAnnual from '../../components/about/ReportsAccountAnnual';
 import ForShareHolders from '../../components/about/ForShareHolders';
+import PersonalDataProtection from '../../components/about/PersonalDataProtection';
 
 // import Common from '../../components/Individuals/Common';
 // import Accident from '../../components/Individuals/Accident';
@@ -83,6 +84,12 @@ class AboutContainer extends Component {
               </NavLink>
               <NavLink
                 to="/about/forShareHolders"
+                className="navbar__link"
+                activeClassName="navbar__link_active">
+                Акционерам
+              </NavLink>
+              <NavLink
+                to="/about/personalDataProtection"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Акционерам
@@ -181,7 +188,10 @@ class AboutContainer extends Component {
               <Redirect exact from="/about" to="/about/forShareHolders" />
               <Route path="/about/forShareHolders" component={ForShareHolders} />
             </Switch>
-
+            <Switch>
+              <Redirect exact from="/about" to="/about/personalDataProtection" />
+              <Route path="/about/personalDataProtection" component={PersonalDataProtection} />
+            </Switch>
             <div className="mb-40" />
           </div>
         </div>
