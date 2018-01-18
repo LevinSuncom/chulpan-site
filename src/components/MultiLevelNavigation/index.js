@@ -185,11 +185,11 @@ const MultiLevelNavigation = props => {
             className="navbar__link">
             Описание
           </Link>
-          <Link
+          {/* <Link
             to="/services/individuals/transport/eosago/regulations"
             className="navbar__link">
             Правила по е-ОСАГО
-          </Link>
+          </Link> */}
           <Link
             to="/services/individuals/transport/eosago/rates"
             className="navbar__link">
