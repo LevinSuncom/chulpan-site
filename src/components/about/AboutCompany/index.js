@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class AboutComapny extends Component {
+class AboutCompany extends Component {
   render() {
     return (
       <div>
-        <h1 className="product-header">Информация о компани</h1>
+        <h1 className="product-header">Информация о компании</h1>
         В целях исполнения Федерального закона Российской Федерации от 23 июля 2013 г. N 234-ФЗ "О внесении изменений в Закон Российской Федерации "Об организации страхового дела в Российской Федерации и удобства посетителей сайта АО СК "Чулпан" на данной странице размещены ссылки на необходимую информацию о Компании
         <br />
         <ul>
@@ -35,4 +35,4 @@ class AboutComapny extends Component {
   }
 }
 
-export default AboutComapny;
+export default AboutCompany;

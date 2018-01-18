@@ -108,6 +108,9 @@ class Footer extends Component {
               <Link to="/about/heads" className="footer__link">
                 Руководство
               </Link>
+              <Link to="/about/aboutCompany" className="footer__link">
+                Информация о компании
+              </Link>
 
               {/* <Link to="" className="footer__link">
                 История
