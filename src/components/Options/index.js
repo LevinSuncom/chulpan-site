@@ -139,7 +139,7 @@ class Options extends Component {
         </div>
         <div className="col-2">
           <div className="option">
-            <Link to="/main" className="option__badge">
+            <Link to="/services/enterprice" className="option__badge">
               <EnterpriceIcon />
               <p>Корпоративным клиентам</p>
             </Link>

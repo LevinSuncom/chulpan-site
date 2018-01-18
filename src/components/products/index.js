@@ -39,6 +39,8 @@ import IndividualsMortgageAbout from './individuals/IndividualsMortgageAbout';
 import IndividualsTravelAbroadAbout from './individuals/IndividualsTravelAbroadAbout';
 import IndividualsTravelAbroadFaq from './individuals/IndividualsTravelAbroadFaq';
 import IndividualsTravelAbroadManual from './individuals/IndividualsTravelAbroadManual';
+import IndividualsTravelAbroadRules from './individuals/IndividualsTravelAbroadRules';
+
 
 // Представитель
 import Delegates from './delegates';
@@ -75,6 +77,7 @@ export {
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
   IndividualsTravelAbroadManual,
+  IndividualsTravelAbroadRules,
   Delegates,
   AllRules
 };

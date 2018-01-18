@@ -41,6 +41,7 @@ import {
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
   IndividualsTravelAbroadManual,
+  IndividualsTravelAbroadRules,
 
   // Представители
   Delegates,
@@ -172,6 +173,10 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/travel/abroad/manual"
                 component={IndividualsTravelAbroadManual}
+              />
+              <Route
+                path="/services/individuals/travel/abroad/regulations"
+                component={IndividualsTravelAbroadRules}
               />
               <Route
                 path="/services/individuals/travel/abroad/calculate"

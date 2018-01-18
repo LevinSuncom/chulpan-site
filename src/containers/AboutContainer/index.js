@@ -10,8 +10,12 @@ import Card from '../../components/about/Card';
 import Capital from '../../components/about/Capital';
 import ReportsMSFO from '../../components/about/ReportsMSFO';
 import ReportsAccountAnnual from '../../components/about/ReportsAccountAnnual';
+import ConsolidatedReport from '../../components/about/ConsolidatedReport';
 import ForShareHolders from '../../components/about/ForShareHolders';
 import PersonalDataProtection from '../../components/about/PersonalDataProtection';
+import AboutCompany from '../../components/about/AboutCompany';
+import Agents from '../../components/about/Agents';
+import WorkingConditions from '../../components/about/WorkingConditions';
 
 // import Common from '../../components/Individuals/Common';
 // import Accident from '../../components/Individuals/Accident';
@@ -83,6 +87,12 @@ class AboutContainer extends Component {
                 Бухгалтерская отчетность
               </NavLink>
               <NavLink
+                to="/about/consolidatedReport"
+                className="navbar__link"
+                activeClassName="navbar__link_active">
+                Консолидированная отчётность
+              </NavLink>
+              <NavLink
                 to="/about/forShareHolders"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
@@ -92,7 +102,25 @@ class AboutContainer extends Component {
                 to="/about/personalDataProtection"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                Акционерам
+                Защита персональных данных
+              </NavLink>
+              <NavLink
+                to="/about/aboutCompany"
+                className="navbar__link"
+                activeClassName="navbar__link_active">
+                Информация о компании
+              </NavLink>
+              <NavLink
+                to="/about/agents"
+                className="navbar__link"
+                activeClassName="navbar__link_active">
+                Реестр агентов
+              </NavLink>
+              <NavLink
+                to="/about/workingConditions"
+                className="navbar__link"
+                activeClassName="navbar__link_active">
+                Результаты спецоценки условий труда
               </NavLink>
 
 {/*
@@ -191,6 +219,22 @@ class AboutContainer extends Component {
             <Switch>
               <Redirect exact from="/about" to="/about/personalDataProtection" />
               <Route path="/about/personalDataProtection" component={PersonalDataProtection} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/aboutCompany" />
+              <Route path="/about/aboutCompany" component={AboutCompany} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/consolidatedReport" />
+              <Route path="/about/consolidatedReport" component={ConsolidatedReport} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/agents" />
+              <Route path="/about/agents" component={Agents} />
+            </Switch>
+            <Switch>
+              <Redirect exact from="/about" to="/about/workingConditions" />
+              <Route path="/about/workingConditions" component={WorkingConditions} />
             </Switch>
             <div className="mb-40" />
           </div>

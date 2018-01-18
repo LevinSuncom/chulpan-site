@@ -5,7 +5,7 @@ class PersonalDataProtection extends Component {
   render() {
     return (
       <div>
-        <h1 className="product-header">Политика защиты персональных данныъ</h1>
+        <h1 className="product-header">Политика защиты персональных данных</h1>
         Страховая компания "Чулпан"    уделяет особое внимание  защите информации и персональных данных своих клиентов.
         <br/>
         <a href={file1}> Политика информационной безопасности в АО СК "Чулпан"</a>

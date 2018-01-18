@@ -1,7 +1,11 @@
 import React from 'react';
 
+import rules from '../../../../documents/Правила добровольного страхования от несчастных случаев граждан и детей.doc';
+
 const IndividualsTransportKASKORegulations = () => {
-  return <div>Нет текстовки</div>;
+  window.open(rules, '_blank');
+  window.history.back();
+  window.location.reload();
 };
 
 export default IndividualsTransportKASKORegulations;
