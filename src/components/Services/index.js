@@ -32,6 +32,7 @@ import {
   IndividualsTransportKASKOManual,
   IndividualsTransportKASKORegulations,
   IndividualsTransportOSAGOAbout,
+  IndividualsTransportOSAGOFaq,
   IndividualsTransportEOSAGOManual,
   IndividualsTransportOSAGORegulations,
   IndividualsTransportEOSAGOFaq,
@@ -225,6 +226,14 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/transport/osago/about"
                 component={IndividualsTransportOSAGOAbout}
+              />
+              <Route
+                path="/services/individuals/transport/osago/faq"
+                component={IndividualsTransportOSAGOFaq}
+              />
+              <Route
+                path="/services/individuals/transport/osago/faq"
+                component={IndividualsTransportOSAGOFaq}
               />
               <Route
                 path="/services/individuals/transport/osago/regulations"

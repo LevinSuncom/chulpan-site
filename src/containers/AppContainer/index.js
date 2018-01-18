@@ -34,6 +34,7 @@ export default class AppContainer extends Component {
 
       '/services/individuals/transport/osago',
       '/services/individuals/transport/osago/about',
+      '/services/individuals/transport/osago/faq',
       '/services/individuals/transport/osago/regulations',
 
       '/services/individuals/transport/eosago',

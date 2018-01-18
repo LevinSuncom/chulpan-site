@@ -151,6 +151,7 @@ const MultiLevelNavigation = props => {
       );
     case '/services/individuals/transport/osago':
     case '/services/individuals/transport/osago/about':
+    case '/services/individuals/transport/osago/faq':
     case '/services/individuals/transport/osago/regulations':
       return (
         <React.Fragment>
@@ -161,6 +162,11 @@ const MultiLevelNavigation = props => {
             to="/services/individuals/transport/osago/about"
             className="navbar__link">
             Описание
+          </Link>
+          <Link
+            to="/services/individuals/transport/osago/faq"
+            className="navbar__link">
+            Вопрос-ответ
           </Link>
           <Link
             to="/services/individuals/transport/osago/regulations"
