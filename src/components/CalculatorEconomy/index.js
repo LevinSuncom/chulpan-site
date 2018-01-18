@@ -120,7 +120,7 @@ export default class CalculatorEconomy extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1 className="product-header">Рассчёт эконом-страхования</h1>
+        <h1 className="product-header">Расчёт эконом-страхования</h1>
         <form action="" className="callback mb-20" onSubmit={this.onSubmit}>
           <label htmlFor="">Условия страхования</label>
           <select
