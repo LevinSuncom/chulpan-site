@@ -75,6 +75,16 @@ class Options extends Component {
                 КАСКО
               </Link>
               <Link
+                to="/services/individuals/transport/kasko2"
+                className="option__link">
+                КАСКО до 1-го случая
+              </Link>
+              <Link
+                to="/services/individuals/transport/kasko50"
+                className="option__link">
+                КАСКО 50
+              </Link>
+              <Link
                 to="/services/individuals/transport/osago"
                 className="option__link">
                 ОСАГО
@@ -83,6 +93,11 @@ class Options extends Component {
                 to="/services/individuals/transport/eosago"
                 className="option__link">
                 е-ОСАГО
+              </Link>
+              <Link
+                to="/services/individuals/transport/voluntary"
+                className="option__link">
+                Добровольная автогражданка
               </Link>
             </div>
           </div>
