@@ -20,6 +20,7 @@ import {
   IndividualsPropertyCombinedManual,
   IndividualsPropertyEconomy,
   IndividualsPropertyExpress,
+  IndividualsPropertyExpressRegulations,
   IndividualsPropertyEstateAbout,
   IndividualsPropertyEstateFaq,
   IndividualsPropertyEstateManual,
@@ -126,6 +127,11 @@ export default class Services extends Component {
                 path="/services/individuals/property/express"
                 component={IndividualsPropertyExpress}
               />
+              <Route
+                exact
+                path="/services/individuals/property/express/regulations"
+                component={IndividualsPropertyExpressRegulations}
+              />              
               <Route
                 path="/services/individuals/property/express/calculate"
                 component={CalculatorExpress}

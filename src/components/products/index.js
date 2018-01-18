@@ -15,6 +15,7 @@ import IndividualsPropertyCombinedAbout from './individuals/IndividualsPropertyC
 import IndividualsPropertyCombinedManual from './individuals/IndividualsPropertyCombinedManual';
 import IndividualsPropertyEconomy from './individuals/IndividualsPropertyEconomy';
 import IndividualsPropertyExpress from './individuals/IndividualsPropertyExpress';
+import IndividualsPropertyExpressRegulations from './individuals/IndividualsPropertyExpressRegulations';
 import IndividualsPropertyEstateAbout from './individuals/IndividualsPropertyEstateAbout';
 import IndividualsPropertyEstateFaq from './individuals/IndividualsPropertyEstateFaq';
 import IndividualsPropertyEstateManual from './individuals/IndividualsPropertyEstateManual';
@@ -59,6 +60,7 @@ export {
   IndividualsPropertyCombinedManual,
   IndividualsPropertyEconomy,
   IndividualsPropertyExpress,
+  IndividualsPropertyExpressRegulations,
   IndividualsPropertyEstateAbout,
   IndividualsPropertyEstateFaq,
   IndividualsPropertyEstateManual,

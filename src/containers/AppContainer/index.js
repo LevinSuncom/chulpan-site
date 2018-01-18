@@ -76,6 +76,7 @@ export default class AppContainer extends Component {
       '/services/individuals/property/economy/calculate',
 
       '/services/individuals/property/express',
+      '/services/individuals/property/express/regulations',
       '/services/individuals/property/express/calculate',
 
       '/services/individuals/property/estate',

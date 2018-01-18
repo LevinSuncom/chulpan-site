@@ -377,6 +377,7 @@ const MultiLevelNavigation = props => {
       );
     case '/services/individuals/property/express':
     case '/services/individuals/property/express/calculate':
+    case '/services/individuals/property/express/regulations':
       return (
         <React.Fragment>
           <Link to="/services/individuals/property" className="navbar__link">
@@ -386,6 +387,11 @@ const MultiLevelNavigation = props => {
             to="/services/individuals/property/express/calculate"
             className="navbar__link">
             Расчитать
+          </NavLink>
+          <NavLink
+            to="/services/individuals/property/express/regulations"
+            className="navbar__link">
+            Правила
           </NavLink>
         </React.Fragment>
       );
