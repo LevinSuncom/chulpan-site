@@ -1,6 +1,8 @@
 import React from 'react';
 import image from './image.jpg';
 
+import delegates from '../../../../documents/Представители/inflist092017.pdf';
+
 const IndividualsTransportEOSAGOAbout = () => {
   return (
     <div className="WordSection1">
@@ -60,11 +62,8 @@ const IndividualsTransportEOSAGOAbout = () => {
       <p>
         <span>
           При наступлении страхового случая на территории где нет офисов нашей
-          компании Вам придется обращаться в{' '}
+          компании Вам придется обращаться в <a href={delegates}>компанию представитель по урегулированию убытков.</a>
         </span>
-        <a href="https://guideh.com/wp-content/uploads/2017/05/%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%9F%D0%90%D0%9E-%D0%A1%D0%9A-%D0%93%D0%90%D0%99%D0%94%D0%95_05.05.17.xls">
-          <span>компанию представитель по урегулированию убытков.</span>
-        </a>
       </p>
 
       <p>

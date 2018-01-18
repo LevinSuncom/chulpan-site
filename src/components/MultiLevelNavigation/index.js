@@ -43,7 +43,7 @@ const MultiLevelNavigation = props => {
             Корпоративным клиентам <Icon />
           </Link>
           <Link to="/services/delegates" className="navbar__link">
-            Представители <Icon />
+            Филиалы и представительства <Icon />
           </Link>
           <Link to="/services/allRules" className="navbar__link">
             Все правила <Icon />
