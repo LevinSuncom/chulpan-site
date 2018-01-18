@@ -94,7 +94,7 @@ class Footer extends Component {
                 Обратная связь
               </span>
               <Link to="" className="footer__link">
-                +8 800 000 00 00
+                8 800 700 44 90
               </Link>
               <Link to="" className="footer__link">
                 mail@chulpan.ru

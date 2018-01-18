@@ -29,7 +29,7 @@ const Header = () => {
           {/* <div className="main-header__info">
               <i className="material-icons fs-12 mr-4">location_on</i>
               Казань<br />
-              +8 800 000 00 00
+              8 800 700 44 90
             </div> */}
           <div>
             <span

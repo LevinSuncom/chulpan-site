@@ -456,7 +456,7 @@ const MultiLevelNavigation = props => {
           <Link
             to="/services/individuals/travel/abroad"
             className="navbar__link">
-            Выезжающим за рубеж <Icon />
+            Выезжающие за границу <Icon />
           </Link>
         </React.Fragment>
       );
@@ -469,7 +469,7 @@ const MultiLevelNavigation = props => {
       return (
         <React.Fragment>
           <Link to="/services/individuals/travel" className="navbar__link">
-            <BackIcon /> Выезжающим за рубеж
+            <BackIcon /> Выезжающие за границу
           </Link>
           <Link
             to="/services/individuals/travel/abroad/about"

@@ -278,7 +278,7 @@ export default class CalculatorTravel extends Component {
     const { participantArr } = this.state;
     return (
       <React.Fragment>
-        <h1 className="product-header">Расчёт ВЗР</h1>
+        <h1 className="product-header">Расчёт полиса выезжающих за границу</h1>
         <form action="" className="callback mb-40" onSubmit={this.onSubmit}>
           <label htmlFor="">Территория страхования</label>
           <select

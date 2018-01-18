@@ -56,7 +56,7 @@ class EnterpriseContainer extends Component {
                 to="/enterprise/vzr"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                ВЗР
+                Выезжающие за границу
               </NavLink>
               <NavLink
                 to="/enterprise/dms"
