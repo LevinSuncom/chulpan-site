@@ -84,7 +84,7 @@ class Options extends Component {
               <Link
                 to="/services/individuals/transport/eosago"
                 className="option__link">
-                еОСАГО
+                е-ОСАГО
               </Link>
             </div>
           </div>

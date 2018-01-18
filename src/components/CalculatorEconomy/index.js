@@ -155,7 +155,7 @@ export default class CalculatorEconomy extends Component {
           </span>
           <div className="mb-12" />
           <button type="submit" className="button">
-            Рассчитать
+            Расчитать
           </button>
         </form>
         <span style={{ color: 'green' }}>

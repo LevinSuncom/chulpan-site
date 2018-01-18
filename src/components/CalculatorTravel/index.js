@@ -423,7 +423,7 @@ export default class CalculatorTravel extends Component {
           </div>
 
           <button type="submit" className="button">
-            Рассчитать
+            Расчитать
           </button>
         </form>
 

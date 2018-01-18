@@ -371,7 +371,7 @@ const MultiLevelNavigation = props => {
           <NavLink
             to="/services/individuals/property/economy/calculate"
             className="navbar__link">
-            Рассчитать
+            Расчитать
           </NavLink>
         </React.Fragment>
       );
@@ -385,7 +385,7 @@ const MultiLevelNavigation = props => {
           <NavLink
             to="/services/individuals/property/express/calculate"
             className="navbar__link">
-            Рассчитать
+            Расчитать
           </NavLink>
         </React.Fragment>
       );
@@ -494,7 +494,7 @@ const MultiLevelNavigation = props => {
           <Link
             to="/services/individuals/travel/abroad/calculate"
             className="navbar__link">
-            Рассчитать
+            Расчитать
           </Link>
         </React.Fragment>
       );
