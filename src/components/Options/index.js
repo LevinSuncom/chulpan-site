@@ -64,12 +64,10 @@ class Options extends Component {
       <div className="row">
         <div className="col-2">
           <div className="option">
-            <Link
-              to="/services/individuals/transport"
-              className="option__badge">
+            <div className="option__badge">
               <CarIcon />
               <p>Автомобиль</p>
-            </Link>
+            </div>
             <div className="option__dropdown">
               <Link
                 to="/services/individuals/transport/kasko"
@@ -91,10 +89,10 @@ class Options extends Component {
         </div>
         <div className="col-2">
           <div className="option">
-            <Link to="/services/individuals/property" className="option__badge">
+            <div className="option__badge">
               <HomeIcon />
               <p>Жильё</p>
-            </Link>
+            </div>
             <div className="option__dropdown">
               <Link
                 to="/services/individuals/property/estate/about"
