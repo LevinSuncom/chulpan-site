@@ -47,7 +47,9 @@ import {
 
   // Представители
   Delegates,
-  AllRules
+  AllRules,
+
+  Enterprise
 } from '../products';
 
 import Breadcrumbs from '../Breadcrumbs';
@@ -263,6 +265,10 @@ export default class Services extends Component {
               />
               <Route path="/services/delegates" component={Delegates} />
               <Route path="/services/allRules" component={AllRules} />
+
+              <Route exact path="/services/enterprise" component={Enterprise}
+              />
+
             </Switch>
           </div>
         </div>

@@ -49,7 +49,7 @@ const MortgageIcon = () => {
   );
 };
 
-const EnterpriceIcon = () => {
+const EnterpriseIcon = () => {
   return (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" />
@@ -152,8 +152,8 @@ class Options extends Component {
         </div>
         <div className="col-2">
           <div className="option">
-            <Link to="/services/enterprice" className="option__badge">
-              <EnterpriceIcon />
+            <Link to="/services/enterprise" className="option__badge">
+              <EnterpriseIcon />
               <p>Корпоративным клиентам</p>
             </Link>
           </div>

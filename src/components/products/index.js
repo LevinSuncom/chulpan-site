@@ -48,6 +48,8 @@ import IndividualsTravelAbroadRules from './individuals/IndividualsTravelAbroadR
 import Delegates from './delegates';
 import AllRules from './allRules';
 
+import Enterprise from './enterprise/enterprise';
+
 export {
   Individuals,
   IndividualsHealthAccidentsAbout,
@@ -83,5 +85,6 @@ export {
   IndividualsTravelAbroadManual,
   IndividualsTravelAbroadRules,
   Delegates,
-  AllRules
+  AllRules,
+  Enterprise
 };
