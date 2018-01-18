@@ -101,7 +101,7 @@ class IndividualsContainer extends Component {
                 to="/individuals/eosago"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
-                ЕОСАГО
+                е-ОСАГО
               </NavLink>
 
               <NavLink
