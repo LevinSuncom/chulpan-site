@@ -47,7 +47,11 @@ export default class CalculatorTravel extends Component {
     participantArr: [
       {
         id: `participant-${new Date().getTime()}`,
-        birthday: ''
+        birthday: '',
+        sportCheck: false,
+        businessCheck: false,
+        leisureCheck: false,
+        tourismCheck: false
       }
     ],
     country: '',
@@ -127,28 +131,28 @@ export default class CalculatorTravel extends Component {
     if (name === 'dayTo' && this.state.dayFrom !== '') {
       this.setState({ time: calculateDays(this.state.dayFrom, value) });
     }
-
-    if (name === 'dayFrom' && this.state.dayTo !== '') {
+    else if (name === 'dayFrom' && this.state.dayTo !== '') {
       this.setState({ time: calculateDays(value, this.state.dayTo) });
     }
-
     this.setState(
       {
         [name]: value
       },
       () => {
-        const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
-        axios
-          .post(rubSumm, {
-            zone: this.state.country,
-            curr: this.state.amount,
-            req: moment()
-          })
-          .then(responce => {
-            const value = responce.data;
-            console.log(value);
-            this.setState({ rubSum: value.value });
-          });
+        if (name === 'amount') {
+          const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
+          axios
+            .post(rubSumm, {
+              zone: this.state.country,
+              curr: this.state.amount,
+              req: moment()
+            })
+            .then(responce => {
+              const value = responce.data;
+              console.log(value);
+              this.setState({ rubSum: value.value });
+            });
+        }
       }
     );
   };
@@ -224,11 +228,7 @@ export default class CalculatorTravel extends Component {
         insuredSumRub: amount,
         beginDate: dayFrom,
         endDate: dayTo,
-        birthDates: participantArr,
-        sportCheck: sportCheck,
-        businessCheck: businessCheck,
-        leisureCheck: leisureCheck,
-        tourismCheck: tourismCheck
+        birthDates: participantArr
       })
       .then(responce => {
         const data = responce.data;
@@ -249,11 +249,27 @@ export default class CalculatorTravel extends Component {
   onParticipantChange = event => {
     const target = event.target;
     const name = target.name;
-    const value = target.value;
+    const id = target.id;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
 
     const updatedParticipantArr = this.state.participantArr.map(item => {
-      if (item.id === name) {
-        item.birthday = value;
+      if (item.id === id) {
+        if (name === 'birthDay') {
+          item.birthday = value
+        }
+        else if (name === 'businessCheck') {
+          item.businessCheck = value
+        }
+        else if (name === 'leisureCheck') {
+          item.leisureCheck = value
+        }
+        else if (name === 'sportCheck') {
+          item.sportCheck = value
+        }
+        else if (name === 'tourismCheck') {
+          item.tourismCheck = value
+        }
+
       }
       return item;
     });
@@ -267,7 +283,11 @@ export default class CalculatorTravel extends Component {
     event.preventDefault();
     const newParticipant = {
       id: `participant-${new Date().getTime()}`,
-      birthday: ''
+      birthday: '',
+      sportCheck: false,
+      businessCheck: false,
+      leisureCheck: false,
+      tourismCheck: false
     };
     this.setState({
       participantArr: [...this.state.participantArr, newParticipant]
@@ -339,7 +359,7 @@ export default class CalculatorTravel extends Component {
           </div>
 
           <div>
-            <label htmlFor="">Укажите дату рождения участника поездки </label>
+            <label htmlFor="">Укажите дату рождения участника и цель поездки </label>
             {participantArr.map(item => {
               return (
                 <React.Fragment>
@@ -348,7 +368,8 @@ export default class CalculatorTravel extends Component {
                     style={{ display: 'flex', alignItems: 'center' }}>
                     <input
                       type="date"
-                      name={item.id}
+                      id={item.id}
+                      name="birthDay"
                       className="mb-12 mr-12"
                       onChange={this.onParticipantChange}
                       value={item.birthday}
@@ -357,6 +378,54 @@ export default class CalculatorTravel extends Component {
                     />
                     {item.birthday &&
                       `Возраст: ${moment().diff(item.birthday, 'years')} лет`}
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <input
+                        type="checkbox"
+                        id={item.id}
+                        name="sportCheck"
+                        className="mr-12"
+                        onChange={this.onParticipantChange}
+                        value={item.sportCheck}
+                      //checked={this.state.sportCheck}
+                      />
+                      <label htmlFor="sportCheck">Спорт</label>
+                      &nbsp;&nbsp;
+                      <input
+                        type="checkbox"
+                        id={item.id}
+                        name="tourismCheck"
+                        className="mr-12"
+                        onChange={this.onParticipantChange}
+                        value={item.tourismCheck}
+                      //checked={this.state.tourismCheck}
+                      />
+                      <label htmlFor="tourismCheck">Туризм</label>
+                      &nbsp;&nbsp;
+                      <input
+                        type="checkbox"
+                        id={item.id}
+                        name="leisureCheck"
+                        className="mr-12"
+                        onChange={this.onParticipantChange}
+                        value={item.leisureCheck}
+                      //checked={this.state.leisureCheck}
+                      />
+                      <label htmlFor="leisureCheck">Активный отдых</label>
+                      &nbsp;&nbsp;
+                      <input
+                        type="checkbox"
+                        id={item.id}
+                        name="businessCheck"
+                        className="mr-12"
+                        onChange={this.onParticipantChange}
+                        value={item.businessCheck}
+                      //checked={this.state.businessCheck}
+                      />
+                      <label htmlFor="businessCheck">Профессиональная деятельность</label>
+                    </div>
+
                   </div>
                 </React.Fragment>
               );
@@ -371,55 +440,6 @@ export default class CalculatorTravel extends Component {
               onClick={this.addParticipant}>
               + Добавить участника
             </button>
-          </div>
-
-          <label htmlFor="">Укажите цель поездки</label>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="checkbox"
-              id="sportCheck"
-              name="sportCheck"
-              className="mr-12"
-              onChange={this.onChange}
-              checked={this.state.sportCheck}
-            />
-            <label htmlFor="sportCheck">Спорт</label>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="checkbox"
-              id="tourismCheck"
-              name="tourismCheck"
-              className="mr-12"
-              onChange={this.onChange}
-              checked={this.state.tourismCheck}
-            />
-            <label htmlFor="tourismCheck">Туризм</label>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="checkbox"
-              id="leisureCheck"
-              name="leisureCheck"
-              className="mr-12"
-              onChange={this.onChange}
-              checked={this.state.leisureCheck}
-            />
-            <label htmlFor="leisureCheck">Активный отдых</label>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="checkbox"
-              id="businessCheck"
-              name="businessCheck"
-              className="mr-12"
-              onChange={this.onChange}
-              checked={this.state.businessCheck}
-            />
-            <label htmlFor="businessCheck">Профессиональная деятельность</label>
           </div>
 
           <button type="submit" className="button">
@@ -451,25 +471,25 @@ export default class CalculatorTravel extends Component {
                 <li>
                   {this.state.responceArr.hospitalTreat &&
                     `медицинские расходы на стационарное лечение ${
-                      this.state.responceArr.hospitalTreat
+                    this.state.responceArr.hospitalTreat
                     }`}
                 </li>
                 <li>
                   {this.state.responceArr.ambulatoryTreat &&
                     `медицинские расходы на амбулаторное лечение ${
-                      this.state.responceArr.ambulatoryTreat
+                    this.state.responceArr.ambulatoryTreat
                     }`}
                 </li>
                 <li>
                   {this.state.responceArr.transportationCost &&
                     `медико-транспортные расходы ${
-                      this.state.responceArr.transportationCost
+                    this.state.responceArr.transportationCost
                     }`}
                 </li>
                 <li>
                   {this.state.responceArr.extraDentalCost &&
                     `медицинские расходы на экстренную стоматологическую помощь ${
-                      this.state.responceArr.extraDentalCost
+                    this.state.responceArr.extraDentalCost
                     }`}
                 </li>
                 <li>
@@ -482,14 +502,14 @@ export default class CalculatorTravel extends Component {
                 <NextButton
                   href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signin&type=express&guid=${
                     this.state.guid
-                  }`}
+                    }`}
                   className="mr-12">
                   Войти в Личный кабинет
                 </NextButton>
                 <NextButton
                   href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signup&type=express&guid=${
                     this.state.guid
-                  }`}>
+                    }`}>
                   Создать Личный Кабинет
                 </NextButton>
               </div>
