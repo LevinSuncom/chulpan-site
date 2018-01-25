@@ -143,7 +143,7 @@ export default class CalculatorEconomy extends Component {
           <input
             type="number"
             name="year"
-            placeholder="Дата ввода в эксплуатацию"
+            placeholder="Год ввода в эксплуатацию"
             className="mb-12"
             onChange={this.onChange}
             value={this.state.year}

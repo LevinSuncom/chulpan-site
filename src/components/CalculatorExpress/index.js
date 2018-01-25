@@ -53,7 +53,8 @@ export default class CalculatorExpress extends Component {
     axios.get(url).then(responce => {
       console.log(responce);
       const value = JSON.parse(responce.data).expressInsuranceTypes;
-      this.setState({ typesArr: value, amount: value[0].id });
+      this.setState({ typesArr: value, amount: value[0].id, amount2: value[0].id * 50000 });
+      
     });
 
     // var today = new Date();
@@ -93,6 +94,11 @@ export default class CalculatorExpress extends Component {
         });
       }
     }
+    if (name === 'amount') {
+      this.setState({
+        amount2: value * 50000
+      });
+    }
 
     this.setState({
       [name]: value
@@ -103,13 +109,13 @@ export default class CalculatorExpress extends Component {
     const { amount2, age, year, amount } = this.state;
     event.preventDefault();
 
-    if (amount2 < 0 || amount2 > 100000) {
+    /*if (amount2 < 0 || amount2 > 100000) {
       this.setState({
         error:
           'Гражданская ответственность должна быть в интервале от 0 до 100000 рублей'
       });
       return;
-    }
+    }*/
 
     if (age < 0 || age > 50000 || age === '') {
       this.setState({
@@ -162,19 +168,20 @@ export default class CalculatorExpress extends Component {
               return (
                 <option value={item.id}>{`${item.name} (${
                   item.value
-                })`}</option>
+                  })`}</option>
               );
             })}
           </select>
 
           <label htmlFor="">Гражданская ответственность</label>
           <input
-            type="number"
+            type="text"
             name="amount2"
             placeholder="Гражданская ответственность"
             className="mb-12"
             onChange={this.onChange}
             value={this.state.amount2}
+            readonly="readonly"
             required
           />
 
@@ -184,7 +191,7 @@ export default class CalculatorExpress extends Component {
           <input
             type="number"
             name="year"
-            placeholder="Дата ввода в эксплуатацию"
+            placeholder="Год ввода в эксплуатацию"
             className="mb-12"
             onChange={this.onChange}
             value={this.state.year}
@@ -212,14 +219,14 @@ export default class CalculatorExpress extends Component {
             <NextButton
               href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signin&type=express&guid=${
                 this.state.guid
-              }`}
+                }`}
               className="mr-12">
               Войти в Личный кабинет
             </NextButton>
             <NextButton
               href={`http://chulpan.ru/Portal/Selfcare/Login?mode=signup&type=express&guid=${
                 this.state.guid
-              }`}>
+                }`}>
               Создать Личный Кабинет
             </NextButton>
           </div>
