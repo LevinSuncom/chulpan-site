@@ -49,7 +49,10 @@ import {
   Delegates,
   AllRules,
 
-  Enterprise
+  Enterprise,
+  EnterpriseProperty,
+  EnterprisePropertyCompanyAbout,
+  EnterprisePropertyCompanyRegulations
 } from '../products';
 
 import Breadcrumbs from '../Breadcrumbs';
@@ -266,9 +269,11 @@ export default class Services extends Component {
               <Route path="/services/delegates" component={Delegates} />
               <Route path="/services/allRules" component={AllRules} />
 
-              <Route exact path="/services/enterprise" component={Enterprise}
-              />
-
+              <Route exact path="/services/enterprise" component={Enterprise}/>
+              <Route exact path="/services/enterprise/property" component={EnterpriseProperty}/>
+              <Redirect exact from="/services/enterprise/property/company" to="/services/enterprise/property/company/about"/>
+              <Route exact path="/services/enterprise/property/company/about" component={EnterprisePropertyCompanyAbout}/>
+              <Route exact path="/services/enterprise/property/company/regulations" component={EnterprisePropertyCompanyRegulations}/>
             </Switch>
           </div>
         </div>

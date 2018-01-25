@@ -49,6 +49,9 @@ import Delegates from './delegates';
 import AllRules from './allRules';
 
 import Enterprise from './enterprise/enterprise';
+import EnterpriseProperty from './enterprise/enterpriseProperty';
+import EnterprisePropertyCompanyAbout from './enterprise/enterprisePropertyCompanyAbout';
+import EnterprisePropertyCompanyRegulations from './enterprise/enterprisePropertyCompanyRegulations';
 
 export {
   Individuals,
@@ -86,5 +89,8 @@ export {
   IndividualsTravelAbroadRules,
   Delegates,
   AllRules,
-  Enterprise
+  Enterprise,
+  EnterpriseProperty,
+  EnterprisePropertyCompanyAbout,
+  EnterprisePropertyCompanyRegulations
 };
