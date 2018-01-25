@@ -52,7 +52,23 @@ import {
   Enterprise,
   EnterpriseProperty,
   EnterprisePropertyCompanyAbout,
-  EnterprisePropertyCompanyRegulations
+  EnterprisePropertyCompanyRegulations,
+  EnterprisePropertyTransportAbout,
+  EnterprisePropertyTransportRegulations,
+  EnterprisePropertyAnimalsAbout,
+  EnterprisePropertyAnimalsRegulations,
+  EnterprisePropertyGoodsAbout,
+  EnterprisePropertyGoodsRegulations,
+  EnterprisePropertyLeasingAbout,
+  EnterprisePropertyLeasingRegulations,
+  EnterprisePropertyDrillingAbout,
+  EnterprisePropertyDrillingRegulations,
+  EnterprisePropertyTitleAbout,
+  EnterprisePropertyTitleRegulations,
+  EnterprisePropertyEmergencyAbout,
+  EnterprisePropertyEmergencyRegulations
+
+
 } from '../products';
 
 import Breadcrumbs from '../Breadcrumbs';
@@ -274,6 +290,35 @@ export default class Services extends Component {
               <Redirect exact from="/services/enterprise/property/company" to="/services/enterprise/property/company/about"/>
               <Route exact path="/services/enterprise/property/company/about" component={EnterprisePropertyCompanyAbout}/>
               <Route exact path="/services/enterprise/property/company/regulations" component={EnterprisePropertyCompanyRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/transport" to="/services/enterprise/property/transport/about"/>
+              <Route exact path="/services/enterprise/property/transport/about" component={EnterprisePropertyTransportAbout}/>
+              <Route exact path="/services/enterprise/property/transport/regulations" component={EnterprisePropertyTransportRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/animals" to="/services/enterprise/property/animals/about"/>
+              <Route exact path="/services/enterprise/property/animals/about" component={EnterprisePropertyAnimalsAbout}/>
+              <Route exact path="/services/enterprise/property/animals/regulations" component={EnterprisePropertyAnimalsRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/goods" to="/services/enterprise/property/goods/about"/>
+              <Route exact path="/services/enterprise/property/goods/about" component={EnterprisePropertyGoodsAbout}/>
+              <Route exact path="/services/enterprise/property/goods/regulations" component={EnterprisePropertyGoodsRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/leasing" to="/services/enterprise/property/leasing/about"/>
+              <Route exact path="/services/enterprise/property/leasing/about" component={EnterprisePropertyLeasingAbout}/>
+              <Route exact path="/services/enterprise/property/leasing/regulations" component={EnterprisePropertyLeasingRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/drilling" to="/services/enterprise/property/drilling/about"/>
+              <Route exact path="/services/enterprise/property/drilling/about" component={EnterprisePropertyDrillingAbout}/>
+              <Route exact path="/services/enterprise/property/drilling/regulations" component={EnterprisePropertyDrillingRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/title" to="/services/enterprise/property/title/about"/>
+              <Route exact path="/services/enterprise/property/title/about" component={EnterprisePropertyTitleAbout}/>
+              <Route exact path="/services/enterprise/property/title/regulations" component={EnterprisePropertyTitleRegulations}/>
+
+              <Redirect exact from="/services/enterprise/property/emergency" to="/services/enterprise/property/emergency/about"/>
+              <Route exact path="/services/enterprise/property/emergency/about" component={EnterprisePropertyEmergencyAbout}/>
+              <Route exact path="/services/enterprise/property/emergency/regulations" component={EnterprisePropertyEmergencyRegulations}/>
+
             </Switch>
           </div>
         </div>

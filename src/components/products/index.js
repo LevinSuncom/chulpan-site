@@ -52,6 +52,21 @@ import Enterprise from './enterprise/enterprise';
 import EnterpriseProperty from './enterprise/enterpriseProperty';
 import EnterprisePropertyCompanyAbout from './enterprise/enterprisePropertyCompanyAbout';
 import EnterprisePropertyCompanyRegulations from './enterprise/enterprisePropertyCompanyRegulations';
+import EnterprisePropertyTransportAbout from './enterprise/enterprisePropertyTransportAbout';
+import EnterprisePropertyTransportRegulations from './enterprise/enterprisePropertyTransportRegulations';
+import EnterprisePropertyAnimalsAbout from './enterprise/enterprisePropertyAnimalsAbout';
+import EnterprisePropertyAnimalsRegulations from './enterprise/enterprisePropertyAnimalsRegulations';
+import EnterprisePropertyGoodsAbout from './enterprise/enterprisePropertyGoodsAbout';
+import EnterprisePropertyGoodsRegulations from './enterprise/enterprisePropertyGoodsRegulations';
+import EnterprisePropertyLeasingAbout from './enterprise/enterprisePropertyLeasingAbout';
+import EnterprisePropertyLeasingRegulations from './enterprise/enterprisePropertyLeasingRegulations';
+import EnterprisePropertyDrillingAbout from './enterprise/enterprisePropertyDrillingAbout';
+import EnterprisePropertyDrillingRegulations from './enterprise/enterprisePropertyDrillingRegulations';
+import EnterprisePropertyTitleAbout from './enterprise/enterprisePropertyTitleAbout';
+import EnterprisePropertyTitleRegulations from './enterprise/enterprisePropertyTitleRegulations';
+import EnterprisePropertyEmergencyAbout from './enterprise/enterprisePropertyEmergencyAbout';
+import EnterprisePropertyEmergencyRegulations from './enterprise/enterprisePropertyEmergencyRegulations';
+
 
 export {
   Individuals,
@@ -92,5 +107,19 @@ export {
   Enterprise,
   EnterpriseProperty,
   EnterprisePropertyCompanyAbout,
-  EnterprisePropertyCompanyRegulations
+  EnterprisePropertyCompanyRegulations,
+  EnterprisePropertyTransportAbout,
+  EnterprisePropertyTransportRegulations,
+  EnterprisePropertyAnimalsAbout,
+  EnterprisePropertyAnimalsRegulations,
+  EnterprisePropertyGoodsAbout,
+  EnterprisePropertyGoodsRegulations,
+  EnterprisePropertyLeasingAbout,
+  EnterprisePropertyLeasingRegulations,
+  EnterprisePropertyDrillingAbout,
+  EnterprisePropertyDrillingRegulations,
+  EnterprisePropertyTitleAbout,
+  EnterprisePropertyTitleRegulations,
+  EnterprisePropertyEmergencyAbout,
+  EnterprisePropertyEmergencyRegulations
 };
