@@ -3,13 +3,9 @@ import React from 'react';
 const IndividualsTravelAbroadFaq = () => {
   return (
     <div>
-      <p>
-        <b>
-          <u>
-            Вопросы и ответы по ВЗР<p />
-          </u>
-        </b>
-      </p>
+      <h1>
+        Вопросы и ответы по страхованию выезжающих за границу<p />
+      </h1>
       <p>
         <b>
           <p>&nbsp;</p>
