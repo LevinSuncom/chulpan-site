@@ -66,7 +66,31 @@ import {
   EnterprisePropertyTitleAbout,
   EnterprisePropertyTitleRegulations,
   EnterprisePropertyEmergencyAbout,
-  EnterprisePropertyEmergencyRegulations
+  EnterprisePropertyEmergencyRegulations,
+
+  EnterpriseLiability,
+  EnterpriseLiabilityVoluntaryAccidentAbout,
+  EnterpriseLiabilityVoluntaryAccidentRegulations,
+  EnterpriseLiabilityVoluntaryAirAbout,
+  EnterpriseLiabilityVoluntaryAirRegulations,
+  EnterpriseLiabilityVoluntaryCapitalAbout,
+  EnterpriseLiabilityVoluntaryCapitalRegulations,
+  EnterpriseLiabilityVoluntaryCarAbout,
+  EnterpriseLiabilityVoluntaryCarRegulations,
+  EnterpriseLiabilityVoluntaryCivilAbout,
+  EnterpriseLiabilityVoluntaryCivilRegulations,
+  EnterpriseLiabilityVoluntaryDefectAbout,
+  EnterpriseLiabilityVoluntaryDefectRegulations,
+  EnterpriseLiabilityVoluntaryDirectorsAbout,
+  EnterpriseLiabilityVoluntaryDirectorsRegulations,
+  EnterpriseLiabilityVoluntaryHydrotechnicsAbout,
+  EnterpriseLiabilityVoluntaryHydrotechnicsRegulations,
+  EnterpriseLiabilityVoluntaryInstallationAbout,
+  EnterpriseLiabilityVoluntaryInstallationRegulations,
+  EnterpriseLiabilityVoluntaryNuclearAbout,
+  EnterpriseLiabilityVoluntaryNuclearRegulations,
+  EnterpriseLiabilityVoluntaryOpoAbout,
+  EnterpriseLiabilityVoluntaryOpoRegulations  
 
 
 } from '../products';
@@ -318,6 +342,52 @@ export default class Services extends Component {
               <Redirect exact from="/services/enterprise/property/emergency" to="/services/enterprise/property/emergency/about"/>
               <Route exact path="/services/enterprise/property/emergency/about" component={EnterprisePropertyEmergencyAbout}/>
               <Route exact path="/services/enterprise/property/emergency/regulations" component={EnterprisePropertyEmergencyRegulations}/>
+
+              <Route exact path="/services/enterprise/liability" component={EnterpriseLiability}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/accident" to="/services/enterprise/liability/voluntary/accident/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/accident/about" component={EnterpriseLiabilityVoluntaryAccidentAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/accident/regulations" component={EnterpriseLiabilityVoluntaryAccidentRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/directors" to="/services/enterprise/liability/voluntary/directors/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/directors/about" component={EnterpriseLiabilityVoluntaryDirectorsAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/directors/regulations" component={EnterpriseLiabilityVoluntaryDirectorsRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/capital" to="/services/enterprise/liability/voluntary/capital/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/capital/about" component={EnterpriseLiabilityVoluntaryCapitalAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/capital/regulations" component={EnterpriseLiabilityVoluntaryCapitalRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/civil" to="/services/enterprise/liability/voluntary/civil/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/civil/about" component={EnterpriseLiabilityVoluntaryCivilAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/civil/regulations" component={EnterpriseLiabilityVoluntaryCivilRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/defect" to="/services/enterprise/liability/voluntary/defect/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/defect/about" component={EnterpriseLiabilityVoluntaryDefectAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/defect/regulations" component={EnterpriseLiabilityVoluntaryDefectRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/installation" to="/services/enterprise/liability/voluntary/installation/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/installation/about" component={EnterpriseLiabilityVoluntaryInstallationAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/installation/regulations" component={EnterpriseLiabilityVoluntaryInstallationRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/nuclear" to="/services/enterprise/liability/voluntary/nuclear/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/nuclear/about" component={EnterpriseLiabilityVoluntaryNuclearAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/nuclear/regulations" component={EnterpriseLiabilityVoluntaryNuclearRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/hydrotechnics" to="/services/enterprise/liability/voluntary/hydrotechnics/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/hydrotechnics/about" component={EnterpriseLiabilityVoluntaryHydrotechnicsAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/hydrotechnics/regulations" component={EnterpriseLiabilityVoluntaryHydrotechnicsRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/opo" to="/services/enterprise/liability/voluntary/opo/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/opo/about" component={EnterpriseLiabilityVoluntaryOpoAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/opo/regulations" component={EnterpriseLiabilityVoluntaryOpoRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/air" to="/services/enterprise/liability/voluntary/air/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/air/about" component={EnterpriseLiabilityVoluntaryAirAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/air/regulations" component={EnterpriseLiabilityVoluntaryAirRegulations}/>
+
+              <Redirect exact from="/services/enterprise/liability/voluntary/car" to="/services/enterprise/liability/voluntary/car/about"/>
+              <Route exact path="/services/enterprise/liability/voluntary/car/about" component={EnterpriseLiabilityVoluntaryCarAbout}/>
+              <Route exact path="/services/enterprise/liability/voluntary/car/regulations" component={EnterpriseLiabilityVoluntaryCarRegulations}/>
 
             </Switch>
           </div>
