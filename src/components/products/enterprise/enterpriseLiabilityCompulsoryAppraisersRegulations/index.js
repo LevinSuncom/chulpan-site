@@ -22,7 +22,7 @@ const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
-      <h1 className="product-header">Страхование ответственности при эксплуатации ОПО</h1>
+      <h1 className="product-header">Страхование профессиональной ответственности оценщиков</h1>
       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
       </p>
