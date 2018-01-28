@@ -91,6 +91,26 @@ import EnterpriseLiabilityVoluntaryNuclearAbout from './enterprise/enterpriseLia
 import EnterpriseLiabilityVoluntaryNuclearRegulations from './enterprise/enterpriseLiabilityVoluntaryNuclearRegulations';
 import EnterpriseLiabilityVoluntaryOpoAbout from './enterprise/enterpriseLiabilityVoluntaryOpoAbout';
 import EnterpriseLiabilityVoluntaryOpoRegulations from './enterprise/enterpriseLiabilityVoluntaryOpoRegulations';
+import enterpriseLiabilityCompulsoryOsopoAbout from './enterprise/enterpriseLiabilityCompulsoryOsopoAbout';
+import enterpriseLiabilityCompulsoryOsopoRegulations from './enterprise/enterpriseLiabilityCompulsoryOsopoRegulations';
+import enterpriseLiabilityCompulsoryOsagoAbout from './enterprise/enterpriseLiabilityCompulsoryOsagoAbout';
+import enterpriseLiabilityCompulsoryOsagoRegulations from './enterprise/enterpriseLiabilityCompulsoryOsagoRegulations';
+import enterpriseLiabilityCompulsoryOsgopAbout from './enterprise/enterpriseLiabilityCompulsoryOsgopAbout';
+import enterpriseLiabilityCompulsoryOsgopRegulations from './enterprise/enterpriseLiabilityCompulsoryOsgopRegulations';
+import enterpriseLiabilityCompulsoryDoctorsAbout from './enterprise/enterpriseLiabilityCompulsoryDoctorsAbout';
+import enterpriseLiabilityCompulsoryDoctorsRegulations from './enterprise/enterpriseLiabilityCompulsoryDoctorsRegulations';
+import enterpriseLiabilityCompulsoryAppraisersAbout from './enterprise/enterpriseLiabilityCompulsoryAppraisersAbout';
+import enterpriseLiabilityCompulsoryAppraisersRegulations from './enterprise/enterpriseLiabilityCompulsoryAppraisersRegulations';
+import enterpriseLiabilityCompulsoryAuditorsAbout from './enterprise/enterpriseLiabilityCompulsoryAuditorsAbout';
+import enterpriseLiabilityCompulsoryAuditorsRegulations from './enterprise/enterpriseLiabilityCompulsoryAuditorsRegulations';
+import enterpriseLiabilityCompulsoryDetectivesAbout from './enterprise/enterpriseLiabilityCompulsoryDetectivesAbout';
+import enterpriseLiabilityCompulsoryDetectivesRegulations from './enterprise/enterpriseLiabilityCompulsoryDetectivesRegulations';
+import enterpriseLiabilityCompulsorySellersAbout from './enterprise/enterpriseLiabilityCompulsorySellersAbout';
+import enterpriseLiabilityCompulsorySellersRegulations from './enterprise/enterpriseLiabilityCompulsorySellersRegulations';
+import enterpriseLiabilityCompulsoryAnimatorsAbout from './enterprise/enterpriseLiabilityCompulsoryAnimatorsAbout';
+import enterpriseLiabilityCompulsoryAnimatorsRegulations from './enterprise/enterpriseLiabilityCompulsoryAnimatorsRegulations';
+import enterpriseLiabilityCompulsorySanatoriumsAbout from './enterprise/enterpriseLiabilityCompulsorySanatoriumsAbout';
+import enterpriseLiabilityCompulsorySanatoriumsRegulations from './enterprise/enterpriseLiabilityCompulsorySanatoriumsRegulations';
 
 export {
   Individuals,
@@ -168,5 +188,25 @@ export {
   EnterpriseLiabilityVoluntaryNuclearAbout,
   EnterpriseLiabilityVoluntaryNuclearRegulations,
   EnterpriseLiabilityVoluntaryOpoAbout,
-  EnterpriseLiabilityVoluntaryOpoRegulations
+  EnterpriseLiabilityVoluntaryOpoRegulations,
+  enterpriseLiabilityCompulsoryOsopoAbout,
+  enterpriseLiabilityCompulsoryOsopoRegulations,
+  enterpriseLiabilityCompulsoryOsagoAbout,
+  enterpriseLiabilityCompulsoryOsagoRegulations,
+  enterpriseLiabilityCompulsoryOsgopAbout,
+  enterpriseLiabilityCompulsoryOsgopRegulations,
+  enterpriseLiabilityCompulsoryDoctorsAbout,
+  enterpriseLiabilityCompulsoryDoctorsRegulations,
+  enterpriseLiabilityCompulsoryAppraisersAbout,
+  enterpriseLiabilityCompulsoryAppraisersRegulations,
+  enterpriseLiabilityCompulsoryAuditorsAbout,
+  enterpriseLiabilityCompulsoryAuditorsRegulations,
+  enterpriseLiabilityCompulsoryDetectivesAbout,
+  enterpriseLiabilityCompulsoryDetectivesRegulations,
+  enterpriseLiabilityCompulsorySellersAbout,
+  enterpriseLiabilityCompulsorySellersRegulations,
+  enterpriseLiabilityCompulsoryAnimatorsAbout,
+  enterpriseLiabilityCompulsoryAnimatorsRegulations,
+  enterpriseLiabilityCompulsorySanatoriumsAbout,
+  enterpriseLiabilityCompulsorySanatoriumsRegulations
 };
