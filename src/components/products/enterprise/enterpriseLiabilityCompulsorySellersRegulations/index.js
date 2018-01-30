@@ -14,22 +14,22 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import actualRules from '../../../../documents/Страхование средств наземного транспорта.doc';
+/* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Профессиональное/СТУР.doc';
+import actualRules from '../../../../documents/Страхование ответственности продавца за качество продукции.doc';
 
 const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование профессиональной ответственности продавцов</h1>
-      <p>
+      {/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>
-      <br/>
+      <br />
       <p>
         <a href={actualRules} target="blank">Скачать актуальные правила</a>
       </p>

@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование сельскохозяйственных животных.doc';
-import statementDraft from '../../../../documents/Страхование сельскохозяйственных животных.doc';
+/* import contractDraft from '../../../../documents/Страхование сельскохозяйственных животных.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Имущество/ССХЖ.doc';
 import actualRules from '../../../../documents/Страхование сельскохозяйственных животных.doc';
 
 const EnterpriseRegulations = () => {
@@ -23,9 +23,9 @@ const EnterpriseRegulations = () => {
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование сельскохозяйственных животных</h1>
-      <p>
+{/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

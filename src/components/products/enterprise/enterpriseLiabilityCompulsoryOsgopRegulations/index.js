@@ -14,18 +14,18 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import actualRules from '../../../../documents/Страхование средств наземного транспорта.doc';
+/* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Профессиональное/СГОАП.doc';
+import actualRules from '../../../../documents/Страхование гражданской ответственности автоперевозчиков.doc';
 
 const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование гражданской ответственности перевозчика</h1>
-      <p>
+{/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
+/* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Добровольное/СГОАЭ.doc';
 import actualRules from '../../../../documents/Страхование средств наземного транспорта.doc';
 
 const EnterpriseRegulations = () => {
@@ -23,9 +23,9 @@ const EnterpriseRegulations = () => {
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхования гражданской ответственности за причинение вреда жизни, здоровью, имуществу третьих лиц, окружающей природной среде в результате ядерно-радиационной аварии на объектах использования атомной энергии</h1>
-      <p>
+{/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

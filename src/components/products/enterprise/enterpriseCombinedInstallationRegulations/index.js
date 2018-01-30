@@ -14,18 +14,19 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import actualRules from '../../../../documents/Страхование средств наземного транспорта.doc';
+/* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Комбинированное/КСМР.doc';
+
+import actualRules from '../../../../documents/Комплексное страхование строительно-монтажных рисков.doc';
 
 const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
-      <h1 className="product-header">Страхование профессиональной ответственности организаторов общественных мероприятий</h1>
-      <p>
+      <h1 className="product-header">Комплексное страхование строительно-монтажных рисков</h1>
+{/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

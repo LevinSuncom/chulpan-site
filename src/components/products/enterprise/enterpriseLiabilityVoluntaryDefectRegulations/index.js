@@ -14,18 +14,18 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import actualRules from '../../../../documents/Страхование средств наземного транспорта.doc';
+/* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Добровольное/СГОВ.doc';
+import actualRules from '../../../../documents/Правила страхования гражданской ответственности за причинение вреда вследствие недостатков работ, которые оказывают влияние на безопасность объектов капитального строительства.doc';
 
 const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование ответственности за причинение вреда вследствие недостатков товаров, работ и услуг</h1>
-      <p>
+      {/* <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

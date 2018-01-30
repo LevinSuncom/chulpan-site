@@ -14,18 +14,18 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../enterpriseProperty/image.jpg';
-import statementDraft from '../enterpriseProperty/image.jpg';
-import actualRules from '../enterpriseProperty/image.jpg';
+/* import contractDraft from '../enterpriseProperty/image.jpg'; */
+import statementDraft from '../../../../documents/Бланки договоров/Имущество/СИП.doc';
+import actualRules from '../../../../documents/Комплексное страхование имущества предприятий и организаций.doc';
 
 const EnterprisePropertyCompanyRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование имущества предприятий</h1>
-      <p>
+{/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

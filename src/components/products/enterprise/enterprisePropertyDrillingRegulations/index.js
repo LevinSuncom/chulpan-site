@@ -14,8 +14,8 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование буровых работ.DOC';
-import statementDraft from '../../../../documents/Страхование буровых работ.DOC';
+/* import contractDraft from '../../../../documents/Страхование буровых работ.DOC'; */
+import statementDraft from '../../../../documents/Бланки договоров/Имущество/СБР.DOC';
 import actualRules from '../../../../documents/Страхование буровых работ.DOC';
 
 const EnterpriseRegulations = () => {
@@ -23,9 +23,9 @@ const EnterpriseRegulations = () => {
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование буровых работ</h1>
-      <p>
+      {/* <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>

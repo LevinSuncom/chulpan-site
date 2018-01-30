@@ -14,18 +14,18 @@ import { Link } from 'react-router-dom';
 //   marginBottom: '12px'
 // };
 
-import contractDraft from '../../../../documents/Страхование титула.doc';
-import statementDraft from '../../../../documents/Страхование титула.doc';
-import actualRules from '../../../../documents/Страхование титула.doc';
+/* import contractDraft from '../../../../documents/Страхование титула.doc'; */
+import statementDraft from '../../../../documents/Бланки договоров/Имущество/СУПС.doc';
+import actualRules from '../../../../documents/Страхование потери имущества в результате утраты права собственности.doc';
 
 const EnterpriseRegulations = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование титула</h1>
-      <p>
+      {/* <p>
         <a href={contractDraft}>Скачать типовой договор</a>
-      </p>
+      </p> */}
       <p>
         <a href={statementDraft}>Скачать типовое заявление</a>
       </p>
