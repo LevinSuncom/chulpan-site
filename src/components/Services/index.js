@@ -110,8 +110,31 @@ import {
   enterpriseLiabilityCompulsoryAnimatorsAbout,
   enterpriseLiabilityCompulsoryAnimatorsRegulations,
   enterpriseLiabilityCompulsorySanatoriumsAbout,
-  enterpriseLiabilityCompulsorySanatoriumsRegulations
+  enterpriseLiabilityCompulsorySanatoriumsRegulations,
 
+  EnterpriseStaff,
+  EnterpriseStaffDmsAbout,
+  EnterpriseStaffDmsRegulations,
+  EnterpriseStaffAccidentAbout,
+  EnterpriseStaffAccidentRegulations,
+  EnterpriseStaffAbroadAbout,
+  EnterpriseStaffAbroadRegulations,  
+
+  EnterpriseCombined,
+  EnterpriseCombinedAirAbout,
+  EnterpriseCombinedAirRegulations,
+  EnterpriseCombinedWaterAbout,
+  EnterpriseCombinedWaterRegulations,
+  EnterpriseCombinedGoodsAbout,
+  EnterpriseCombinedGoodsRegulations,
+  EnterpriseCombinedCompanyAbout,
+  EnterpriseCombinedCompanyRegulations,
+  EnterpriseCombinedDrillingAbout,
+  EnterpriseCombinedDrillingRegulations,
+  EnterpriseCombinedInstallationAbout,
+  EnterpriseCombinedInstallationRegulations,
+  EnterpriseCombinedMortgageAbout,
+  EnterpriseCombinedMortgageRegulations
 
 } from '../products';
 
@@ -448,6 +471,31 @@ export default class Services extends Component {
               <Redirect exact from="/services/enterprise/liability/compulsory/sanatoriums" to="/services/enterprise/liability/compulsory/sanatoriums/about" />
               <Route exact path="/services/enterprise/liability/compulsory/sanatoriums/about" component={enterpriseLiabilityCompulsorySanatoriumsAbout} />
               <Route exact path="/services/enterprise/liability/compulsory/sanatoriums/regulations" component={enterpriseLiabilityCompulsorySanatoriumsRegulations} />
+
+              <Route exact path="/services/enterprise/staff" component={EnterpriseStaff} />
+
+              <Route exact path="/services/enterprise/combined" component={EnterpriseCombined} />
+              <Redirect exact path="/services/enterprise/combined/air" to="/services/enterprise/combined/air/about" />
+              <Route exact path="/services/enterprise/combined/air/about" component={EnterpriseCombinedAirAbout} />
+              <Route exact path="/services/enterprise/combined/air/regulations" component={EnterpriseCombinedAirRegulations} />
+              <Redirect exact path="/services/enterprise/combined/water" to="/services/enterprise/combined/water/about" />
+              <Route exact path="/services/enterprise/combined/water/about" component={EnterpriseCombinedWaterAbout} />
+              <Route exact path="/services/enterprise/combined/water/regulations" component={EnterpriseCombinedWaterRegulations} />
+              <Redirect exact path="/services/enterprise/combined/goods" to="/services/enterprise/combined/goods/about" />
+              <Route exact path="/services/enterprise/combined/goods/about" component={EnterpriseCombinedGoodsAbout} />
+              <Route exact path="/services/enterprise/combined/goods/regulations" component={EnterpriseCombinedGoodsRegulations} />
+              <Redirect exact path="/services/enterprise/combined/company" to="/services/enterprise/combined/company/about" />
+              <Route exact path="/services/enterprise/combined/company/about" component={EnterpriseCombinedCompanyAbout} />
+              <Route exact path="/services/enterprise/combined/company/regulations" component={EnterpriseCombinedCompanyRegulations} />
+              <Redirect exact path="/services/enterprise/combined/drilling" to="/services/enterprise/combined/drilling/about" />
+              <Route exact path="/services/enterprise/combined/drilling/about" component={EnterpriseCombinedDrillingAbout} />
+              <Route exact path="/services/enterprise/combined/drilling/regulations" component={EnterpriseCombinedDrillingRegulations} />
+              <Redirect exact path="/services/enterprise/combined/installation" to="/services/enterprise/combined/installation/about" />
+              <Route exact path="/services/enterprise/combined/installation/about" component={EnterpriseCombinedInstallationAbout} />
+              <Route exact path="/services/enterprise/combined/installation/regulations" component={EnterpriseCombinedInstallationRegulations} />
+              <Redirect exact path="/services/enterprise/combined/mortgage" to="/services/enterprise/combined/mortgage/about" />
+              <Route exact path="/services/enterprise/combined/mortgage/about" component={EnterpriseCombinedMortgageAbout} />
+              <Route exact path="/services/enterprise/combined/mortgage/regulations" component={EnterpriseCombinedMortgageRegulations} />
             </Switch>
           </div>
         </div>

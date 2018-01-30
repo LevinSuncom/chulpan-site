@@ -112,6 +112,30 @@ import enterpriseLiabilityCompulsoryAnimatorsRegulations from './enterprise/ente
 import enterpriseLiabilityCompulsorySanatoriumsAbout from './enterprise/enterpriseLiabilityCompulsorySanatoriumsAbout';
 import enterpriseLiabilityCompulsorySanatoriumsRegulations from './enterprise/enterpriseLiabilityCompulsorySanatoriumsRegulations';
 
+import EnterpriseStaff from './enterprise/enterpriseStaff';
+import EnterpriseStaffDmsAbout from './enterprise/enterpriseStaffDmsAbout';
+import EnterpriseStaffDmsRegulations from './enterprise/enterpriseStaffDmsRegulations';
+import EnterpriseStaffAccidentAbout from './enterprise/enterpriseStaffAccidentAbout';
+import EnterpriseStaffAccidentRegulations from './enterprise/enterpriseStaffAccidentRegulations';
+import EnterpriseStaffAbroadAbout from './enterprise/enterpriseStaffAbroadAbout';
+import EnterpriseStaffAbroadRegulations from './enterprise/enterpriseStaffAbroadRegulations';
+
+import EnterpriseCombined from './enterprise/enterpriseCombined';
+import EnterpriseCombinedAirAbout  from './enterprise/enterpriseCombinedAirAbout';
+import EnterpriseCombinedAirRegulations  from './enterprise/enterpriseCombinedAirRegulations';
+import EnterpriseCombinedWaterAbout  from './enterprise/enterpriseCombinedWaterAbout';
+import EnterpriseCombinedWaterRegulations  from './enterprise/enterpriseCombinedWaterRegulations';
+import EnterpriseCombinedGoodsAbout  from './enterprise/enterpriseCombinedGoodsAbout';
+import EnterpriseCombinedGoodsRegulations  from './enterprise/enterpriseCombinedGoodsRegulations';
+import EnterpriseCombinedCompanyAbout  from './enterprise/enterpriseCombinedCompanyAbout';
+import EnterpriseCombinedCompanyRegulations  from './enterprise/enterpriseCombinedCompanyRegulations';
+import EnterpriseCombinedDrillingAbout  from './enterprise/enterpriseCombinedDrillingAbout';
+import EnterpriseCombinedDrillingRegulations  from './enterprise/enterpriseCombinedDrillingRegulations';
+import EnterpriseCombinedInstallationAbout  from './enterprise/enterpriseCombinedInstallationAbout';
+import EnterpriseCombinedInstallationRegulations  from './enterprise/enterpriseCombinedInstallationRegulations';
+import EnterpriseCombinedMortgageAbout  from './enterprise/enterpriseCombinedMortgageAbout';
+import EnterpriseCombinedMortgageRegulations  from './enterprise/enterpriseCombinedMortgageRegulations';
+
 export {
   Individuals,
   IndividualsHealthAccidentsAbout,
@@ -208,5 +232,30 @@ export {
   enterpriseLiabilityCompulsoryAnimatorsAbout,
   enterpriseLiabilityCompulsoryAnimatorsRegulations,
   enterpriseLiabilityCompulsorySanatoriumsAbout,
-  enterpriseLiabilityCompulsorySanatoriumsRegulations
+  enterpriseLiabilityCompulsorySanatoriumsRegulations,
+
+  EnterpriseStaff,
+  EnterpriseStaffDmsAbout,
+  EnterpriseStaffDmsRegulations,
+  EnterpriseStaffAccidentAbout,
+  EnterpriseStaffAccidentRegulations,
+  EnterpriseStaffAbroadAbout,
+  EnterpriseStaffAbroadRegulations,
+  
+  EnterpriseCombined,
+  EnterpriseCombinedAirAbout,
+  EnterpriseCombinedAirRegulations,
+  EnterpriseCombinedWaterAbout,
+  EnterpriseCombinedWaterRegulations,
+  EnterpriseCombinedGoodsAbout,
+  EnterpriseCombinedGoodsRegulations,
+  EnterpriseCombinedCompanyAbout,
+  EnterpriseCombinedCompanyRegulations,
+  EnterpriseCombinedDrillingAbout,
+  EnterpriseCombinedDrillingRegulations,
+  EnterpriseCombinedInstallationAbout,
+  EnterpriseCombinedInstallationRegulations,
+  EnterpriseCombinedMortgageAbout,
+  EnterpriseCombinedMortgageRegulations
+
 };
