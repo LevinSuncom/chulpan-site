@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-// import { Modal } from 'react-modal';
+import { Modal } from 'react-modal';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';

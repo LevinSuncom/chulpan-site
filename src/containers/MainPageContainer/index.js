@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { YMaps, Map, Placemark, GeoObject } from 'react-yandex-maps';
-// import Modal from 'react-modal';
+import Modal from 'react-modal';
 
 import Carousel from '../../components/Carousel';
 import Options from '../../components/Options';
