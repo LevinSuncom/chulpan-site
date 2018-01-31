@@ -25,6 +25,7 @@ import IndividualsTransportEOSAGOAbout from './individuals/IndividualsTransportE
 import IndividualsTransportKASKO2 from './individuals/IndividualsTransportKASKO2';
 import IndividualsTransportKASKO50 from './individuals/IndividualsTransportKASKO50';
 import IndividualsTransportKASKOAbout from './individuals/IndividualsTransportKASKOAbout';
+import IndividualsTransportKASKOFaq from './individuals/IndividualsTransportKASKOFaq';
 import IndividualsTransportKASKOManual from './individuals/IndividualsTransportKASKOManual';
 import IndividualsTransportKASKORegulations from './individuals/IndividualsTransportKASKORegulations';
 import IndividualsTransportOSAGOAbout from './individuals/IndividualsTransportOSAGOAbout';
@@ -159,6 +160,7 @@ export {
   IndividualsTransportKASKO50,
   IndividualsTransportKASKOAbout,
   IndividualsTransportKASKOManual,
+  IndividualsTransportKASKOFaq,
   IndividualsTransportKASKORegulations,
   IndividualsTransportOSAGOAbout,
   IndividualsTransportOSAGOFaq,

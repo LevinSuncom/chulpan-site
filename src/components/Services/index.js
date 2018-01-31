@@ -29,6 +29,7 @@ import {
   IndividualsTransportKASKO2,
   IndividualsTransportKASKO50,
   IndividualsTransportKASKOAbout,
+  IndividualsTransportKASKOFaq,
   IndividualsTransportKASKOManual,
   IndividualsTransportKASKORegulations,
   IndividualsTransportOSAGOAbout,
@@ -303,6 +304,10 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/transport/kasko/manual"
                 component={IndividualsTransportKASKOManual}
+              />
+              <Route
+                path="/services/individuals/transport/kasko/faq"
+                component={IndividualsTransportKASKOFaq}
               />
               <Route
                 path="/services/individuals/transport/kasko/regulations"
