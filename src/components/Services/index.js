@@ -69,6 +69,7 @@ import {
   EnterprisePropertyEmergencyRegulations,
 
   EnterpriseLiability,
+  EnterpriseLiabilityVoluntary,
   EnterpriseLiabilityVoluntaryAccidentAbout,
   EnterpriseLiabilityVoluntaryAccidentRegulations,
   EnterpriseLiabilityVoluntaryAirAbout,
@@ -91,6 +92,7 @@ import {
   EnterpriseLiabilityVoluntaryNuclearRegulations,
   EnterpriseLiabilityVoluntaryOpoAbout,
   EnterpriseLiabilityVoluntaryOpoRegulations,
+  EnterpriseLiabilityCompulsory,
   enterpriseLiabilityCompulsoryOsopoAbout,
   enterpriseLiabilityCompulsoryOsopoRegulations,
   enterpriseLiabilityCompulsoryOsagoAbout,
@@ -387,6 +389,8 @@ export default class Services extends Component {
               <Route exact path="/services/enterprise/property/emergency/regulations" component={EnterprisePropertyEmergencyRegulations} />
 
               <Route exact path="/services/enterprise/liability" component={EnterpriseLiability} />
+              <Route exact path="/services/enterprise/liability/voluntary" component={EnterpriseLiabilityVoluntary} />
+              <Route exact path="/services/enterprise/liability/compulsory" component={EnterpriseLiabilityCompulsory} />              
 
               <Redirect exact from="/services/enterprise/liability/voluntary/accident" to="/services/enterprise/liability/voluntary/accident/about" />
               <Route exact path="/services/enterprise/liability/voluntary/accident/about" component={EnterpriseLiabilityVoluntaryAccidentAbout} />

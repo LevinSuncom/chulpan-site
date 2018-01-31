@@ -68,7 +68,8 @@ import EnterprisePropertyEmergencyAbout from './enterprise/enterprisePropertyEme
 import EnterprisePropertyEmergencyRegulations from './enterprise/enterprisePropertyEmergencyRegulations';
 
 import EnterpriseLiability from './enterprise/enterpriseLiability';
-
+import EnterpriseLiabilityVoluntary from './enterprise/enterpriseLiabilityVoluntary';
+import EnterpriseLiabilityCompulsory from './enterprise/enterpriseLiabilityCompulsory';
 import EnterpriseLiabilityVoluntaryAccidentAbout from './enterprise/enterpriseLiabilityVoluntaryAccidentAbout';
 import EnterpriseLiabilityVoluntaryAccidentRegulations from './enterprise/enterpriseLiabilityVoluntaryAccidentRegulations';
 import EnterpriseLiabilityVoluntaryAirAbout from './enterprise/enterpriseLiabilityVoluntaryAirAbout';
@@ -191,6 +192,7 @@ export {
   EnterprisePropertyEmergencyAbout,
   EnterprisePropertyEmergencyRegulations,
   EnterpriseLiability,
+  EnterpriseLiabilityVoluntary,
   EnterpriseLiabilityVoluntaryAccidentAbout,
   EnterpriseLiabilityVoluntaryAccidentRegulations,
   EnterpriseLiabilityVoluntaryAirAbout,
@@ -213,6 +215,7 @@ export {
   EnterpriseLiabilityVoluntaryNuclearRegulations,
   EnterpriseLiabilityVoluntaryOpoAbout,
   EnterpriseLiabilityVoluntaryOpoRegulations,
+  EnterpriseLiabilityCompulsory,
   enterpriseLiabilityCompulsoryOsopoAbout,
   enterpriseLiabilityCompulsoryOsopoRegulations,
   enterpriseLiabilityCompulsoryOsagoAbout,

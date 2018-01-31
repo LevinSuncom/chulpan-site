@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 // };
 
 /* import contractDraft from '../../../../documents/Страхование титула.doc'; */
-import statementDraft from '../../../../documents/Бланки договоров/Личное страхование/НСП.DOC';
+import statementDraft from '../../../../documents/Бланки договоров/Личное страхование/НСП.doc';
 import actualRules from '../../../../documents/Страхование титула.doc';
 
 const EnterpriseRegulations = () => {
