@@ -20,7 +20,7 @@ const EnterpriseAbout = () => {
   return (
     <div>
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
-      <h1 className="product-header">Обязательное страхование ответственности</h1>
+      <h1 className="product-header">Добровольное страхование ответственности</h1>
       <img src={image} className="product-image" alt="" />
       <p>Нет текста</p>    
     </div >
