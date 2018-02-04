@@ -21,13 +21,13 @@ import actualRules from '../../../../documents/Страхование титул
 const EnterpriseRegulations = () => {
   return (
     <div>
-      {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
+      {/* <Breadcrumтиповые бланкиbs>{this.props.location.pathname}</Breadcrumbs> */}
       <h1 className="product-header">Страхование несчастных случаев на производстве</h1>
 {/*       <p>
         <a href={contractDraft}>Скачать типовой договор</a>
       </p> */}
       <p>
-        <a href={statementDraft}>Скачать типовое заявление</a>
+        <a href={statementDraft}>Скачать типовые бланки</a>
       </p>
       <br/>
       <p>

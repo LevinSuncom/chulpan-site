@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualsTransportEOSAGOManual = () => {
   return (
     <div>
-      <h1>ОСАГО</h1>
+      <h1 className="product-header">ОСАГО</h1>
       <p
         className="MsoListParagraphCxSpFirst"
         style={{

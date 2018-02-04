@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualsTransportOSAGORegulations = () => {
   return (
     <div>
-      <h1>КАСКО</h1>
+      <h1 className="product-header">КАСКО</h1>
       <p>Страхователь (доверенное лицо страхователя) после того, как ему стало известно о наступлении страхового случая, обязан:</p>
       <p>В случае хищения, угона застрахованного ТС:</p>
       <ul>

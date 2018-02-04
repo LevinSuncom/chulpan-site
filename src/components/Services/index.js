@@ -10,6 +10,7 @@ import {
   // Здоровье
   IndividualsHealthAccidentsAbout,
   IndividualsHealthAccidentsFaq,
+  IndividualsHealthAccidentsManual,
   IndividualsHealthAccidentsRegulations,
   IndividualsHealthSport,
   IndividualsHealthKids,
@@ -17,6 +18,8 @@ import {
   IndividualsHealthBorrowers,
   // Имущество
   IndividualsPropertyCombinedAbout,
+  IndividualsPropertyCombinedFaq,
+  IndividualsPropertyCombinedRegulations,
   IndividualsPropertyCombinedManual,
   IndividualsPropertyEconomy,
   IndividualsPropertyExpress,
@@ -40,6 +43,8 @@ import {
   IndividualsTransportVoluntaryAbout,
   // Ипотека
   IndividualsMortgageAbout,
+  IndividualsMortgageFaq,
+  IndividualsMortgageRegulations,
   // Путешествия
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
@@ -121,7 +126,7 @@ import {
   EnterpriseStaffAccidentAbout,
   EnterpriseStaffAccidentRegulations,
   EnterpriseStaffAbroadAbout,
-  EnterpriseStaffAbroadRegulations,  
+  EnterpriseStaffAbroadRegulations,
 
   EnterpriseCombined,
   EnterpriseCombinedAirAbout,
@@ -177,6 +182,10 @@ export default class Services extends Component {
                 component={IndividualsHealthAccidentsRegulations}
               />
               <Route
+                path="/services/individuals/health/accidents/manual"
+                component={IndividualsHealthAccidentsManual}
+              />
+              <Route
                 path="/services/individuals/health/sport"
                 component={IndividualsHealthSport}
               />
@@ -200,6 +209,14 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/property/combined/about"
                 component={IndividualsPropertyCombinedAbout}
+              />
+              <Route
+                path="/services/individuals/property/combined/regulations"
+                component={IndividualsPropertyCombinedRegulations}
+              />
+              <Route
+                path="/services/individuals/property/combined/faq"
+                component={IndividualsPropertyCombinedFaq}
               />
               <Route
                 path="/services/individuals/property/combined/manual"
@@ -254,6 +271,20 @@ export default class Services extends Component {
               <Route
                 path="/services/individuals/mortgage/about"
                 component={IndividualsMortgageAbout}
+              />
+              <Route
+                path="/services/individuals/mortgage/faq"
+                component={IndividualsMortgageFaq}
+              />
+              <Route
+                path="/services/individuals/mortgage/regulations"
+                component={IndividualsMortgageRegulations}
+              />
+
+              <Redirect
+                exact
+                from="/services/individuals/travel"
+                to="/services/individuals/travel/abroad"
               />
               <Redirect
                 exact
@@ -395,7 +426,7 @@ export default class Services extends Component {
 
               <Route exact path="/services/enterprise/liability" component={EnterpriseLiability} />
               <Route exact path="/services/enterprise/liability/voluntary" component={EnterpriseLiabilityVoluntary} />
-              <Route exact path="/services/enterprise/liability/compulsory" component={EnterpriseLiabilityCompulsory} />              
+              <Route exact path="/services/enterprise/liability/compulsory" component={EnterpriseLiabilityCompulsory} />
 
               <Redirect exact from="/services/enterprise/liability/voluntary/accident" to="/services/enterprise/liability/voluntary/accident/about" />
               <Route exact path="/services/enterprise/liability/voluntary/accident/about" component={EnterpriseLiabilityVoluntaryAccidentAbout} />

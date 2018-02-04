@@ -4,6 +4,7 @@ import Individuals from './individuals/Individuals';
 // Здоровье
 import IndividualsHealthAccidentsAbout from './individuals/IndividualsHealthAccidentsAbout';
 import IndividualsHealthAccidentsFaq from './individuals/IndividualsHealthAccidentsFaq';
+import IndividualsHealthAccidentsManual from './individuals/IndividualsHealthAccidentsManual';
 import IndividualsHealthAccidentsRegulations from './individuals/IndividualsHealthAccidentsRegulations';
 import IndividualsHealthSport from './individuals/IndividualsHealthSport';
 import IndividualsHealthKids from './individuals/IndividualsHealthKids';
@@ -12,6 +13,8 @@ import IndividualsHealthBorrowers from './individuals/IndividualsHealthBorrowers
 
 // Имущество
 import IndividualsPropertyCombinedAbout from './individuals/IndividualsPropertyCombinedAbout';
+import IndividualsPropertyCombinedFaq from './individuals/IndividualsPropertyCombinedFaq';
+import IndividualsPropertyCombinedRegulations from './individuals/IndividualsPropertyCombinedRegulations';
 import IndividualsPropertyCombinedManual from './individuals/IndividualsPropertyCombinedManual';
 import IndividualsPropertyEconomy from './individuals/IndividualsPropertyEconomy';
 import IndividualsPropertyExpress from './individuals/IndividualsPropertyExpress';
@@ -37,6 +40,8 @@ import IndividualsTransportVoluntaryAbout from './individuals/IndividualsTranspo
 
 // Ипотека
 import IndividualsMortgageAbout from './individuals/IndividualsMortgageAbout';
+import IndividualsMortgageFaq from './individuals/IndividualsMortgageFaq';
+import IndividualsMortgageRegulations from './individuals/IndividualsMortgageRegulations';
 
 // Путешествия
 import IndividualsTravelAbroadAbout from './individuals/IndividualsTravelAbroadAbout';
@@ -143,11 +148,14 @@ export {
   IndividualsHealthAccidentsAbout,
   IndividualsHealthAccidentsFaq,
   IndividualsHealthAccidentsRegulations,
+  IndividualsHealthAccidentsManual,
   IndividualsHealthSport,
   IndividualsHealthKids,
   IndividualsHealthFamily,
   IndividualsHealthBorrowers,
   IndividualsPropertyCombinedAbout,
+  IndividualsPropertyCombinedFaq,
+  IndividualsPropertyCombinedRegulations,
   IndividualsPropertyCombinedManual,
   IndividualsPropertyEconomy,
   IndividualsPropertyExpress,
@@ -169,6 +177,8 @@ export {
   IndividualsTransportEOSAGOFaq,
   IndividualsTransportVoluntaryAbout,
   IndividualsMortgageAbout,
+  IndividualsMortgageFaq,
+  IndividualsMortgageRegulations,
   IndividualsTravelAbroadAbout,
   IndividualsTravelAbroadFaq,
   IndividualsTravelAbroadManual,

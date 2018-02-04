@@ -3,8 +3,8 @@ import React from 'react';
 const IndividualsTravelAbroadFaq = () => {
   return (
     <div>
-      <h1>
-        Вопросы и ответы по страхованию выезжающих за границу<p />
+      <h1 className="product-header">
+        Страхование выезжающих за границу. Вопрос-ответ.<p />
       </h1>
       <p>
         <b>

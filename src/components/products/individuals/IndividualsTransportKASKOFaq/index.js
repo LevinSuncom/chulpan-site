@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualsTransportKASKOFaq = () => {
   return (
     <div>
-      <h1>
+      <h1 className="product-header">
         КАСКО. Вопрос-ответ<p />
       </h1>
       <b>Если у водителя имеется полис ОСАГО, есть ли необходимость в страховании КАСКО? </b>

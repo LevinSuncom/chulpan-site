@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualsTransportOSAGOFaq = () => {
   return (
     <div>
-      <h1>
+      <h1 className="product-header">
         ОСАГО. Вопрос-ответ<p />
       </h1>
       <p>

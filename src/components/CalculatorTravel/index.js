@@ -453,11 +453,11 @@ export default class CalculatorTravel extends Component {
 
         <p style={{ color: 'green' }}>
           {this.state.responceArr.feeRub &&
-            `Стоимость полиса: ${this.state.responceArr.feeRub} рублей `}
+            `Стоимость полиса: ${this.state.responceArr.feeRub.toFixed(2)} рублей `}
           {this.state.responceArr.currency === 'EUR' &&
             `в евро ${this.state.responceArr.feeCurrency}`}
           {this.state.responceArr.currency === 'USD' &&
-            `в долларах ${this.state.responceArr.feeCurrency}`}
+            `в долларах ${this.state.responceArr.feeCurrency.toFixed(2)}`}
         </p>
 
         <div>
@@ -516,6 +516,15 @@ export default class CalculatorTravel extends Component {
             </div>
           )}
         </div>
+        <span id="hotlog_counter"></span>
+        <span id="hotlog_dyn"></span>
+        <script type="text/javascript">
+          var hot_s = document.createElement('script');
+          hot_s.type = 'text/javascript'; hot_s.async = true;
+          hot_s.src = 'http://js.hotlog.ru/dcounter/2563388.js';
+          hot_d = document.getElementById('hotlog_dyn');
+          hot_d.appendChild(hot_s);
+          </script>
       </React.Fragment>
     );
   }
