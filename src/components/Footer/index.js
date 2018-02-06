@@ -91,7 +91,7 @@ class Footer extends Component {
     const url1 =
       'http://chulpan.ru/Portal/Address/GetCountryRegions';
     axios.get(url1).then(responce => {
-      console.log(responce.data);
+      //console.log(responce.data);
       //const value = JSON.parse(responce.data);
       const value = responce.data;
       this.setState({ regions: value, region: '1600000000000' });
@@ -99,7 +99,7 @@ class Footer extends Component {
     const url2 =
       'http://chulpan.ru/Portal/Feedback/GetHours';
     axios.get(url2).then(responce => {
-      console.log(responce.data);
+      //console.log(responce.data);
       //const value = JSON.parse(responce.data);
       const value = responce.data;
       this.setState({ hours: value, hoursFrom: value[8].id, hoursTo: value[17].id });

@@ -6,6 +6,7 @@ import Carousel from '../../components/Carousel';
 import Options from '../../components/Options';
 import News from '../../components/News';
 import Stocks from '../../components/Stocks';
+import Link from 'react-router-dom/Link';
 
 class MainPageContainer extends Component {
   state = {
@@ -26,7 +27,9 @@ class MainPageContainer extends Component {
             style={{ border: 0, borderBottom: '1px solid #E4E4E4', zIndex: -1 }}
           />
 
-          <h1>Новости</h1>
+          <div className="mb-28" style={{ whiteSpace: 'nowrap' }}>
+          <Link to="/news"><h1>Новости</h1></Link>
+          </div>
           <News />
 
           <div className="mb-52" />
@@ -56,7 +59,7 @@ class MainPageContainer extends Component {
           </YMaps>
           <div className="mb-40" />
         </div>
-      </div>
+      </div >
     );
   }
 }

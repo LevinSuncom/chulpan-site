@@ -42,7 +42,7 @@ class ReportsAccountAnnual extends Component {
   render() {
     return (
       <div>
-        <h1 className="product-header">Годовая бухгалтерская отченость</h1>
+        <h1 className="product-header">Годовая бухгалтерская отчетность</h1>
         За 2016 год
         <br />
         <ul>

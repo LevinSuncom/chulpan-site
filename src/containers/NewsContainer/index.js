@@ -1,7 +1,85 @@
 import React, { Component } from 'react';
+import Pagination from "react-js-pagination";
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class NewsContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      newsId: -1,
+      newsPage: 1,
+      newsPageCount: 5,
+      totalCount: 3,
+      newsBrief: [
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 1,
+          date: '2017-07-20'
+        },
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 2,
+          date: '2017-07-20'
+        },
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 3,
+          date: '2017-07-20'
+        }
+      ]
+    };
+  }
+
+  componentDidMount() {
+    console.log('Component is mounted')
+  }
+
+  handlePageChange(pageNumber) {
+    /* console.log(`active page is ${pageNumber}`); */
+    this.setState({newsPage: pageNumber});
+  }
+
   render() {
+    if (this.props.match.params.id === undefined) {
+      return (
+        <div className="container mb-32"
+          style={{ minHeight: 'calc(100vh - 312px)' }}>
+
+          <div className="mb-20" />
+          <h1 className="product-header">Новости</h1>
+
+          {/* <p style={{ textAlign: 'center' }}> */}
+          <div className="list">
+            {this.state.newsBrief.map(item =>
+              <div>
+                <p><b><h5>{(new Date(item.date)).toLocaleDateString()}</h5></b></p>
+                <p><h3>{item.title}</h3></p>
+                <p>{item.brief}</p>
+                <p><Link to={"/news/" + item.id}>Подробнее</Link></p>
+                <div className="mb-20" />
+                <hr />
+              </div>
+            )}
+          </div>
+
+{/*           <Pagination
+            hideDisabled
+            activePage={this.state.newsPage}
+            itemsCountPerPage={this.state.newsPageCount}
+            totalItemsCount={this.state.totalCount}
+            onChange={this.handlePageChange}
+          /> */}
+          {/* </p> */}
+        </div>
+      );
+    }
+    else {
+      console.log("single news")
+    }
     return (
       <div
         className="container mb-32"

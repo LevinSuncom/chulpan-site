@@ -125,7 +125,7 @@ class Options extends Component {
         <div className="col-2">
           <div className="option">
             <Link
-              to="/services/individuals/travel/abroad/calculate"
+              to="/services/individuals/travel/abroad"
               className="option__badge">
               <TravelIcon />
               <p>Путешествия</p>

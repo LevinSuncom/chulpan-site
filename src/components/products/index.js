@@ -37,6 +37,8 @@ import IndividualsTransportEOSAGOManual from './individuals/IndividualsTransport
 import IndividualsTransportOSAGORegulations from './individuals/IndividualsTransportOSAGORegulations';
 import IndividualsTransportEOSAGOFaq from './individuals/IndividualsTransportEOSAGOFaq';
 import IndividualsTransportVoluntaryAbout from './individuals/IndividualsTransportVoluntaryAbout';
+import IndividualsTransportVoluntaryFaq from './individuals/IndividualsTransportVoluntaryFaq';
+import IndividualsTransportVoluntaryRegulations from './individuals/IndividualsTransportVoluntaryRegulations';
 
 // Ипотека
 import IndividualsMortgageAbout from './individuals/IndividualsMortgageAbout';
@@ -176,6 +178,8 @@ export {
   IndividualsTransportOSAGORegulations,
   IndividualsTransportEOSAGOFaq,
   IndividualsTransportVoluntaryAbout,
+  IndividualsTransportVoluntaryFaq,
+  IndividualsTransportVoluntaryRegulations,
   IndividualsMortgageAbout,
   IndividualsMortgageFaq,
   IndividualsMortgageRegulations,

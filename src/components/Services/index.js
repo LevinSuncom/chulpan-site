@@ -41,6 +41,8 @@ import {
   IndividualsTransportOSAGORegulations,
   IndividualsTransportEOSAGOFaq,
   IndividualsTransportVoluntaryAbout,
+  IndividualsTransportVoluntaryFaq,
+  IndividualsTransportVoluntaryRegulations,
   // Ипотека
   IndividualsMortgageAbout,
   IndividualsMortgageFaq,
@@ -281,12 +283,12 @@ export default class Services extends Component {
                 component={IndividualsMortgageRegulations}
               />
 
-              <Redirect
+{/*               <Redirect
                 exact
                 from="/services/individuals/travel"
                 to="/services/individuals/travel/abroad"
               />
-              <Redirect
+ */}              <Redirect
                 exact
                 from="/services/individuals/travel/abroad"
                 to="/services/individuals/travel/abroad/about"
@@ -387,6 +389,15 @@ export default class Services extends Component {
                 path="/services/individuals/transport/voluntary/about"
                 component={IndividualsTransportVoluntaryAbout}
               />
+              <Route
+                path="/services/individuals/transport/voluntary/faq"
+                component={IndividualsTransportVoluntaryFaq}
+              />
+              <Route
+                path="/services/individuals/transport/voluntary/regulations"
+                component={IndividualsTransportVoluntaryRegulations}
+              />
+
               <Route path="/services/delegates" component={Delegates} />
               <Route path="/services/allRules" component={AllRules} />
 
@@ -513,6 +524,15 @@ export default class Services extends Component {
               <Route exact path="/services/enterprise/liability/compulsory/sanatoriums/regulations" component={enterpriseLiabilityCompulsorySanatoriumsRegulations} />
 
               <Route exact path="/services/enterprise/staff" component={EnterpriseStaff} />
+              <Redirect exact path="/services/enterprise/staff/abroad" to="/services/enterprise/staff/abroad/about" />
+              <Route exact path="/services/enterprise/staff/abroad/about" component={EnterpriseStaffAbroadAbout} />
+              <Route exact path="/services/enterprise/staff/abroad/regulations" component={EnterpriseStaffAbroadRegulations} />
+              <Redirect exact path="/services/enterprise/staff/dms" to="/services/enterprise/staff/dms/about" />
+              <Route exact path="/services/enterprise/staff/dms/about" component={EnterpriseStaffDmsAbout} />
+              <Route exact path="/services/enterprise/staff/dms/regulations" component={EnterpriseStaffDmsRegulations} />
+              <Redirect exact path="/services/enterprise/staff/accident" to="/services/enterprise/staff/accident/about" />
+              <Route exact path="/services/enterprise/staff/accident/about" component={EnterpriseStaffAccidentAbout} />
+              <Route exact path="/services/enterprise/staff/accident/regulations" component={EnterpriseStaffAccidentRegulations} />
 
               <Route exact path="/services/enterprise/combined" component={EnterpriseCombined} />
               <Redirect exact path="/services/enterprise/combined/air" to="/services/enterprise/combined/air/about" />

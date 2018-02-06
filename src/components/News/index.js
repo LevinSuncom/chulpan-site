@@ -8,30 +8,27 @@ class News extends Component {
       <div className="row">
         <div className="col-4">
           <Link to="news/1">
-            <span style={{ fontWeight: '200' }}>15/11/2016</span>
+            <span style={{ fontWeight: '200' }}>20.07.2017</span>
             <div style={{ color: '#0095D6' }}>
-              Сообщение о проведении внеочередного собрания акционеров АО СК
-              «Чулпан»
+              Сообщение о завершении передачи страхового портфеля
             </div>
             <span style={{ fontWeight: '200' }}>Акционерное общество…</span>
           </Link>
         </div>
         <div className="col-4">
           <Link to="news/1">
-            <span style={{ fontWeight: '200' }}>15/11/2016</span>
+            <span style={{ fontWeight: '200' }}>20.07.2017</span>
             <div style={{ color: '#0095D6' }}>
-              Сообщение о проведении внеочередного собрания акционеров АО СК
-              «Чулпан»
+              Сообщение о завершении передачи страхового портфеля
             </div>
             <span style={{ fontWeight: '200' }}>Акционерное общество…</span>
           </Link>
         </div>
         <div className="col-4">
           <Link to="news/1">
-            <span style={{ fontWeight: '200' }}>15/11/2016</span>
+            <span style={{ fontWeight: '200' }}>20.07.2017</span>
             <div style={{ color: '#0095D6' }}>
-              Сообщение о проведении внеочередного собрания акционеров АО СК
-              «Чулпан»
+              Сообщение о завершении передачи страхового портфеля
             </div>
             <span style={{ fontWeight: '200' }}>Акционерное общество…</span>
           </Link>

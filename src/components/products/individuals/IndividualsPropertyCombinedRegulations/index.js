@@ -9,7 +9,6 @@ const IndividualsPropertyCombinedRegulations = () => {
       <p>
         Актуальная версия правил. <a href={actualRules}>Скачать</a>
       </p>
-     
     </div>
   );
 };

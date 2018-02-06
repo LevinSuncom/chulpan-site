@@ -7,7 +7,7 @@ const IndividualsTransportKASKORegulations = () => {
     <div>
       <h1 className="product-header">КАСКО</h1>
       <p>
-        Актуальная версия правил. <a href={actualRules}>Скачать</a>
+        <a href={actualRules} target="blank">Скачать актуальные правила</a>
       </p>
      
     </div>

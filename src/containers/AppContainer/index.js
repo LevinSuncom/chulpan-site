@@ -335,6 +335,7 @@ export default class AppContainer extends Component {
             <Route path="/individuals" component={IndividualsContainer} />
             <Route path="/enterprise" component={EnterpriseContainer} />
             <Route path="/about" component={AboutContainer} />
+            <Route exact path="/news" component={NewsContainer} />
             <Route exact path="/news/:id" component={NewsContainer} />
             {routes.map(route => (
               <Route key={route} exact path={route} component={Services} />

@@ -1711,7 +1711,7 @@ const MultiLevelNavigation = props => {
       return (
         <React.Fragment>
           <Link to="/services" className="navbar__link">
-            <BackIcon /> Представители
+            <BackIcon /> Филиалы и представительства
           </Link>
         </React.Fragment>
       );

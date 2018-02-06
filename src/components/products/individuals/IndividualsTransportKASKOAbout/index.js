@@ -7,7 +7,7 @@ const IndividualsTransportKASKOAbout = () => {
       {/* <Breadcrumbs>{this.props.location.pathname}</Breadcrumbs> */}
 
       <h1 className="product-header">
-        Добровольное страхование средств наземного транспорта
+        КАСКО
       </h1>
       <img src={image} className="product-image" alt="" />
       <p>
