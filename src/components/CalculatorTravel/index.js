@@ -139,7 +139,7 @@ export default class CalculatorTravel extends Component {
         [name]: value
       },
       () => {
-        if (name === 'amount') {
+        if (name === 'amount' || name === 'country') {
           const rubSumm = 'http://chulpan.ru/Portal/Travel/GetRubSum';
           axios
             .post(rubSumm, {

@@ -3,32 +3,56 @@ import Pagination from "react-js-pagination";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+require('./style.css');
+
 class NewsContainer extends Component {
   constructor(props) {
     super(props);
+    this.handlePageChange = this.handlePageChange.bind(this);
+    this.getCurrentNews = this.getCurrentNews.bind(this);
     this.state = {
       newsId: -1,
       newsPage: 1,
       newsPageCount: 5,
-      totalCount: 3,
+      totalCount: 6,
       newsBrief: [
         {
           title: 'Сообщение о завершении передачи страхового портфеля',
           brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
           id: 1,
-          date: '2017-07-20'
+          date: '2017-07-21'
         },
         {
           title: 'Сообщение о завершении передачи страхового портфеля',
           brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
           id: 2,
-          date: '2017-07-20'
+          date: '2017-07-22'
         },
         {
           title: 'Сообщение о завершении передачи страхового портфеля',
           brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
           id: 3,
-          date: '2017-07-20'
+          date: '2017-07-23'
+        },
+
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 4,
+          date: '2017-07-24'
+        },
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 5,
+          date: '2017-07-25'
+        },
+
+        {
+          title: 'Сообщение о завершении передачи страхового портфеля',
+          brief: 'ООО «СК «АСКО-Жизнь» осуществило передачу страхового портфеля по добровольному страхованию жизни',
+          id: 6,
+          date: '2017-07-26'
         }
       ]
     };
@@ -40,10 +64,32 @@ class NewsContainer extends Component {
 
   handlePageChange(pageNumber) {
     /* console.log(`active page is ${pageNumber}`); */
-    this.setState({newsPage: pageNumber});
+    this.setState({ newsPage: pageNumber });
+  }
+
+  getCurrentNews() {
+    var startNews = this.state.newsPageCount*(this.state.newsPage - 1);
+    var endNews = startNews + this.state.newsPageCount;
+
+    return this.state.newsBrief.sort(function (a, b) {
+      return +new Date(b.date) - +new Date(a.date);
+    }).slice(startNews, endNews);
+  }
+
+  renderSingleNews(news) {
+    return (
+      <div>
+        <p><b><h5>{(new Date(news.date)).toLocaleDateString()}</h5></b></p>
+        <p><h3>{news.title}</h3></p>
+        <p>{news.brief}</p>
+        <p><Link to={"/news/" + news.id}>Подробнее</Link></p>
+        <div className="mb-20" />
+        <hr />
+      </div>)
   }
 
   render() {
+    var renderedNews = this.getCurrentNews().map(item => this.renderSingleNews(item));
     if (this.props.match.params.id === undefined) {
       return (
         <div className="container mb-32"
@@ -54,25 +100,31 @@ class NewsContainer extends Component {
 
           {/* <p style={{ textAlign: 'center' }}> */}
           <div className="list">
-            {this.state.newsBrief.map(item =>
-              <div>
-                <p><b><h5>{(new Date(item.date)).toLocaleDateString()}</h5></b></p>
-                <p><h3>{item.title}</h3></p>
-                <p>{item.brief}</p>
-                <p><Link to={"/news/" + item.id}>Подробнее</Link></p>
-                <div className="mb-20" />
-                <hr />
-              </div>
-            )}
+            {renderedNews}
           </div>
 
-{/*           <Pagination
+           <Pagination
             hideDisabled
+            prevPageText='раньше'
+            nextPageText='позже'
+            firstPageText='<<'
+            lastPageText='>>'
             activePage={this.state.newsPage}
             itemsCountPerPage={this.state.newsPageCount}
             totalItemsCount={this.state.totalCount}
             onChange={this.handlePageChange}
-          /> */}
+          />
+  {/*                 <ReactPaginate previousLabel={"previous"}
+                       nextLabel={"next"}
+                       breakLabel={<a href="">...</a>}
+                       breakClassName={"break-me"}
+                       pageCount={this.state.pageCount}
+                       marginPagesDisplayed={2}
+                       pageRangeDisplayed={5}
+                       onPageChange={this.handlePageClick}
+                       containerClassName={"pagination"}
+                       subContainerClassName={"pages pagination"}
+                       activeClassName={"active"} />  */}
           {/* </p> */}
         </div>
       );

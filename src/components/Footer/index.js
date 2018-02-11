@@ -20,7 +20,7 @@ const modalStyle = {
     padding: '2rem',
     position: 'fixed',
     right: 'auto',
-    top: '10%', // start from center
+    top: '5%', // start from center
     //transform: 'translate(-50%,-' + offsetPx + ')', // adjust top "up" based on height
     width: '450px'
     //maxWidth: '40rem'
