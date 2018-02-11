@@ -253,7 +253,7 @@ class Footer extends Component {
               //marginTop: '40px'
             }}>
             <h1 className="mb-20">Заказать звонок</h1>
-            <form action="" className="callback mb-40" ref="uploadForm" onSubmit={this.onCallbackSubmit}>
+            <form action="" className="callback" ref="uploadForm" onSubmit={this.onCallbackSubmit}>
               <label htmlFor="">Номер телефона</label>
 
               <MaskedInput
@@ -337,7 +337,7 @@ class Footer extends Component {
               //marginTop: '40px'
             }}>
             <h1 className="mb-20">Обратная связь</h1>
-            <form action="" className="callback mb-40" onSubmit={this.onFeedbackSubmit}>
+            <form action="" className="callback" onSubmit={this.onFeedbackSubmit}>
               <label htmlFor="">ФИО</label>
               <input
                 type="text"

@@ -68,9 +68,9 @@ const Header = () => {
             }}>
             8 800 700 44 90
           </span>
-          <NavLink to="http://chulpan.ru/Portal/Selfcare/LogIn" className="button ">
+          <a href="http://chulpan.ru/Portal/Selfcare/LogIn" className="button ">
             Личный кабинет
-          </NavLink>
+          </a>
         </div>
       </div>
     </header>
