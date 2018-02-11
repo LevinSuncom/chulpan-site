@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 import axios from 'axios';
+import MaskedInput from 'react-input-mask';
+
+import FileInput from '../FileInput'
 
 import './style.css';
+
+let file = null;
 
 const modalStyle = {
   content: {
@@ -17,7 +22,7 @@ const modalStyle = {
     right: 'auto',
     top: '10%', // start from center
     //transform: 'translate(-50%,-' + offsetPx + ')', // adjust top "up" based on height
-    width: '450px',
+    width: '450px'
     //maxWidth: '40rem'
   },
   overlay: {
@@ -26,7 +31,8 @@ const modalStyle = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(235, 235, 235, 0.75)'
+    backgroundColor: 'rgba(235, 235, 235, 0.75)',
+    zIndex: '99' 
   },
 };
 
@@ -67,6 +73,15 @@ class Footer extends Component {
     theme: '',
     hoursFrom: '',
     hoursTo: '',
+    feedbackFio: '',
+    feedbackPhone: '',
+    feedbackEmail: '',
+    feedbackTheme: '',
+    feedbackContent: '',
+    feedbackAttachment: null,
+    feedbackAttachmentDisplayFileName: '',
+    feedbackAttachmentVisible: false,
+    feedbackContentVisible: true,
     regions: [
       {
         code: '',
@@ -84,33 +99,26 @@ class Footer extends Component {
         name: ''
       }
     ]
-
   };
 
   componentDidMount() {
     const url1 =
       'http://chulpan.ru/Portal/Address/GetCountryRegions';
     axios.get(url1).then(responce => {
-      //console.log(responce.data);
-      //const value = JSON.parse(responce.data);
       const value = responce.data;
       this.setState({ regions: value, region: '1600000000000' });
     });
     const url2 =
       'http://chulpan.ru/Portal/Feedback/GetHours';
     axios.get(url2).then(responce => {
-      //console.log(responce.data);
-      //const value = JSON.parse(responce.data);
       const value = responce.data;
       this.setState({ hours: value, hoursFrom: value[8].id, hoursTo: value[17].id });
     });
     const url3 =
       'http://chulpan.ru/Portal/Feedback/GetThemes';
     axios.get(url3).then(responce => {
-      console.log(responce.data);
-      //const value = JSON.parse(responce.data);
       const value = responce.data;
-      this.setState({ feedbackThemes: value, feedbackThemes: value[0].id });
+      this.setState({ feedbackThemes: value, feedbackTheme: value[0].id });
     });
 
   }
@@ -119,10 +127,34 @@ class Footer extends Component {
     const name = target.name;
     const value = target.value;
 
-    // console.log(value)
-    // console.log(typeof value)
-
     if (name === 'hoursFrom') {
+      this.setState({
+        [name]: value
+      });  
+    } else
+    if (name === 'feedbackTheme') {
+      this.setState({ feedbackAttachmentVisible: value == 2 })
+      this.setState({ feedbackContentVisible: value != 2 })
+      this.setState({
+        [name]: value
+      });  
+    }
+    else if (name === 'feedbackAttachment') {
+      if (value.lastIndexOf('\\')){
+        var i = value.lastIndexOf('\\')+1;
+      }
+      else{
+        var i = value.lastIndexOf('/')+1;
+      }						
+      var filename = value.slice(i);
+      this.setState({feedbackAttachmentDisplayFileName: filename});
+      this.state.feedbackAttachment = new File([event.target.files[0]], event.target.files[0].name)
+      file = new File([event.target.files[0]], event.target.files[0].name)
+    }
+    else {
+      this.setState({
+        [name]: value
+      });  
     }
 
     this.setState({
@@ -163,26 +195,35 @@ class Footer extends Component {
       })
       .catch(() => { });
     this.setState({ answerIsOpen: true, modalIsOpen: false });
-    // console.log('Vse okey')
   };
 
   onFeedbackSubmit = event => {
-    const { phone, region, theme, hoursFrom, hoursTo } = this.state;
+    const { feedbackFio, feedbackPhone, feedbackEmail, feedbackTheme, feedbackContent, feedbackAttachment } = this.state;
     event.preventDefault();
 
     this.setState({
       error: ''
     });
 
-    const url = 'http://chulpan.ru/Portal/Feedback/Callback';
+    const url = 'http://chulpan.ru/Portal/Feedback/Feedback';
+    var config = {};
+    const formData = new FormData();
+    formData.append('fio',feedbackFio);
+    formData.append('phone',feedbackPhone);
+    formData.append('email',feedbackEmail);
+    formData.append('theme',feedbackTheme);
+    formData.append('content',feedbackContent);
+    if (this.state.feedbackTheme == 2)
+    {
+      config = {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+      };
+      formData.append('file', file);
+    }
     axios
-      .post(url, {
-        phone: phone,
-        region: region,
-        theme: theme,
-        hoursFrom: hoursFrom,
-        hoursTo: hoursTo
-      })
+      .post(url, formData, config)
       .then(responce => {
         console.log(responce);
         const data = responce.data;
@@ -190,17 +231,14 @@ class Footer extends Component {
           this.setState({ error: data.error, buttons: false });
         } else {
           this.setState({
-            error: '',
-            price: data.fee,
-            buttons: true,
-            guid: data.guid
+            error: ''
           });
         }
       })
       .catch(() => { });
     this.setState({ answerIsOpen: true, feedbackModalIsOpen: false });
-    // console.log('Vse okey')
   };
+
 
   render() {
     return (
@@ -215,14 +253,17 @@ class Footer extends Component {
               //marginTop: '40px'
             }}>
             <h1 className="mb-20">Заказать звонок</h1>
-            <form action="" className="callback mb-40" onSubmit={this.onCallbackSubmit}>
+            <form action="" className="callback mb-40" ref="uploadForm" onSubmit={this.onCallbackSubmit}>
               <label htmlFor="">Номер телефона</label>
-              <input
+
+              <MaskedInput
                 type="text"
                 name="phone"
                 onChange={this.onChange}
                 placeholder="Номер телефона"
                 className="mb-12"
+                mask="+7 (999) 999-99-99"
+                required
               />
               <label htmlFor="">Регион</label>
               <select
@@ -244,7 +285,8 @@ class Footer extends Component {
                 className="mb-12"
                 placeholder="Тема"
                 name="theme"
-                onChange={this.onChange} />
+                onChange={this.onChange} 
+                required/>
               <label htmlFor="">Желательное время звонка</label>
               <div style={{ alignSelf: 'left' }}>
                 C:&nbsp;
@@ -299,63 +341,77 @@ class Footer extends Component {
               <label htmlFor="">ФИО</label>
               <input
                 type="text"
-                name="feedbakFio"
+                name="feedbackFio"
                 onChange={this.onChange}
                 placeholder="ФИО"
                 className="mb-12"
+                required
               />
               <label htmlFor="">Номер телефона</label>
-              <input
+              {/* <InputMask */}
+              <MaskedInput
                 type="text"
                 name="feedbackPhone"
                 onChange={this.onChange}
                 placeholder="Номер телефона"
                 className="mb-12"
+                mask="+7 (999) 999-99-99"
+                required
               />
               <label htmlFor="">E-mail</label>
               <input
-                type="text"
+                type="email"
+                placeholder="email@example.com"
                 name="feedbackEmail"
                 onChange={this.onChange}
-                placeholder="E-mail"
-                className="mb-12"
-              />
+                className="mb-12" 
+                required/>
               <label htmlFor="">Тема</label>
               <select
                 name="feedbackTheme"
                 onChange={this.onChange}
                 id=""
-                value={this.state.feedbakTheme}
+                value={this.state.feedbackTheme}
                 className="mb-12">
-                {/*                 {this.state.feedbackThemes.map(item => {
+                {/* this.state.feedbackThemes.map(item => {
                   return (
                     <option value={item.id}>{`${item.name}`}</option>
                   );
-                })}
- */}
-
+                }) */}
                 <option value="1">Предложение</option>
                 <option value="2">Заявление</option>
                 <option value="3">Жалоба</option>
                 <option value="4">Вопрос по страхованию</option>
               </select>
-              <label htmlFor="">Содержание</label>
-              <input
+              {this.state.feedbackContentVisible && (<label htmlFor="">Содержание</label>)}
+              {this.state.feedbackContentVisible && (<input
                 type="text"
                 name="feedbackContent"
                 onChange={this.onChange}
                 placeholder="Содержание"
                 className="mb-12"
-              />
-              {/*               <label htmlFor="">Вложения</label>
-              <input
-                type="file"
-                name="feedbackContent"
-                onChange={this.onChange}
-                placeholder="Содержание"
-                className="mb-12"
-              />
- */}
+              />)}
+
+              {this.state.feedbackAttachmentVisible && (<label htmlFor="">Вложения</label>)}
+              {this.state.feedbackAttachmentVisible && (
+/*                 <div className="attachment" >
+                  <input
+                    type="file"
+                    name="feedbackAttachment"
+                    onChange={this.onChange}
+                    placeholder="Вложение"
+                    className="mb-12"
+                    style={{ opacity: 0, overflow: 'hidden' }}
+                  />
+                  Выбрать файл для загрузки
+              </div> */
+              <div class="fileform">
+              <div id="fileformlabel">{this.state.feedbackAttachmentDisplayFileName}</div>
+              <div class="selectbutton">Обзор</div>
+              <input id="upload" name='feedbackAttachment' type="file" onChange={this.onChange}/>
+              </div>
+            )}
+
               <div style={{ alignSelf: 'center' }}>
                 <button type="submit" className="button" style={{ marginRight: '8px' }}>
                   Отправить
@@ -390,23 +446,23 @@ class Footer extends Component {
           <div className="row">
             <div className="col-3 footer__navs">
               <span className="footer__headline">Навигация</span>
-              <Link to="" className="footer__link">
+              <a href="http://чулпан-мед.рф" className="footer__link">
                 OOО Страховая Медицинская Организация «Чулпан&#8209;Мед»
-              </Link>
-              <Link to="" className="footer__link">
+              </a>
+              <a href="http://чулпан-медицина.рф" className="footer__link">
                 Лечебно-профилактический центр «Чулпан&#8209;Медицина»
-              </Link>
-              <Link to="" className="footer__link">
+              </a>
+              <a href="http://чулпан-жизнь.рф" className="footer__link">
                 ООО Страховая компания «Чулпан&#8209;Жизнь»
-              </Link>
+              </a>
             </div>
             <div className="col-3 footer__navs">
               <span className="footer__headline">Информация</span>
-              <Link to="" className="footer__link">
+              <Link to="/about/personalDataProtection" className="footer__link">
                 Политика о защите персональных данных
               </Link>
 
-              <Link to="" className="footer__link">
+              <Link to="/about/consolidatedReport" className="footer__link">
                 Отчётность
               </Link>
             </div>
@@ -428,12 +484,12 @@ class Footer extends Component {
                 style={{ cursor: 'pointer' }}>
                 Обратная связь
               </span>
-              <Link to="" className="footer__link">
+              <a href="tel:+78007004490" className="footer__link">
                 8 800 700 44 90
-              </Link>
-              <Link to="" className="footer__link">
+              </a>
+              <a href="mailto:mail@chulpan.ru" className="footer__link">
                 mail@chulpan.ru
-              </Link>
+              </a>
             </div>
             <div className="col-3 footer__navs">
               <span className="footer__headline">О компании</span>

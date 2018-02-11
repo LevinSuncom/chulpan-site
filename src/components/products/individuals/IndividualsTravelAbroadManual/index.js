@@ -3,6 +3,7 @@ import React from 'react';
 const IndividualsTravelAbroadManual = () => {
   return (
     <div>
+      <h1 className="product-header">Страхование выезжающих за границу</h1>
       <p>
         <b>
           ВНИМАНИЮ ЗАСТРАХОВАННОГО!<p />

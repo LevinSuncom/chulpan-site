@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@mitchallen/react-email-input-field": "^0.1.6",
     "axios": "^0.17.1",
     "bootstrap": "^4.0.0",
     "bootstrap-less": "^3.3.8",
@@ -10,11 +11,16 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.4.1",
+    "react-input-mask": "^1.2.1",
     "react-js-pagination": "^3.0.1",
     "react-modal": "^3.1.11",
     "react-router-dom": "^4.2.2",
+    "react-text-mask": "^5.1.0",
+    "react-validation": "^3.0.7",
     "react-yandex-maps": "^2.1.4",
-    "styled-components": "^2.4.0"
+    "styled-components": "^2.4.0",
+    "text-mask-addons": "^3.7.1",
+    "validator": "^9.4.0"
   },
   "devDependencies": {
     "prettier": "^1.9.2",
