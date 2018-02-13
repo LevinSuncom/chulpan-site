@@ -1,0 +1,22 @@
+ProxyRequests Off
+ProxyPreserveHost On
+
+<Proxy *>
+    Order deny,allow
+    Allow from localhost
+</Proxy>
+
+RewriteEngine On  
+
+RewriteCond %{REQUEST_URI} ^/Portal/
+RewriteRule ^(.*)$ http://185.149.64.215:8084/$1 [P,QSA]
+
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ /index.html [L]
+
+ProxyPass /Portal http://185.149.64.215:8084/ interpolate
+ProxyPassReverse /Portal http://185.149.64.215:8084/ interpolate

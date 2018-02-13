@@ -29,7 +29,8 @@ ul.pagination>.active>span:focus,
 ul.pagination>.active>span:hover {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
+  /* background-color: #337ab7; */
+  background-color: rgb(0, 149, 214);
   border-color: #337ab7;
   cursor: default;
 }

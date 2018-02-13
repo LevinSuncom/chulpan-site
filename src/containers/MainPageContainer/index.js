@@ -28,7 +28,7 @@ class MainPageContainer extends Component {
           />
 
           <div className="mb-28" style={{ whiteSpace: 'nowrap' }}>
-          <Link to="/news"><h1>Новости</h1></Link>
+          <Link to="/news" style={{color: 'rgb(0, 149, 214)'}}><h1>Новости</h1></Link>
           </div>
           <News />
 

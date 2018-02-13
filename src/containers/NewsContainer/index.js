@@ -82,7 +82,7 @@ class NewsContainer extends Component {
         <p><b><h5>{(new Date(news.date)).toLocaleDateString()}</h5></b></p>
         <p><h3>{news.title}</h3></p>
         <p>{news.brief}</p>
-        <p><Link to={"/news/" + news.id}>Подробнее</Link></p>
+        <p><Link to={"/news/" + news.id} style={{color: 'rgb(0, 149, 214)'}}>Подробнее</Link></p>
         <div className="mb-20" />
         <hr />
       </div>)

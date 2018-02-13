@@ -287,7 +287,7 @@ class Footer extends Component {
                 name="theme"
                 onChange={this.onChange} 
                 required/>
-              <label htmlFor="">Желательное время звонка</label>
+              <label htmlFor="">Желательное время звонка (московское время)</label>
               <div style={{ alignSelf: 'left' }}>
                 C:&nbsp;
                 <select
