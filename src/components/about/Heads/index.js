@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+import vafin from './vafin.jpg';
+import shakirov from './shakirov.jpg';
+import leuhina from './leuhina.jpg';
+import galiautdinov from './galiautdinov.jpg';
+
 class Heads extends Component {
   render() {
     return (
@@ -10,16 +15,17 @@ class Heads extends Component {
           <img
             style={{ width: '85px', height: '110px' }}
             alt=""
-            src="http://www.chulpan.ru/img/rukovodstvo/vafin2013.jpg"
+            src={vafin}
             width="85"
             height="110"
           />
         </div>
         <div>
-          <a href="http://www.chulpan.ru/130/">
+          {/* <a href="http://www.chulpan.ru/130/"> */}
             <b>Вафин Фарит Салихович</b>
-          </a>{' '}
-          - генеральный директор
+          {/* </a>{' '}a */}
+          <br/>
+          Генеральный директор
         </div>
         <div>
           <hr />
@@ -28,20 +34,20 @@ class Heads extends Component {
           <img
             style={{ width: '85px', height: '111px' }}
             alt=""
-            src="http://www.chulpan.ru/img/rukovodstvo/shakirov2013.jpg"
+            src={shakirov}
             width="85"
             height="111"
           />
         </div>
         <div>
-          <a href="http://www.chulpan.ru/134/">
-            <span style={{ fontWeight: 'bold' }}>
-              Шакиров Фарит Гарифзанович
-            </span>
-          </a>
+          {/* <a href="http://www.chulpan.ru/134/"> */}
+            {/* <span style={{ fontWeight: 'bold' }}> */}
+              <b>Шакиров Фарит Гарифзанович</b>
+            {/* </span> */}
+          {/* </a> */}
         </div>
         <div>
-          - первый заместитель генерального директора, начальник управления по
+          Первый заместитель генерального директора, начальник управления по
           экономике и финансам
         </div>
         <div>
@@ -52,23 +58,23 @@ class Heads extends Component {
             <img
               style={{ width: '85px', height: '110px' }}
               alt=""
-              src="http://www.chulpan.ru/img/rukovodstvo/galjautdinov2013.jpg"
+              src={galiautdinov}
               width="85"
               height="110"
             />
           </p>
           <p>
-            <a href="http://www.chulpan.ru/132/">
-              <span style={{ fontWeight: 'bold' }}>
-                Галяутдинов Баязит Аледдинович
-              </span>
-            </a>
-            - заместитель генерального директора,начальник управления личного
+            {/* <a href="http://www.chulpan.ru/132/">
+              <span style={{ fontWeight: 'bold' }}> */}
+                <b>Галяутдинов Баязит Аледдинович</b>
+{/*               </span>
+            </a> */}
+            <br/>
+            Заместитель генерального директора,начальник управления личного
             страхования<br />
           </p>
-          <hr />
         </div>
-        <div>
+{/*         <div>
           <img
             style={{ width: '84px', height: '107px' }}
             alt=""
@@ -83,7 +89,7 @@ class Heads extends Component {
           </a>
           - заместитель генерального директора, начальник управления по
           страхованию имущества и ответственности
-        </div>
+        </div> */}
         <blockquote dir="ltr">
           <hr />
           <p>
@@ -91,17 +97,20 @@ class Heads extends Component {
               <img
                 style={{ width: '87px', height: '111px' }}
                 alt=""
-                src="http://www.chulpan.ru/img/rukovodstvo/leuhina.jpg"
+                src={leuhina}
                 width="97"
                 height="121"
               />
             </strong>
           </p>
           <p>
-            <strong>
-              <a href="http://www.chulpan.ru/250/">Леухина Елена Петровна</a>
-            </strong>
-            &nbsp;- главный бухгалтер - начальник управления бухгалтерского
+            {/* <strong>
+              <a href="http://www.chulpan.ru/250/"> */}
+              <b>Леухина Елена Петровна</b>
+              {/* </a>
+            </strong> */}
+            <br/>
+            Главный бухгалтер, начальник управления бухгалтерского
             учета и отчетности
           </p>
         </blockquote>

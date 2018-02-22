@@ -86,12 +86,12 @@ class AboutContainer extends Component {
                 activeClassName="navbar__link_active">
                 Бухгалтерская отчетность
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/about/consolidatedReport"
                 className="navbar__link"
                 activeClassName="navbar__link_active">
                 Консолидированная отчётность
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/about/forShareHolders"
                 className="navbar__link"
@@ -224,10 +224,10 @@ class AboutContainer extends Component {
               <Redirect exact from="/about" to="/about/aboutCompany" />
               <Route path="/about/aboutCompany" component={AboutCompany} />
             </Switch>
-            <Switch>
+{/*             <Switch>
               <Redirect exact from="/about" to="/about/consolidatedReport" />
               <Route path="/about/consolidatedReport" component={ConsolidatedReport} />
-            </Switch>
+            </Switch> */}
             <Switch>
               <Redirect exact from="/about" to="/about/agents" />
               <Route path="/about/agents" component={Agents} />

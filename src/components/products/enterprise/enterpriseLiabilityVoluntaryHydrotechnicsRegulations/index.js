@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 /* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
 import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Добровольное/СОГС.doc';
-import actualRules from '../../../../documents/Страхование гражданской ответственности эксплуатирующих организаций и собственников гидротехнических сооружений за причинение вредажизни, здоровью или имуществу третьих лиц.doc';
+import actualRules from '../../../../documents/Страхование гражданской ответственности собственников гидротехнических сооружений.doc';
 
 const EnterpriseRegulations = () => {
   return (

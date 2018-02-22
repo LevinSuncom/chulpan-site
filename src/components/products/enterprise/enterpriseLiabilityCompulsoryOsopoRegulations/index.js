@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 /* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
 import statementDraft from '../../../../documents/Страхование средств наземного транспорта.doc';
-import actualRules from '../../../../documents/Страхование гражданской ответственности организаций, эксплуатирующих опасные производственные объекты, за причинение вреда жизни, - 1.doc';
+import actualRules from '../../../../documents/Страхование гражданской ответственности организаций, эксплуатирующих опасные производственные объекты.doc';
 
 const EnterpriseRegulations = () => {
   return (

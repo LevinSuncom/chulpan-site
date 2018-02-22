@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 /* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
 import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Добровольное/СГОКС.doc';
-import actualRules from '../../../../documents/Правила страхования гражданской ответственности за причинение вреда вследствие недостатков работ, которые оказывают влияние на безопасность объектов капитального строительства.doc';
+import actualRules from '../../../../documents/Правила страхования гражданской ответственности капитального строительства.doc';
 
 const EnterpriseRegulations = () => {
   return (

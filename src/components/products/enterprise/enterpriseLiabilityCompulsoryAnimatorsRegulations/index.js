@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 /* import contractDraft from '../../../../documents/Страхование средств наземного транспорта.doc'; */
 import statementDraft from '../../../../documents/Бланки договоров/Ответственность/Профессиональное/ГООЗ.DOC';
-import actualRules from '../../../../documents/Страхование гражданской ответственности организаторов (устроителей) зрелищных, спортивно-оздоровительных, культурных и общественных мероприятий.DOC';
+import actualRules from '../../../../documents/Страхование гражданской ответственности организаторов общественных мероприятий.DOC';
 
 const EnterpriseRegulations = () => {
   return (

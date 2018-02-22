@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import file1 from './reestr17052017chulpan.xls';
+import file1 from './reestr07022018.xls';
 
 class Agents extends Component {
   render() {
@@ -28,7 +28,7 @@ class Agents extends Component {
         <hr />
         <p><span>*- сотрудничество со страховыми брокерами АО СК «Чулпан» ведет исключительно в области перестрахования</span>
         </p>
-        <p><span>Дата и время последнего изменения на странице: 17.05.2017г., 15:35</span>
+        <p><span>Дата и время последнего изменения на странице: 07.02.2018г., 16:30</span>
         </p>
       </div>
     );

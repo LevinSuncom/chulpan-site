@@ -462,7 +462,7 @@ class Footer extends Component {
                 Политика о защите персональных данных
               </Link>
 
-              <Link to="/about/consolidatedReport" className="footer__link">
+              <Link to="/about/reportsAccountAnnual" className="footer__link">
                 Отчётность
               </Link>
             </div>
@@ -487,8 +487,8 @@ class Footer extends Component {
               <a href="tel:+78007004490" className="footer__link">
                 8 800 700 44 90
               </a>
-              <a href="mailto:mail@chulpan.ru" className="footer__link">
-                mail@chulpan.ru
+              <a href="mailto:chulpan@tatais.ru" className="footer__link">
+              chulpan@tatais.ru
               </a>
             </div>
             <div className="col-3 footer__navs">
